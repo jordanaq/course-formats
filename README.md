@@ -10,6 +10,10 @@ This repository is the **provenance authority**: a release here names the exact 
 Schema, and fixtures that downstream repositories consume. Consumers vendor a release as a git
 submodule pinned to a tag; they do not keep editable copies.
 
+[`ERRATA.md`](ERRATA.md) holds the canonical list of conflicts found inside the formats, their
+resolution, and the items deliberately left open. App-specific profiles and fixture conversions
+stay in the consuming repositories.
+
 ## Canonicality
 
 - **Schemas are canonical for structure.** `releases/<release>/schemas/*.schema.json` is the
@@ -25,7 +29,7 @@ submodule pinned to a tag; they do not keep editable copies.
 ## Versioning
 
 - One release pairs an assessment bundle format with a submission specification revision.
-  `v0.12.0` pairs assessment `0.12.0` with submission `0.4`.
+  `v0.12.1` pairs assessment `0.12.1` with submission `0.5`.
 - Release directories, tags, and `manifest.json` carry the version. Artifact filenames are
   deliberately unversioned.
 - Releases are immutable. A change produces a new release directory and tag.
@@ -33,6 +37,7 @@ submodule pinned to a tag; they do not keep editable copies.
 ## Layout
 
 ```
+ERRATA.md                 # conflicts inside the formats, resolved and open
 releases/<release>/
   manifest.json           # formats, artifact paths, SHA-256 pins
   schemas/                # canonical machine-readable structure
@@ -46,9 +51,9 @@ tools/
 
 | Repository | Role | Status |
 | --- | --- | --- |
-| `assessment-cli` | reads schemas and fixtures; validates bundles and submissions | submodule at `vendor/course-formats`, `v0.12.0` |
+| `assessment-cli` | reads schemas and fixtures; validates bundles and submissions | submodule at `vendor/course-formats`, `v0.12.1` |
 | `~/Documents/Obsidian-Vault` | reads the normative specs and linter | submodule at `Agents/Design/course-formats`; current specs and linter are symlinks into it |
-| `course-organizer` | reads the schemas and specs | submodule at `vendor/course-formats`, `v0.12.0` |
+| `course-organizer` | reads the schemas and specs | submodule at `vendor/course-formats`, `v0.12.1` |
 
 Consumers pin the release tag. Update by checking out a newer tag in the submodule and
 committing the new gitlink.
@@ -69,6 +74,7 @@ it.
 
 1. Generate the specs' embedded schema blocks from `releases/<release>/schemas/` and fail on drift.
 2. Move and adapt the build scripts; they currently assume vault paths and versioned filenames.
-3. Reconcile the bundle spec's citations of `submission-format-spec-v0.3.md` with the paired
-   submission revision `0.4`.
-4. Add the upstream remote, tags, and consumer submodules.
+3. Resolve the open errata in [`ERRATA.md`](ERRATA.md): ignored over-answer word checks,
+   pending-locator wording, and rubric prose caps.
+4. Move the course-structure spec and its schema/fixtures here, then resolve C01–C05 and the
+   stale submission v0.3 citation it still carries.
