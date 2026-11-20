@@ -3,8 +3,8 @@
 Canonical source for course formats and their linters, consumed by the Obsidian vault,
 `assessment-cli`, and `course-organizer`.
 
-Current scope: the assessment bundle and submission formats. The repository is intended to
-grow to own the course-structure format and the other course linters as well.
+Current scope: the assessment bundle, submission, and course-structure formats. The
+course-structure spec is prose only for now; its schema and linter are still to move.
 
 This repository is the **provenance authority**: a release here names the exact prose, JSON
 Schema, and fixtures that downstream repositories consume. Consumers vendor a release as a git
@@ -28,8 +28,9 @@ stay in the consuming repositories.
 
 ## Versioning
 
-- One release pairs an assessment bundle format with a submission specification revision.
-  `v0.12.1` pairs assessment `0.12.1` with submission `0.5`.
+- One release pairs an assessment bundle format with a submission specification revision and
+  a course-structure revision. `v0.12.2` pairs assessment `0.12.1`, submission `0.5`, and
+  course `0.1.11`.
 - Release directories, tags, and `manifest.json` carry the version. Artifact filenames are
   deliberately unversioned.
 - Releases are immutable. A change produces a new release directory and tag.
@@ -51,9 +52,9 @@ tools/
 
 | Repository | Role | Status |
 | --- | --- | --- |
-| `assessment-cli` | reads schemas and fixtures; validates bundles and submissions | submodule at `vendor/course-formats`, `v0.12.1` |
+| `assessment-cli` | reads schemas and fixtures; validates bundles and submissions | submodule at `vendor/course-formats`, `v0.12.2` |
 | `~/Documents/Obsidian-Vault` | reads the normative specs and linter | submodule at `Agents/Design/course-formats`; current specs and linter are symlinks into it |
-| `course-organizer` | reads the schemas and specs | submodule at `vendor/course-formats`, `v0.12.1` |
+| `course-organizer` | reads the schemas and specs | submodule at `vendor/course-formats`, `v0.12.2` |
 
 Consumers pin the release tag. Update by checking out a newer tag in the submodule and
 committing the new gitlink.
@@ -68,13 +69,16 @@ release-gating** and is currently out of date:
   which this repository no longer uses.
 
 Fix these when the linter is brought back into service. The current release does not depend on
-it.
+it. The course linter (`course_lint.py`) still lives in the vault and is not yet part of this
+repository.
 
 ## Known pending work
 
 1. Generate the specs' embedded schema blocks from `releases/<release>/schemas/` and fail on drift.
-2. Move and adapt the build scripts; they currently assume vault paths and versioned filenames.
-3. Resolve the open errata in [`ERRATA.md`](ERRATA.md): ignored over-answer word checks,
+2. Add the prose-example test: extract the current appendix bundles into fixtures and validate
+   them alongside the schema.
+3. Move the course linter and its fixtures here; then resolve C01–C05 and the stale submission
+   v0.3 citation the course spec still carries.
+4. Resolve the open errata in [`ERRATA.md`](ERRATA.md): ignored over-answer word checks,
    pending-locator wording, and rubric prose caps.
-4. Move the course-structure spec and its schema/fixtures here, then resolve C01–C05 and the
-   stale submission v0.3 citation it still carries.
+5. The vault's build/verify scripts stay in the vault for now.

@@ -1,0 +1,351 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.local/assessment-submission-v0.12.1-rev0.5.json",
+  "title": "Assessment Submission v0.12.1 (spec v0.5)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format_version",
+    "assessment_id",
+    "submission_id",
+    "submitter",
+    "attempt",
+    "submitted_at",
+    "paper",
+    "responses"
+  ],
+  "properties": {
+    "format_version": {
+      "const": "0.12.1",
+      "description": "The bundle's format version: a submission cannot be read without its bundle."
+    },
+    "assessment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "submission_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._-]{2,64}-\\d{8}T\\d{6}Z$"
+    },
+    "submitter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "username"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "username": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9._-]{2,64}$"
+        }
+      }
+    },
+    "attempt": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "started_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d\\d-\\d\\dT\\d\\d:\\d\\d:\\d\\dZ$",
+      "description": "The instant the student began the sitting. See §5 for when a writer must supply it."
+    },
+    "submitted_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d\\d-\\d\\dT\\d\\d:\\d\\d:\\d\\dZ$"
+    },
+    "paper": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "commit",
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "commit": {
+          "type": "string",
+          "pattern": "^(uncommitted|[0-9a-f]{40})$"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "responses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "question_id"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "question_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+          },
+          "response": {
+            "$ref": "#/$defs/response"
+          },
+          "feedback": {
+            "$ref": "#/$defs/feedback"
+          }
+        }
+      }
+    },
+    "grading": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "complete"
+      ],
+      "properties": {
+        "complete": {
+          "type": "boolean"
+        },
+        "completed_at": {
+          "type": "string"
+        },
+        "approved": {
+          "type": "boolean"
+        },
+        "approved_at": {
+          "type": "string"
+        },
+        "approved_by": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "graders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "username",
+          "role",
+          "at"
+        ],
+        "properties": {
+          "username": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9._-]{2,64}$"
+          },
+          "role": {
+            "enum": [
+              "primary",
+              "reviewer",
+              "approver"
+            ]
+          },
+          "at": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "process_notes": {
+      "type": "array",
+      "description": "Grading events that are not score changes. Private.",
+      "items": {
+        "type": "object",
+        "required": [
+          "question_id",
+          "count",
+          "bound"
+        ],
+        "properties": {
+          "question_id": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "bound": {
+            "enum": [
+              "min",
+              "max"
+            ]
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "total_possible_points": {
+      "$ref": "#/$defs/point"
+    },
+    "total_awarded_points": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/point"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "point": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+    },
+    "response": {
+      "type": "object",
+      "description": "One shape per question type: selected_option_ids for choice, text for written, alternative ids for a pool.",
+      "properties": {
+        "selected_option_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    },
+    "feedback": {
+      "type": "object",
+      "required": [
+        "released",
+        "points_awarded",
+        "max_points",
+        "review_reason",
+        "include_reference_answer"
+      ],
+      "properties": {
+        "released": {
+          "type": "boolean"
+        },
+        "points_awarded": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/point"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "max_points": {
+          "$ref": "#/$defs/point"
+        },
+        "review_reason": {
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "include_reference_answer": {
+          "type": "boolean"
+        },
+        "overall_feedback": {
+          "type": "string",
+          "minLength": 1
+        },
+        "correct_option_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "correct": {
+          "type": "boolean"
+        },
+        "selected_option_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "explanation": {
+          "type": "string"
+        },
+        "reference_answer": {
+          "type": "string"
+        },
+        "uncapped_awarded_points": {
+          "$ref": "#/$defs/point"
+        },
+        "criteria": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "criterion_id",
+              "points_awarded",
+              "evidence",
+              "justification"
+            ],
+            "properties": {
+              "criterion_id": {
+                "type": "string"
+              },
+              "points": {
+                "$ref": "#/$defs/point"
+              },
+              "description": {
+                "type": "string"
+              },
+              "points_awarded": {
+                "$ref": "#/$defs/point"
+              },
+              "evidence": {
+                "type": "string"
+              },
+              "justification": {
+                "type": "string",
+                "minLength": 1
+              },
+              "released": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "alternatives": {
+          "type": "object"
+        },
+        "counted_alternative_ids": {
+          "description": "The first choose_n answered alternatives in the group's alternative order; these are graded.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ignored_alternative_ids": {
+          "description": "Answered alternatives beyond the first choose_n, in the group's alternative order; recorded but not graded.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

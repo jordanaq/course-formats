@@ -1,0 +1,35 @@
+{
+  "release": "v0.12.2",
+  "formats": {
+    "assessment": "0.12.1",
+    "submission": "0.5",
+    "course": "0.1.11"
+  },
+  "canonical": "schemas",
+  "artifacts": {
+    "schemas": {
+      "assessment": "releases/v0.12.2/schemas/assessment-bundle.schema.json",
+      "submission": "releases/v0.12.2/schemas/submission.schema.json"
+    },
+    "specs": {
+      "assessment": "releases/v0.12.2/specs/assessment-format-spec.md",
+      "submission": "releases/v0.12.2/specs/submission-format-spec.md",
+      "course": "releases/v0.12.2/specs/course-structure-spec.md"
+    },
+    "fixtures": {
+      "conformance_vectors": "releases/v0.12.2/fixtures/conformance-vectors.json",
+      "legacy_worked_examples": "releases/v0.12.2/fixtures/legacy-worked-examples.json",
+      "choice_response_example": "releases/v0.12.2/fixtures/choice-response-example.json"
+    }
+  },
+  "sha256": {
+    "releases/v0.12.2/schemas/assessment-bundle.schema.json": "25abd29a521303073294394c79f7334ee6a15ff9e60ad410ea1807e6911c4800",
+    "releases/v0.12.2/schemas/submission.schema.json": "c472141e502712ffd6b0714e3b683c3436f5b3c442bdc9d3ff1da47bbaa19c73",
+    "releases/v0.12.2/specs/assessment-format-spec.md": "d076fe464b281ae95d3ba725473b634594fa89e5786d8cf43899b6c87987d50f",
+    "releases/v0.12.2/specs/submission-format-spec.md": "11d69f22df9fcc56cd626b4273b3053f78eeba1ae200bbe1eb9624f3b4c9b94d",
+    "releases/v0.12.2/specs/course-structure-spec.md": "c398375607915a058ce2541930ca639f3c729cc83bcf3f1b8eb6a39b050dcdad",
+    "releases/v0.12.2/fixtures/conformance-vectors.json": "ab78846a41fbac955fc2b8d3eea217531a63de85a2e1f0df0943887530b7e6b3",
+    "releases/v0.12.2/fixtures/legacy-worked-examples.json": "92e35e7e8f81abc0eb19b39af15102b957e86e82582b3a19b6688cd1e1ef8c8d",
+    "releases/v0.12.2/fixtures/choice-response-example.json": "3ff6d28a6bbcefaf6b6c62e67bfe849ac3c7c3d749773f5f96b77be988f7b63d"
+  }
+}

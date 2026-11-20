@@ -4,7 +4,9 @@ This file records conflicts found **inside the canonical formats**. App-specific
 fixture conversions, and product decisions stay in the consuming repositories
 (`course-organizer/docs/spec-reconciliation.md` and `assessment-cli/docs/PLAN.md`).
 
-Current release: `v0.12.1` — assessment `0.12.1`, submission `0.5`.
+Current release: `v0.12.2` — assessment `0.12.1`, submission `0.5`, course `0.1.11`.
+The assessment/submission errata below were resolved in `v0.12.1`; `v0.12.2` adds the
+course-structure spec unchanged.
 
 ## Resolved in v0.12.1
 

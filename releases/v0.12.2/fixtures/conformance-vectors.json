@@ -1,0 +1,3697 @@
+{
+  "D": [
+    {
+      "policy": "partial_credit",
+      "question_id": "q2",
+      "selected_option_ids": [],
+      "expected_points": "0"
+    },
+    {
+      "policy": "partial_credit",
+      "question_id": "q2",
+      "selected_option_ids": [
+        "a"
+      ],
+      "expected_points": "2"
+    },
+    {
+      "policy": "partial_credit",
+      "question_id": "q2",
+      "selected_option_ids": [
+        "a",
+        "c"
+      ],
+      "expected_points": "4"
+    },
+    {
+      "policy": "partial_credit",
+      "question_id": "q2",
+      "selected_option_ids": [
+        "a",
+        "b",
+        "c"
+      ],
+      "expected_points": "2"
+    },
+    {
+      "policy": "partial_credit",
+      "question_id": "q2",
+      "selected_option_ids": [
+        "a",
+        "b"
+      ],
+      "expected_points": "0"
+    },
+    {
+      "policy": "partial_credit",
+      "question_id": "q2",
+      "selected_option_ids": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "expected_points": "0"
+    },
+    {
+      "policy": "partial_credit",
+      "question_id": "q2",
+      "selected_option_ids": [
+        "b",
+        "d"
+      ],
+      "expected_points": "0"
+    },
+    {
+      "policy": "all_or_nothing",
+      "question_id": "q3",
+      "selected_option_ids": [],
+      "expected_points": "0"
+    },
+    {
+      "policy": "all_or_nothing",
+      "question_id": "q3",
+      "selected_option_ids": [
+        "a"
+      ],
+      "expected_points": "0"
+    },
+    {
+      "policy": "all_or_nothing",
+      "question_id": "q3",
+      "selected_option_ids": [
+        "a",
+        "b"
+      ],
+      "expected_points": "3"
+    },
+    {
+      "policy": "all_or_nothing",
+      "question_id": "q3",
+      "selected_option_ids": [
+        "a",
+        "b",
+        "c"
+      ],
+      "expected_points": "0"
+    }
+  ],
+  "D.1": [
+    {
+      "case": "3-point item, correct {a,b}, distractors {c,d} — one of two correct",
+      "policy": "partial_credit",
+      "points": "3",
+      "correct_option_ids": [
+        "a",
+        "b"
+      ],
+      "distractor_option_ids": [
+        "c",
+        "d"
+      ],
+      "selected_option_ids": [
+        "a"
+      ],
+      "expected_points": "3/2"
+    },
+    {
+      "case": "3-point item, correct {a,b}, distractors {c,d} — both correct",
+      "policy": "partial_credit",
+      "points": "3",
+      "correct_option_ids": [
+        "a",
+        "b"
+      ],
+      "distractor_option_ids": [
+        "c",
+        "d"
+      ],
+      "selected_option_ids": [
+        "a",
+        "b"
+      ],
+      "expected_points": "3"
+    },
+    {
+      "case": "3-point item, correct {a,b}, distractors {c,d} — one correct, one distractor",
+      "policy": "partial_credit",
+      "points": "3",
+      "correct_option_ids": [
+        "a",
+        "b"
+      ],
+      "distractor_option_ids": [
+        "c",
+        "d"
+      ],
+      "selected_option_ids": [
+        "a",
+        "c"
+      ],
+      "expected_points": "0"
+    },
+    {
+      "case": "3-point item, correct {a,b}, distractors {c,d} — both correct plus a distractor",
+      "policy": "partial_credit",
+      "points": "3",
+      "correct_option_ids": [
+        "a",
+        "b"
+      ],
+      "distractor_option_ids": [
+        "c",
+        "d"
+      ],
+      "selected_option_ids": [
+        "a",
+        "b",
+        "c"
+      ],
+      "expected_points": "3/2"
+    },
+    {
+      "case": "1-point item, correct {a,b,c}, distractor {d} — one of three correct",
+      "policy": "partial_credit",
+      "points": "1",
+      "correct_option_ids": [
+        "a",
+        "b",
+        "c"
+      ],
+      "distractor_option_ids": [
+        "d"
+      ],
+      "selected_option_ids": [
+        "a"
+      ],
+      "expected_points": "1/3"
+    },
+    {
+      "case": "1-point item, correct {a,b,c}, distractor {d} — two of three correct",
+      "policy": "partial_credit",
+      "points": "1",
+      "correct_option_ids": [
+        "a",
+        "b",
+        "c"
+      ],
+      "distractor_option_ids": [
+        "d"
+      ],
+      "selected_option_ids": [
+        "a",
+        "b"
+      ],
+      "expected_points": "2/3"
+    },
+    {
+      "case": "1-point item, correct {a,b,c}, distractor {d} — one correct, one distractor (zero-clamped)",
+      "policy": "partial_credit",
+      "points": "1",
+      "correct_option_ids": [
+        "a",
+        "b",
+        "c"
+      ],
+      "distractor_option_ids": [
+        "d"
+      ],
+      "selected_option_ids": [
+        "a",
+        "d"
+      ],
+      "expected_points": "0"
+    },
+    {
+      "case": "1-point item, correct {a,b,c}, distractor {d} — every option selected",
+      "policy": "partial_credit",
+      "points": "1",
+      "correct_option_ids": [
+        "a",
+        "b",
+        "c"
+      ],
+      "distractor_option_ids": [
+        "d"
+      ],
+      "selected_option_ids": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "expected_points": "0"
+    },
+    {
+      "case": "5-point item, correct {a,b,d}, distractors {c,e} — two of three correct",
+      "policy": "partial_credit",
+      "points": "5",
+      "correct_option_ids": [
+        "a",
+        "b",
+        "d"
+      ],
+      "distractor_option_ids": [
+        "c",
+        "e"
+      ],
+      "selected_option_ids": [
+        "a",
+        "b"
+      ],
+      "expected_points": "10/3"
+    },
+    {
+      "case": "5-point item, correct {a,b,d}, distractors {c,e} — two of three correct plus a distractor",
+      "policy": "partial_credit",
+      "points": "5",
+      "correct_option_ids": [
+        "a",
+        "b",
+        "d"
+      ],
+      "distractor_option_ids": [
+        "c",
+        "e"
+      ],
+      "selected_option_ids": [
+        "a",
+        "b",
+        "c"
+      ],
+      "expected_points": "5/6"
+    }
+  ],
+  "G.4": [
+    {
+      "case": "two-of-three group, both answers on the two counted alternatives",
+      "choose_n": 2,
+      "group_points": "70",
+      "alternatives": [
+        {
+          "id": "b1",
+          "points": "35"
+        },
+        {
+          "id": "b2",
+          "points": "35"
+        },
+        {
+          "id": "b3",
+          "points": "35"
+        }
+      ],
+      "answered_alternative_ids": [
+        "b1",
+        "b2"
+      ],
+      "expected_counted_alternative_ids": [
+        "b1",
+        "b2"
+      ],
+      "expected_ignored_alternative_ids": [],
+      "expected_group_max_points": "70",
+      "expected_awarded_points": null
+    },
+    {
+      "case": "two-of-three group, three answers — the first two in document order count",
+      "choose_n": 2,
+      "group_points": "70",
+      "alternatives": [
+        {
+          "id": "b1",
+          "points": "35"
+        },
+        {
+          "id": "b2",
+          "points": "35"
+        },
+        {
+          "id": "b3",
+          "points": "35"
+        }
+      ],
+      "answered_alternative_ids": [
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "expected_counted_alternative_ids": [
+        "b1",
+        "b2"
+      ],
+      "expected_ignored_alternative_ids": [
+        "b3"
+      ],
+      "expected_group_max_points": "70",
+      "expected_awarded_points": null
+    },
+    {
+      "case": "three-of-four group answered out of order — counting follows the document, not the submission",
+      "choose_n": 3,
+      "group_points": "30",
+      "alternatives": [
+        {
+          "id": "d1",
+          "points": "10"
+        },
+        {
+          "id": "d2",
+          "points": "10"
+        },
+        {
+          "id": "d3",
+          "points": "10"
+        },
+        {
+          "id": "d4",
+          "points": "10"
+        }
+      ],
+      "answered_alternative_ids": [
+        "d4",
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "expected_counted_alternative_ids": [
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "expected_ignored_alternative_ids": [
+        "d4"
+      ],
+      "expected_group_max_points": "30",
+      "expected_awarded_points": null
+    },
+    {
+      "case": "one-of-two group with no answer — 0 earned, the group maximum unchanged",
+      "choose_n": 1,
+      "group_points": "10",
+      "alternatives": [
+        {
+          "id": "c1",
+          "points": "10"
+        },
+        {
+          "id": "c2",
+          "points": "10"
+        }
+      ],
+      "answered_alternative_ids": [],
+      "expected_counted_alternative_ids": [],
+      "expected_ignored_alternative_ids": [],
+      "expected_group_max_points": "10",
+      "expected_awarded_points": "0"
+    },
+    {
+      "case": "choice-typed alternatives: each counted alternative is recomputed by its own method",
+      "choose_n": 2,
+      "group_points": "8",
+      "alternatives": [
+        {
+          "id": "x1",
+          "points": "4",
+          "type": "multiple_select",
+          "scoring_policy": "partial_credit",
+          "options": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "correct_option_ids": [
+            "a",
+            "c"
+          ]
+        },
+        {
+          "id": "x2",
+          "points": "4",
+          "type": "multiple_select",
+          "scoring_policy": "partial_credit",
+          "options": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "correct_option_ids": [
+            "a",
+            "c"
+          ]
+        },
+        {
+          "id": "x3",
+          "points": "4",
+          "type": "multiple_select",
+          "scoring_policy": "partial_credit",
+          "options": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "correct_option_ids": [
+            "a",
+            "c"
+          ]
+        }
+      ],
+      "answered_alternative_ids": [
+        "x1",
+        "x3"
+      ],
+      "answers": {
+        "x1": [
+          "a"
+        ],
+        "x3": [
+          "a",
+          "c"
+        ]
+      },
+      "expected_counted_alternative_ids": [
+        "x1",
+        "x3"
+      ],
+      "expected_ignored_alternative_ids": [],
+      "expected_group_max_points": "8",
+      "expected_awarded_points": "6"
+    }
+  ],
+  "H.4": [
+    {
+      "case": "verified citation on a scheme the source declares verified",
+      "source": {
+        "id": "morris",
+        "citation": "Morris (1999)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "morris",
+        "scheme": "chapter",
+        "value": "3",
+        "status": "verified"
+      },
+      "expected": "accept"
+    },
+    {
+      "case": "verified page where the source's pagination is still pending",
+      "source": {
+        "id": "morris",
+        "citation": "Morris (1999)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "morris",
+        "scheme": "print_page",
+        "value": "104",
+        "status": "verified"
+      },
+      "expected": "reject",
+      "why": "a gated scheme may be verified only if the source declares it verified"
+    },
+    {
+      "case": "same page, honestly marked pending",
+      "source": {
+        "id": "morris",
+        "citation": "Morris (1999)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "morris",
+        "scheme": "print_page",
+        "value": "104",
+        "status": "pending"
+      },
+      "expected": "accept"
+    },
+    {
+      "case": "verified page inside a verified range of a source whose scheme is not itself declared verified",
+      "source": {
+        "id": "s",
+        "citation": "S",
+        "schemes": [
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "ranges": [
+          {
+            "label": "Part I",
+            "scheme": "print_page",
+            "from": 1,
+            "to": 65,
+            "status": "verified"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "s",
+        "scheme": "print_page",
+        "value": "40",
+        "status": "verified"
+      },
+      "expected": "accept"
+    },
+    {
+      "case": "verified page outside every verified range",
+      "source": {
+        "id": "tessler",
+        "citation": "Tessler (1994)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "verified"
+          }
+        ],
+        "ranges": [
+          {
+            "label": "Part I chs. 1–2",
+            "scheme": "print_page",
+            "from": 1,
+            "to": 65,
+            "status": "verified",
+            "offset": -20
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "tessler",
+        "scheme": "print_page",
+        "value": "200",
+        "status": "verified"
+      },
+      "expected": "accept",
+      "why": "the scheme itself is declared verified"
+    },
+    {
+      "case": "derived page naming the range it was derived from",
+      "source": {
+        "id": "s",
+        "citation": "S",
+        "schemes": [
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "ranges": [
+          {
+            "label": "Part I chs. 1–2",
+            "scheme": "print_page",
+            "from": 1,
+            "to": 65,
+            "status": "derived"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "s",
+        "scheme": "print_page",
+        "value": "45",
+        "status": "derived",
+        "derived_from": "Part I chs. 1–2"
+      },
+      "expected": "accept"
+    },
+    {
+      "case": "derived page with no declared derivation",
+      "source": {
+        "id": "s",
+        "citation": "S",
+        "schemes": [
+          {
+            "scheme": "print_page",
+            "status": "none"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "s",
+        "scheme": "print_page",
+        "value": "45",
+        "status": "derived"
+      },
+      "expected": "reject",
+      "why": "a derived locator MUST name the range it came from"
+    },
+    {
+      "case": "derived page naming a range the source does not have",
+      "source": {
+        "id": "s",
+        "citation": "S",
+        "schemes": [
+          {
+            "scheme": "print_page",
+            "status": "none"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "s",
+        "scheme": "print_page",
+        "value": "45",
+        "status": "derived",
+        "derived_from": "Part IX"
+      },
+      "expected": "reject"
+    },
+    {
+      "case": "scheme the source never declared",
+      "source": {
+        "id": "morris",
+        "citation": "Morris (1999)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "morris",
+        "scheme": "heading",
+        "value": "Ch. 3",
+        "status": "verified"
+      },
+      "expected": "reject"
+    },
+    {
+      "case": "citation of a source that is not in sources[]",
+      "source": {
+        "id": "morris",
+        "citation": "Morris (1999)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "laqueur",
+        "scheme": "chapter",
+        "value": "5",
+        "status": "verified"
+      },
+      "expected": "reject"
+    },
+    {
+      "case": "gated scheme carrying a non-integer value",
+      "source": {
+        "id": "morris",
+        "citation": "Morris (1999)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "morris",
+        "scheme": "chapter",
+        "value": "3 and 4",
+        "status": "verified"
+      },
+      "expected": "accept",
+      "why": "chapter is not a gated scheme; composite values are ordinary strings"
+    },
+    {
+      "case": "gated scheme carrying a composite value",
+      "source": {
+        "id": "tessler",
+        "citation": "Tessler (1994)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "verified"
+          }
+        ],
+        "ranges": [
+          {
+            "label": "Part I chs. 1–2",
+            "scheme": "print_page",
+            "from": 1,
+            "to": 65,
+            "status": "verified",
+            "offset": -20
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "tessler",
+        "scheme": "print_page",
+        "value": "104–106",
+        "status": "verified"
+      },
+      "expected": "reject",
+      "why": "use range {from, to} for a span on a gated scheme"
+    },
+    {
+      "case": "page span written as a range",
+      "source": {
+        "id": "morris",
+        "citation": "Morris (1999)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "morris",
+        "scheme": "print_page",
+        "range": {
+          "from": 486,
+          "to": 487
+        },
+        "status": "pending"
+      },
+      "expected": "accept"
+    },
+    {
+      "case": "range with inverted bounds",
+      "source": {
+        "id": "morris",
+        "citation": "Morris (1999)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "morris",
+        "scheme": "print_page",
+        "range": {
+          "from": 90,
+          "to": 12
+        },
+        "status": "pending"
+      },
+      "expected": "reject"
+    },
+    {
+      "case": "locator carrying both a value and a range",
+      "source": {
+        "id": "morris",
+        "citation": "Morris (1999)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "morris",
+        "scheme": "print_page",
+        "value": "104",
+        "range": {
+          "from": 104,
+          "to": 110
+        },
+        "status": "pending"
+      },
+      "expected": "reject",
+      "why": "exactly one of value or range"
+    },
+    {
+      "case": "locator with no value and no range",
+      "source": {
+        "id": "morris",
+        "citation": "Morris (1999)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "morris",
+        "scheme": "chapter",
+        "status": "verified"
+      },
+      "expected": "reject"
+    },
+    {
+      "case": "locator with no status",
+      "source": {
+        "id": "morris",
+        "citation": "Morris (1999)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "morris",
+        "scheme": "chapter",
+        "value": "3"
+      },
+      "expected": "reject",
+      "why": "status is required — silence is not a verification state"
+    },
+    {
+      "case": "secondary reference marked as such",
+      "source": {
+        "id": "morris",
+        "citation": "Morris (1999)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "morris",
+        "scheme": "chapter",
+        "value": "5",
+        "status": "verified",
+        "role": "cf"
+      },
+      "expected": "accept"
+    },
+    {
+      "case": "a locator on a gated line scheme inside the source's declared numbering",
+      "source": {
+        "id": "lathe_txt",
+        "citation": "the-lathe-of-heaven.txt",
+        "schemes": [
+          {
+            "scheme": "line",
+            "status": "verified"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "lathe_txt",
+        "scheme": "line",
+        "range": {
+          "from": 75,
+          "to": 79
+        },
+        "status": "verified"
+      },
+      "expected": "accept"
+    },
+    {
+      "case": "duplicate source id",
+      "sources": [
+        {
+          "id": "morris",
+          "citation": "Morris (1999)",
+          "schemes": [
+            {
+              "scheme": "chapter",
+              "status": "verified"
+            },
+            {
+              "scheme": "print_page",
+              "status": "pending"
+            }
+          ],
+          "tier": "required"
+        },
+        {
+          "id": "morris",
+          "citation": "Morris (1999)",
+          "schemes": [
+            {
+              "scheme": "chapter",
+              "status": "verified"
+            },
+            {
+              "scheme": "print_page",
+              "status": "pending"
+            }
+          ],
+          "tier": "required"
+        }
+      ],
+      "locator": {
+        "source_id": "morris",
+        "scheme": "chapter",
+        "value": "3",
+        "status": "verified"
+      },
+      "expected": "reject"
+    },
+    {
+      "case": "source declaring the same scheme twice",
+      "source": {
+        "id": "s",
+        "citation": "S",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "chapter",
+            "status": "pending"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "s",
+        "scheme": "chapter",
+        "value": "1",
+        "status": "verified"
+      },
+      "expected": "reject"
+    },
+    {
+      "case": "quote-log entry citing an undeclared source",
+      "source": {
+        "id": "morris",
+        "citation": "Morris (1999)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "tier": "required"
+      },
+      "locator": {
+        "source_id": "tessler",
+        "scheme": "chapter",
+        "value": "1",
+        "status": "verified"
+      },
+      "expected": "reject"
+    }
+  ],
+  "I.4": [
+    {
+      "case": "mastery exam, completion gate, required floor met",
+      "expected": "accept",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "gate": {
+        "mastery": true,
+        "mode": "completion"
+      },
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "3/5",
+          "applies_to": "mastery"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "score gate carrying a threshold",
+      "expected": "accept",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "gate": {
+        "mastery": true,
+        "mode": "score",
+        "threshold_share": "7/10"
+      },
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "3/5",
+          "applies_to": "mastery"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "no gate and no floors (both nodes are optional)",
+      "expected": "accept",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "floor on the extension tier applying to every assessment",
+      "expected": "accept",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "floors": [
+        {
+          "tier": "extension",
+          "min_share": "1",
+          "applies_to": "all"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a",
+            "c"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b",
+            "c"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "c"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "c"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "required floor met exactly, at three fifths",
+      "expected": "accept",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "gate": {
+        "mastery": true,
+        "mode": "score",
+        "threshold_share": "3/4"
+      },
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "3/5",
+          "applies_to": "mastery"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": []
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "one alternative grounded only in extension material, floor applies to mastery exams",
+      "expected": "accept",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "gate": {
+        "mastery": false
+      },
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "3/5",
+          "applies_to": "mastery"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "c"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "c"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "c"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "floor share above one",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "4/3",
+          "applies_to": "all"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "completion gate carrying a threshold",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "gate": {
+        "mastery": true,
+        "mode": "completion",
+        "threshold_share": "7/10"
+      },
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "score gate with no threshold",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "gate": {
+        "mastery": true,
+        "mode": "score"
+      },
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "mode stated on a non-mastery gate",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "gate": {
+        "mastery": false,
+        "mode": "completion"
+      },
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "floor naming a tier no source uses",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required"
+        }
+      ],
+      "floors": [
+        {
+          "tier": "supplemental",
+          "min_share": "1/2",
+          "applies_to": "all"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "two floors on the same tier",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "1/2",
+          "applies_to": "all"
+        },
+        {
+          "tier": "required",
+          "min_share": "3/5",
+          "applies_to": "mastery"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "required floor not met: two fifths of the points are grounded",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "gate": {
+        "mastery": true,
+        "mode": "score",
+        "threshold_share": "1/2"
+      },
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "3/5",
+          "applies_to": "mastery"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": []
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": []
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "one alternative ungrounded in required readings while the other is grounded",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "gate": {
+        "mastery": true,
+        "mode": "completion"
+      },
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "3/5",
+          "applies_to": "mastery"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "c"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "two segments sharing an id",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ],
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "s1",
+            "kind": "lecture"
+          },
+          {
+            "id": "s1",
+            "kind": "lesson"
+          }
+        ]
+      }
+    },
+    {
+      "case": "segment id colliding with a source id",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ],
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "a"
+          }
+        ]
+      }
+    },
+    {
+      "case": "scope with an empty segment list",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ],
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": []
+      }
+    },
+    {
+      "case": "scope with no course id",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ],
+      "scope": {
+        "course": {},
+        "segments": [
+          {
+            "id": "s1"
+          }
+        ]
+      }
+    },
+    {
+      "case": "unknown tier",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "core"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "unknown source category",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "tertiary"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "unknown floor applicability",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "1/2",
+          "applies_to": "some"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "threshold of zero",
+      "expected": "reject",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "b",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "c",
+          "tier": "extension"
+        }
+      ],
+      "gate": {
+        "mastery": true,
+        "mode": "score",
+        "threshold_share": "0"
+      },
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "source_ids": [
+            "a"
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "b"
+          ]
+        },
+        {
+          "id": "g1",
+          "points": "10",
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a",
+                "b"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "b"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "J.1": [
+    {
+      "case": "coverage absent — the audit is optional",
+      "expected": "accept",
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "s1"
+          }
+        ]
+      },
+      "questions": [
+        "q1"
+      ]
+    },
+    {
+      "case": "one segment reached by three questions",
+      "expected": "accept",
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "s1"
+          }
+        ]
+      },
+      "questions": [
+        "q1",
+        "q2",
+        "q3"
+      ],
+      "coverage": {
+        "assessed": [
+          {
+            "segment_id": "s1",
+            "question_ids": [
+              "q1",
+              "q2",
+              "q3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "one question spanning two segments",
+      "expected": "accept",
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "s1"
+          },
+          {
+            "id": "s2"
+          }
+        ]
+      },
+      "questions": [
+        "q1",
+        "q2"
+      ],
+      "coverage": {
+        "assessed": [
+          {
+            "segment_id": "s1",
+            "question_ids": [
+              "q1"
+            ]
+          },
+          {
+            "segment_id": "s2",
+            "question_ids": [
+              "q1",
+              "q2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "an omission inside an assessed segment, with a reason",
+      "expected": "accept",
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "s1"
+          }
+        ]
+      },
+      "questions": [
+        "q1"
+      ],
+      "coverage": {
+        "assessed": [
+          {
+            "segment_id": "s1",
+            "question_ids": [
+              "q1"
+            ]
+          }
+        ],
+        "omitted": [
+          {
+            "segment_id": "s1",
+            "topic": "laying-hen systems",
+            "reason": "time"
+          }
+        ]
+      }
+    },
+    {
+      "case": "an omission with no segment and no reason",
+      "expected": "accept",
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "s1"
+          }
+        ]
+      },
+      "questions": [
+        "q1"
+      ],
+      "coverage": {
+        "assessed": [
+          {
+            "segment_id": "s1",
+            "question_ids": [
+              "q1"
+            ]
+          }
+        ],
+        "omitted": [
+          {
+            "topic": "post-1948 refugee politics"
+          }
+        ]
+      }
+    },
+    {
+      "case": "coverage carrying an author's note",
+      "expected": "accept",
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "s1"
+          }
+        ]
+      },
+      "questions": [
+        "q1"
+      ],
+      "coverage": {
+        "assessed": [
+          {
+            "segment_id": "s1",
+            "question_ids": [
+              "q1"
+            ],
+            "note": "Recall only."
+          }
+        ],
+        "note": "Short answers foreground Lectures 1–3; essays broaden coverage."
+      }
+    },
+    {
+      "case": "coverage without scope",
+      "expected": "reject",
+      "questions": [
+        "q1"
+      ],
+      "coverage": {
+        "assessed": [
+          {
+            "segment_id": "s1",
+            "question_ids": [
+              "q1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "assessed naming an unknown segment",
+      "expected": "reject",
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "s1"
+          }
+        ]
+      },
+      "questions": [
+        "q1"
+      ],
+      "coverage": {
+        "assessed": [
+          {
+            "segment_id": "s9",
+            "question_ids": [
+              "q1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "assessed naming an unknown question",
+      "expected": "reject",
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "s1"
+          }
+        ]
+      },
+      "questions": [
+        "q1"
+      ],
+      "coverage": {
+        "assessed": [
+          {
+            "segment_id": "s1",
+            "question_ids": [
+              "q9"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "the same segment twice in assessed",
+      "expected": "reject",
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "s1"
+          }
+        ]
+      },
+      "questions": [
+        "q1"
+      ],
+      "coverage": {
+        "assessed": [
+          {
+            "segment_id": "s1",
+            "question_ids": [
+              "q1"
+            ]
+          },
+          {
+            "segment_id": "s1",
+            "question_ids": [
+              "q1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "empty assessed",
+      "expected": "reject",
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "s1"
+          }
+        ]
+      },
+      "questions": [
+        "q1"
+      ],
+      "coverage": {
+        "assessed": []
+      }
+    },
+    {
+      "case": "an omission naming an unknown segment",
+      "expected": "reject",
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "s1"
+          }
+        ]
+      },
+      "questions": [
+        "q1"
+      ],
+      "coverage": {
+        "assessed": [
+          {
+            "segment_id": "s1",
+            "question_ids": [
+              "q1"
+            ]
+          }
+        ],
+        "omitted": [
+          {
+            "segment_id": "s9",
+            "topic": "anything"
+          }
+        ]
+      }
+    },
+    {
+      "case": "an unknown omission reason",
+      "expected": "reject",
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "s1"
+          }
+        ]
+      },
+      "questions": [
+        "q1"
+      ],
+      "coverage": {
+        "assessed": [
+          {
+            "segment_id": "s1",
+            "question_ids": [
+              "q1"
+            ]
+          }
+        ],
+        "omitted": [
+          {
+            "topic": "anything",
+            "reason": "boredom"
+          }
+        ]
+      }
+    },
+    {
+      "case": "an omission with no topic",
+      "expected": "reject",
+      "scope": {
+        "course": {
+          "id": "c1"
+        },
+        "segments": [
+          {
+            "id": "s1"
+          }
+        ]
+      },
+      "questions": [
+        "q1"
+      ],
+      "coverage": {
+        "assessed": [
+          {
+            "segment_id": "s1",
+            "question_ids": [
+              "q1"
+            ]
+          }
+        ],
+        "omitted": [
+          {
+            "reason": "time"
+          }
+        ]
+      }
+    }
+  ],
+  "K.1": [
+    {
+      "case": "no limit declared",
+      "expected": "accept",
+      "subject": "word_limit"
+    },
+    {
+      "case": "an advisory range with no note",
+      "expected": "accept",
+      "word_count": {
+        "min": 400,
+        "max": 500
+      },
+      "subject": "word_limit"
+    },
+    {
+      "case": "a recorded range with a note",
+      "expected": "accept",
+      "word_count": {
+        "min": 150,
+        "max": 200,
+        "enforcement": "recorded",
+        "note": "Over-length answers are flagged in feedback; the mark is unchanged."
+      },
+      "subject": "word_limit"
+    },
+    {
+      "case": "a capped range with a note",
+      "expected": "accept",
+      "word_count": {
+        "min": 1,
+        "max": 120,
+        "enforcement": "capped",
+        "note": "The marker reads the first 120 words and ignores the rest."
+      },
+      "subject": "word_limit"
+    },
+    {
+      "case": "a recorded range without a note",
+      "expected": "reject",
+      "by": "schema",
+      "word_count": {
+        "min": 150,
+        "max": 200,
+        "enforcement": "recorded"
+      },
+      "subject": "word_limit"
+    },
+    {
+      "case": "a capped range without a note",
+      "expected": "reject",
+      "by": "schema",
+      "word_count": {
+        "min": 1,
+        "max": 120,
+        "enforcement": "capped"
+      },
+      "subject": "word_limit"
+    },
+    {
+      "case": "a range with no maximum",
+      "expected": "reject",
+      "by": "schema",
+      "word_count": {
+        "min": 100
+      },
+      "subject": "word_limit"
+    },
+    {
+      "case": "a minimum greater than its maximum",
+      "expected": "reject",
+      "by": "semantics",
+      "word_count": {
+        "min": 500,
+        "max": 400
+      },
+      "subject": "word_limit"
+    },
+    {
+      "case": "an enforcement outside the vocabulary",
+      "expected": "reject",
+      "by": "schema",
+      "word_count": {
+        "min": 100,
+        "max": 200,
+        "enforcement": "strict",
+        "note": "Nonsense value."
+      },
+      "subject": "word_limit"
+    }
+  ],
+  "L.1": [
+    {
+      "case": "no delivery declared — closed book by default",
+      "expected": "accept",
+      "subject": "delivery"
+    },
+    {
+      "case": "an open-book paper",
+      "expected": "accept",
+      "delivery": {
+        "mode": "open_book"
+      },
+      "subject": "delivery"
+    },
+    {
+      "case": "an explicitly closed-book paper",
+      "expected": "accept",
+      "delivery": {
+        "mode": "closed_book"
+      },
+      "subject": "delivery"
+    },
+    {
+      "case": "a mode outside the vocabulary",
+      "expected": "reject",
+      "by": "schema",
+      "delivery": {
+        "mode": "open_notes"
+      },
+      "subject": "delivery"
+    },
+    {
+      "case": "a delivery object with no mode",
+      "expected": "reject",
+      "by": "schema",
+      "delivery": {},
+      "subject": "delivery"
+    }
+  ],
+  "M.1": [
+    {
+      "case": "an equal-weight group that states nothing (the default)",
+      "expected": "accept",
+      "group": {
+        "points": "10",
+        "choose_n": 2,
+        "alternatives": [
+          "5",
+          "5",
+          "5"
+        ]
+      },
+      "subject": "credit"
+    },
+    {
+      "case": "an equal-weight group that declares its mode",
+      "expected": "accept",
+      "group": {
+        "points": "10",
+        "choose_n": 2,
+        "credit": {
+          "mode": "equal"
+        },
+        "alternatives": [
+          "5",
+          "5",
+          "5"
+        ]
+      },
+      "subject": "credit"
+    },
+    {
+      "case": "a capped pool of equal items whose purse is smaller than their sum",
+      "expected": "accept",
+      "group": {
+        "points": "5",
+        "choose_n": 3,
+        "credit": {
+          "mode": "capped"
+        },
+        "alternatives": [
+          "2",
+          "2",
+          "2",
+          "2"
+        ]
+      },
+      "subject": "credit"
+    },
+    {
+      "case": "a capped pool of unequal items",
+      "expected": "accept",
+      "group": {
+        "points": "5",
+        "choose_n": 3,
+        "credit": {
+          "mode": "capped"
+        },
+        "alternatives": [
+          "2",
+          "2",
+          "2",
+          "1"
+        ]
+      },
+      "subject": "credit"
+    },
+    {
+      "case": "a capped group whose alternatives reach its weight",
+      "expected": "accept",
+      "group": {
+        "points": "6",
+        "choose_n": 3,
+        "credit": {
+          "mode": "capped"
+        },
+        "alternatives": [
+          "2",
+          "2",
+          "2"
+        ]
+      },
+      "subject": "credit"
+    },
+    {
+      "case": "an equal-weight group with unequal alternatives",
+      "expected": "reject",
+      "by": "semantics",
+      "group": {
+        "points": "10",
+        "choose_n": 2,
+        "alternatives": [
+          "5",
+          "4",
+          "5"
+        ]
+      },
+      "subject": "credit"
+    },
+    {
+      "case": "an equal-weight group whose alternatives do not divide the weight",
+      "expected": "reject",
+      "by": "semantics",
+      "group": {
+        "points": "10",
+        "choose_n": 3,
+        "alternatives": [
+          "3",
+          "3",
+          "3"
+        ]
+      },
+      "subject": "credit"
+    },
+    {
+      "case": "a capped group with an alternative above the ceiling",
+      "expected": "reject",
+      "by": "semantics",
+      "group": {
+        "points": "5",
+        "choose_n": 2,
+        "credit": {
+          "mode": "capped"
+        },
+        "alternatives": [
+          "6",
+          "2"
+        ]
+      },
+      "subject": "credit"
+    },
+    {
+      "case": "a capped group whose best answers cannot reach its weight",
+      "expected": "warn",
+      "group": {
+        "points": "5",
+        "choose_n": 2,
+        "credit": {
+          "mode": "capped"
+        },
+        "alternatives": [
+          "2",
+          "2",
+          "2"
+        ]
+      },
+      "subject": "credit"
+    },
+    {
+      "case": "a credit mode outside the vocabulary",
+      "expected": "reject",
+      "by": "schema",
+      "group": {
+        "points": "5",
+        "choose_n": 2,
+        "credit": {
+          "mode": "weighted"
+        },
+        "alternatives": [
+          "2",
+          "2"
+        ]
+      },
+      "subject": "credit"
+    },
+    {
+      "case": "a credit object with no mode",
+      "expected": "reject",
+      "by": "schema",
+      "group": {
+        "points": "5",
+        "choose_n": 2,
+        "credit": {},
+        "alternatives": [
+          "2",
+          "2"
+        ]
+      },
+      "subject": "credit"
+    }
+  ],
+  "N.1": [
+    {
+      "case": "an equal-weight group at choose_n 1, both alternatives grounded",
+      "expected": "accept",
+      "subject": "grounding",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required"
+        }
+      ],
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "1",
+          "applies_to": "all"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "g1",
+          "points": "10",
+          "choose_n": 1,
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": [
+                "a"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "an equal-weight group at choose_n 1, one alternative ungrounded",
+      "expected": "reject",
+      "by": "semantics",
+      "subject": "grounding",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required"
+        }
+      ],
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "1",
+          "applies_to": "all"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "g1",
+          "points": "10",
+          "choose_n": 1,
+          "alternatives": [
+            {
+              "id": "a1",
+              "points": "10",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "a2",
+              "points": "10",
+              "source_ids": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "a capped pool of eight 2-point terms, choose 3, all grounded, a 5-point purse",
+      "expected": "accept",
+      "subject": "grounding",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required"
+        }
+      ],
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "1",
+          "applies_to": "all"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "g1",
+          "points": "5",
+          "choose_n": 3,
+          "alternatives": [
+            {
+              "id": "t1",
+              "points": "2",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "t2",
+              "points": "2",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "t3",
+              "points": "2",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "t4",
+              "points": "2",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "t5",
+              "points": "2",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "t6",
+              "points": "2",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "t7",
+              "points": "2",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "t8",
+              "points": "2",
+              "source_ids": [
+                "a"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "the same pool with three ungrounded terms — a student may answer exactly those",
+      "expected": "reject",
+      "by": "semantics",
+      "subject": "grounding",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required"
+        }
+      ],
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "1",
+          "applies_to": "all"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "g1",
+          "points": "5",
+          "choose_n": 3,
+          "alternatives": [
+            {
+              "id": "t1",
+              "points": "2",
+              "source_ids": []
+            },
+            {
+              "id": "t2",
+              "points": "2",
+              "source_ids": []
+            },
+            {
+              "id": "t3",
+              "points": "2",
+              "source_ids": []
+            },
+            {
+              "id": "t4",
+              "points": "2",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "t5",
+              "points": "2",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "t6",
+              "points": "2",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "t7",
+              "points": "2",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "t8",
+              "points": "2",
+              "source_ids": [
+                "a"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "three 35-point essays, choose 2, all grounded, a 70-point group",
+      "expected": "accept",
+      "subject": "grounding",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required"
+        },
+        {
+          "id": "b",
+          "tier": "extension"
+        }
+      ],
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "1",
+          "applies_to": "all"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "g1",
+          "points": "70",
+          "choose_n": 2,
+          "alternatives": [
+            {
+              "id": "e1",
+              "points": "35",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "e2",
+              "points": "35",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "e3",
+              "points": "35",
+              "source_ids": [
+                "a"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "the same group with one ungrounded essay",
+      "expected": "reject",
+      "by": "semantics",
+      "subject": "grounding",
+      "sources": [
+        {
+          "id": "a",
+          "tier": "required"
+        }
+      ],
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "1",
+          "applies_to": "all"
+        }
+      ],
+      "grounding": [
+        {
+          "id": "g1",
+          "points": "70",
+          "choose_n": 2,
+          "alternatives": [
+            {
+              "id": "e1",
+              "points": "35",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "e2",
+              "points": "35",
+              "source_ids": [
+                "a"
+              ]
+            },
+            {
+              "id": "e3",
+              "points": "35",
+              "source_ids": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "a paper whose pool and questions are all grounded — the translated key's shape",
+      "expected": "accept",
+      "subject": "grounding",
+      "sources": [
+        {
+          "id": "s",
+          "tier": "required"
+        }
+      ],
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "1",
+          "applies_to": "mastery"
+        }
+      ],
+      "gate": {
+        "mastery": true,
+        "mode": "completion"
+      },
+      "grounding": [
+        {
+          "id": "q1",
+          "points": "5",
+          "choose_n": 3,
+          "alternatives": [
+            {
+              "id": "p1",
+              "points": "2",
+              "source_ids": [
+                "s"
+              ]
+            },
+            {
+              "id": "p2",
+              "points": "2",
+              "source_ids": [
+                "s"
+              ]
+            },
+            {
+              "id": "p3",
+              "points": "2",
+              "source_ids": [
+                "s"
+              ]
+            },
+            {
+              "id": "p4",
+              "points": "2",
+              "source_ids": [
+                "s"
+              ]
+            },
+            {
+              "id": "p5",
+              "points": "2",
+              "source_ids": [
+                "s"
+              ]
+            },
+            {
+              "id": "p6",
+              "points": "2",
+              "source_ids": [
+                "s"
+              ]
+            },
+            {
+              "id": "p7",
+              "points": "2",
+              "source_ids": [
+                "s"
+              ]
+            },
+            {
+              "id": "p8",
+              "points": "2",
+              "source_ids": [
+                "s"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "points": "5",
+          "source_ids": [
+            "s"
+          ]
+        },
+        {
+          "id": "q3",
+          "points": "5",
+          "source_ids": [
+            "s"
+          ]
+        },
+        {
+          "id": "q4",
+          "points": "5",
+          "source_ids": [
+            "s"
+          ]
+        },
+        {
+          "id": "q5",
+          "points": "10",
+          "source_ids": [
+            "s"
+          ]
+        }
+      ]
+    }
+  ],
+  "O.1": [
+    {
+      "case": "a 5-point question split 2/2/1, awards within every weight",
+      "expected": "accept",
+      "question_points": "5",
+      "criteria": [
+        {"id": "c1", "points": "2"},
+        {"id": "c2", "points": "2"},
+        {"id": "c3", "points": "1"}
+      ],
+      "award": {"c1": "2", "c2": "1", "c3": "1"}
+    },
+    {
+      "case": "an unweighted rubric where one criterion takes the whole question",
+      "expected": "accept",
+      "question_points": "5",
+      "criteria": [
+        {"id": "c1"},
+        {"id": "c2"},
+        {"id": "c3"}
+      ],
+      "award": {"c1": "5", "c2": "0", "c3": "0"}
+    },
+    {
+      "case": "a 10-point essay split 4/3/3, full marks",
+      "expected": "accept",
+      "question_points": "10",
+      "criteria": [
+        {"id": "c1", "points": "4"},
+        {"id": "c2", "points": "3"},
+        {"id": "c3", "points": "3"}
+      ],
+      "award": {"c1": "4", "c2": "3", "c3": "3"}
+    },
+    {
+      "case": "weights that sum to 7 on a 5-point question",
+      "expected": "reject",
+      "by": "semantics",
+      "question_points": "5",
+      "criteria": [
+        {"id": "c1", "points": "2"},
+        {"id": "c2", "points": "2"},
+        {"id": "c3", "points": "1"},
+        {"id": "c4", "points": "2"}
+      ],
+      "award": {"c1": "2", "c2": "2", "c3": "1", "c4": "0"}
+    },
+    {
+      "case": "half-declared weights: c1 and c3 weighted, c2 not",
+      "expected": "reject",
+      "by": "semantics",
+      "question_points": "5",
+      "criteria": [
+        {"id": "c1", "points": "2"},
+        {"id": "c2"},
+        {"id": "c3", "points": "1"}
+      ],
+      "award": {"c1": "2", "c2": "0", "c3": "1"}
+    },
+    {
+      "case": "an award above the criterion's own weight",
+      "expected": "reject",
+      "by": "semantics",
+      "question_points": "5",
+      "criteria": [
+        {"id": "c1", "points": "2"},
+        {"id": "c2", "points": "2"},
+        {"id": "c3", "points": "1"}
+      ],
+      "award": {"c1": "3", "c2": "1", "c3": "1"}
+    },
+    {
+      "case": "a weight of zero, which the schema's point_value forbids",
+      "expected": "reject",
+      "by": "schema",
+      "question_points": "5",
+      "criteria": [
+        {"id": "c1", "points": "0"},
+        {"id": "c2", "points": "5"}
+      ],
+      "award": {"c1": "0", "c2": "5"}
+    }
+  ]
+}
