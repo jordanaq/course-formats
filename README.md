@@ -1,7 +1,10 @@
-# assessment-formats
+# course-formats
 
-Canonical source for the assessment and submission formats consumed by the Obsidian vault,
+Canonical source for course formats and their linters, consumed by the Obsidian vault,
 `assessment-cli`, and `course-organizer`.
+
+Current scope: the assessment bundle and submission formats. The repository is intended to
+grow to own the course-structure format and the other course linters as well.
 
 This repository is the **provenance authority**: a release here names the exact prose, JSON
 Schema, and fixtures that downstream repositories consume. Consumers vendor a release as a git
