@@ -5,4 +5,7 @@ edition = "2024"
 publish = false
 
 [dependencies]
+imbl = "7.0.2"
+itertools = "0.15.0"
+semver = "1.0.28"
 serde_json = "1"
