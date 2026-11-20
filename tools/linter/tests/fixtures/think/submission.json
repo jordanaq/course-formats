@@ -1,0 +1,237 @@
+{
+  "format_version": "0.12.0",
+  "assessment_id": "think_exam_05_god",
+  "submission_id": "fixture-20261003T092530Z",
+  "submitter": {
+    "name": "Fixture Author",
+    "username": "fixture"
+  },
+  "attempt": 1,
+  "submitted_at": "2026-10-03T09:25:30Z",
+  "paper": {
+    "commit": "0000000000000000000000000000000000000000",
+    "path": "linter/tests/fixtures/think/bundle.json",
+    "sha256": "9b42e4a24ec9309df410ab3ee66c8fc317bfc8ebda2d83c2a914843fc9772ee8"
+  },
+  "responses": [
+    {
+      "question_id": "q1",
+      "response": {
+        "selected_option_ids": [
+          "b"
+        ]
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "1",
+        "max_points": "1",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "Selected b; the correct set is {b}. Single-choice is all-or-nothing (§3.2): full credit. The answer names the equivocation between object-in-reality and object-in-conception."
+      }
+    },
+    {
+      "question_id": "q2",
+      "response": {
+        "selected_option_ids": [
+          "a"
+        ]
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "1",
+        "max_points": "1",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "Selected a; the correct set is {a}. All-or-nothing: full credit. The answer gives the theologian's distinction between dependent things and a self-sufficient terminus."
+      }
+    },
+    {
+      "question_id": "q3",
+      "response": {
+        "selected_option_ids": [
+          "d"
+        ]
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "0",
+        "max_points": "1",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "Selected d; the correct set is {c}. All-or-nothing: zero. Option d turns Philo's competing analogy (the universe as organism) into a positive conclusion he does not draw; the concession Philo actually makes is the thin one in c."
+      }
+    },
+    {
+      "question_id": "q4",
+      "response": {
+        "selected_option_ids": [
+          "b"
+        ]
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "1",
+        "max_points": "1",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "Selected b; the correct set is {b}. All-or-nothing: full credit. The answer gives the evidential reading of the dormitory analogy rather than a deductive disproof."
+      }
+    },
+    {
+      "question_id": "q5",
+      "response": {
+        "selected_option_ids": [
+          "c"
+        ]
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "1",
+        "max_points": "1",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "Selected c; the correct set is {c}. All-or-nothing: full credit. The answer gives the calibrated weighing of testimonial failure against the reported event."
+      }
+    },
+    {
+      "question_id": "q6",
+      "response": {
+        "text": "Cleanthes argues by analogy. In nature, means are adjusted to ends — eyes for seeing, joints for walking — exactly as they are in machines that human intelligence has designed. Since like effects are presumed to have like causes, and artefacts owe their adjustment to a designing mind, the universe, which is adjusted in the same way, probably owes its order to an intelligent cause, and the more so because it is vastly greater than any artefact.\n\nPhilo's first objection attacks the analogy's evidential basis: the universe is not a machine. We have seen many artefacts made and no universe made, so the resemblance is too thin to carry the causal inference.\n\nHis second objection is that even if design is granted, the conclusion is thin. It gives a cause proportioned to the effect — at most a remote analogy to mind — not the single, perfect, omnipotent and benevolent author that theology wants."
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "3",
+        "max_points": "4",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "Awards 1 + 1 + 1/2 + 1/2 = 3 of 4. The reconstruction and the inference are accurate; both objections are named but neither is developed — the evidential objection asserts the disanalogy without saying why it defeats the inference, and the scope objection asserts the thin conclusion without the reasoning that design underdetermines theology.",
+        "criteria": [
+          {
+            "criterion_id": "q6_c1",
+            "points_awarded": "1",
+            "evidence": "“In nature, means are adjusted to ends … exactly as they are in machines that human intelligence has designed”, with “like effects are presumed to have like causes”.",
+            "justification": "Both analogues and the like-effects principle are stated, which is what the criterion's full credit requires."
+          },
+          {
+            "criterion_id": "q6_c2",
+            "points_awarded": "1",
+            "evidence": "“the universe … probably owes its order to an intelligent cause, and the more so because it is vastly greater than any artefact”.",
+            "justification": "The inference from designed artefacts to an intelligent cosmic cause is drawn explicitly and proportioned to the effect."
+          },
+          {
+            "criterion_id": "q6_c3",
+            "points_awarded": "1/2",
+            "evidence": "“the universe is not a machine. We have seen many artefacts made and no universe made, so the resemblance is too thin to carry the causal inference.”",
+            "justification": "The evidential objection is named — dissimilarity plus no experience of universe production — but the answer does not say why the disanalogy defeats the inference, and gives no competing natural analogy. The criterion reserves full credit for a reason of that kind, so half is awarded."
+          },
+          {
+            "criterion_id": "q6_c4",
+            "points_awarded": "1/2",
+            "evidence": "“even if design is granted, the conclusion is thin … at most a remote analogy to mind — not the single, perfect, omnipotent and benevolent author that theology wants.”",
+            "justification": "The objection's conclusion is stated correctly, but the answer gives no reasoning why a granted design conclusion underdetermines theology (no multiple, defective or dependent designer, no argument from proportioning cause to effect). The criterion reserves full credit for that reasoning, so half is awarded."
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "q7",
+      "response": {
+        "text": "Demea's response to evil is not Cleanthes' inference from the world's quality; it denies that we may measure divine goodness by our own. If God's purposes are beyond our comprehension, then apparently pointless suffering is no contradiction, because we are in no position to say what a good God would permit. Compatibility is preserved precisely by refusing to specify what “good” means in the divine case.\n\nThe cost is that the word loses its content. If divine goodness is not the goodness we apply to parents and rulers — if it licenses anything — then belief that God is good yields no expectation about how the world will go and no guidance about what we should do. The immunity is bought by explanatory and practical inertness: a cause whose relation to intelligence is only a remote and undefined analogy does the same work, in practice, as no posit at all."
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "4",
+        "max_points": "4",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "Awards 1 + 1 + 1 + 1 = 4 of 4. All four elements are present: the contrast with Cleanthes, compatibility by incomprehensibility, the loss of prediction and guidance, and the tradeoff stated as immunity bought by inertness.",
+        "criteria": [
+          {
+            "criterion_id": "q7_c1",
+            "points_awarded": "1",
+            "evidence": "“Demea's response to evil is not Cleanthes' inference from the world's quality; it denies that we may measure divine goodness by our own.”",
+            "justification": "The criterion asks that Demea's move be distinguished from Cleanthes'; the answer does so in its first sentence."
+          },
+          {
+            "criterion_id": "q7_c2",
+            "points_awarded": "1",
+            "evidence": "“If God's purposes are beyond our comprehension, then apparently pointless suffering is no contradiction, because we are in no position to say what a good God would permit.”",
+            "justification": "Bare compatibility with evil is preserved and the mechanism — no inference from human standards — is stated."
+          },
+          {
+            "criterion_id": "q7_c3",
+            "points_awarded": "1",
+            "evidence": "“belief that God is good yields no expectation about how the world will go and no guidance about what we should do.”",
+            "justification": "Both consequences the criterion names are present: loss of prediction and loss of moral guidance."
+          },
+          {
+            "criterion_id": "q7_c4",
+            "points_awarded": "1",
+            "evidence": "“The immunity is bought by explanatory and practical inertness: a cause whose relation to intelligence is only a remote and undefined analogy does the same work, in practice, as no posit at all.”",
+            "justification": "The tradeoff is stated as a tradeoff, including the closing comparison with no posit at all — the key's own formulation of the point."
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "q8",
+      "response": {
+        "text": "The argument fails as a prudential argument, and that is all its failure shows. Wager reasoning is supposed to decide under ignorance: the choice is forced, the stakes infinite, the finite cost of belief negligible, and belief can be cultivated by habituation even if it is not directly voluntary. On those assumptions, betting on God dominates.\n\nBlackburn's objection is that the table is not the agent's to draw. The premise that reason cannot identify the true religion is exactly what forbids assigning the payoffs: if nothing discriminates among the live options, then for any candidate X — a different god, a jealous god who punishes credulity, a god who rewards only evidence-sensitive non-belief — a table of the same shape can be constructed, with infinite reward attached to X and disaster to its denial. Pascal's matrix is one row selected from an indefinite set, and its selection is unjustified by the very ignorance that is supposed to motivate it. Nor can the wager be repaired by saying that some assignment is better than none: probabilities and outcome assignments must be justified before an infinite utility can settle anything.\n\nNone of this shows that God does not exist. It shows that this route to belief — practical rationality under stipulated ignorance — does not work: the conclusion is about the argument's form, not about the truth of theism."
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "13/2",
+        "max_points": "7",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "Awards 1 + 2 + 2 + 1/2 + 1 = 13/2 of 7. Thesis, reconstruction and the arbitrary-candidate objection are all strong; the point about ignorance underwriting the payoff assignments is made in passing rather than argued, so it earns half.",
+        "criteria": [
+          {
+            "criterion_id": "q8_c1",
+            "points_awarded": "1",
+            "evidence": "“The argument fails as a prudential argument, and that is all its failure shows.”",
+            "justification": "A clear thesis that locates the failure in the argument rather than in theism, which is what the criterion requires."
+          },
+          {
+            "criterion_id": "q8_c2",
+            "points_awarded": "2",
+            "evidence": "“the choice is forced, the stakes infinite, the finite cost of belief negligible, and belief can be cultivated by habituation even if it is not directly voluntary.”",
+            "justification": "All four elements the criterion lists — practical choice, infinite payoff, negligible finite cost, cultivation of belief — are reconstructed in one sentence, so full credit."
+          },
+          {
+            "criterion_id": "q8_c3",
+            "points_awarded": "2",
+            "evidence": "“for any candidate X — a different god, a jealous god who punishes credulity, a god who rewards only evidence-sensitive non-belief — a table of the same shape can be constructed … Pascal's matrix is one row selected from an indefinite set.”",
+            "justification": "The false-options objection is made in the general form the criterion asks for, including the case of a deity who rewards evidence-sensitive non-belief."
+          },
+          {
+            "criterion_id": "q8_c4",
+            "points_awarded": "1/2",
+            "evidence": "“its selection is unjustified by the very ignorance that is supposed to motivate it.”",
+            "justification": "The answer asserts that the ignorance undercuts the assignment but does not argue the tension — that the same premise cannot both silence reason and license a specific payoff table. The criterion awards half for the point stated only implicitly."
+          },
+          {
+            "criterion_id": "q8_c5",
+            "points_awarded": "1",
+            "evidence": "“None of this shows that God does not exist. It shows that this route to belief … does not work: the conclusion is about the argument's form, not about the truth of theism.”",
+            "justification": "The distinction between a failed wager and a proof of atheism is drawn explicitly in the closing paragraph."
+          }
+        ]
+      }
+    }
+  ],
+  "grading": {
+    "complete": true,
+    "completed_at": "2026-10-03T10:15:30Z"
+  },
+  "graders": [
+    {
+      "username": "fixture",
+      "role": "primary",
+      "at": "2026-10-03T10:15:30Z"
+    }
+  ],
+  "total_possible_points": "20",
+  "total_awarded_points": "35/2"
+}

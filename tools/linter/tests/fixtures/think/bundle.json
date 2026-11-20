@@ -1,0 +1,700 @@
+{
+  "format_version": "0.12.0",
+  "assessment": {
+    "id": "think_exam_05_god",
+    "title": "Simon Blackburn, Think, Chapter 5 (\u201cGod\u201d) \u2014 Open-Book Self-Study Exam",
+    "subject": "Philosophy",
+    "audience": "Graduate-level philosophy",
+    "instructions": "You may consult Blackburn's Chapter 5 and the accompanying LLM-Wiki note. Answer all questions. For multiple-choice questions, select the single best answer. For short answers, prioritize precise argument reconstruction over breadth. For the final prompt, state a defensible thesis and address at least one objection or limitation.",
+    "time_limit_minutes": 20,
+    "scope": {
+      "course": {
+        "id": "think",
+        "label": "Think (Blackburn)"
+      },
+      "segments": [
+        {
+          "id": "part-5-god",
+          "label": "Unit 05 \u2014 God (Blackburn, Ch. 5)",
+          "kind": "unit"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "blackburn-think",
+        "citation": "Simon Blackburn, Think: A Compelling Introduction to Philosophy (Oxford University Press, 1999), Chapter 5, \u201cGod\u201d. ISBN 978-0-19-969087-1.",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "section",
+            "status": "pending"
+          },
+          {
+            "scheme": "fulltxt_line",
+            "status": "pending"
+          }
+        ],
+        "note": "The key cites \u201cfull-TXT lines NNNN\u2013NNNN\u201d from a Calibre text extraction that its own disclosure says was deleted after generation. `fulltxt_line` is this document's declared scheme name for that numbering \u2014 the specification defines no such scheme \u2014 and every citation on it is `pending`, because the numbered artifact no longer exists. Section titles are as the key names them and were not checked against the printed book, so `section` is `pending` as well. No page scheme is declared at all: pagination was never verified here and none is cited.",
+        "tier": "required",
+        "category": "primary"
+      },
+      {
+        "id": "part-5-god-notes",
+        "citation": "Part-5-God \u2014 LLM-Wiki study notes on Blackburn, Think, Ch. 5 (hub page with Arguments, Problem-of-Evil and Faith-and-Reason sub-pages)",
+        "schemes": [
+          {
+            "scheme": "heading",
+            "status": "verified"
+          },
+          {
+            "scheme": "path",
+            "status": "verified"
+          }
+        ],
+        "note": "The key's wikilinks ([[Part-5-God#The ontological argument]] and similar) name anchors on the hub page, but that page is navigation only: its headings are Chapter map, Sub-pages, Dialectical conclusions, Cross-references and Source. The argument headings live in the sub-pages, so each heading locator names the heading that exists and records which file carries it.",
+        "tier": "supplemental"
+      }
+    ],
+    "delivery": {
+      "mode": "open_book"
+    },
+    "coverage": {
+      "assessed": [
+        {
+          "segment_id": "part-5-god",
+          "question_ids": [
+            "q1",
+            "q2",
+            "q3",
+            "q4",
+            "q5",
+            "q6",
+            "q7",
+            "q8"
+          ],
+          "note": "The paper's own coverage table maps its questions to argument clusters (ontological, cosmological, design, evil, miracles, wager), not to course segments; the whole paper sits inside the single segment the course state file records for exam-05 (`covers_segment_ids: ['part-5-god']`)."
+        }
+      ],
+      "omitted": [
+        {
+          "segment_id": "part-5-god",
+          "topic": "Religion as a non-truth-apt practice",
+          "reason": "time",
+          "note": "Key: omitted because the limit is 20 minutes."
+        },
+        {
+          "segment_id": "part-5-god",
+          "topic": "Soul-making and the free-will defence in detail",
+          "reason": "time",
+          "note": "Key: omitted because the limit is 20 minutes."
+        },
+        {
+          "segment_id": "part-5-god",
+          "topic": "Mill, Clifford, Coleridge, and the final practical assessment of fideism",
+          "reason": "time",
+          "note": "Key: omitted because the limit is 20 minutes."
+        },
+        {
+          "segment_id": "part-5-god",
+          "topic": "Blackburn's Bayesian restatement beyond the logic captured in Question 5",
+          "reason": "time",
+          "note": "Key: omitted because the limit is 20 minutes."
+        }
+      ],
+      "note": "Lifted from the key's \u201cCoverage audit\u201d table and \u201cProportionality and omissions\u201d list. The key states no coverage quota, and none is implied here."
+    },
+    "sections": [
+      {
+        "id": "part_i_mcq",
+        "title": "Part I \u2014 Multiple Choice",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "single_choice",
+            "prompt": "What is Blackburn's preferred diagnosis of the ontological argument's central defect?",
+            "points": "1",
+            "estimated_minutes": 1,
+            "options": [
+              {
+                "id": "a",
+                "text": "Its conclusion is probabilistic even though its premises are deductive."
+              },
+              {
+                "id": "b",
+                "text": "It equivocates when comparing an object in reality with an object as represented in conception."
+              },
+              {
+                "id": "c",
+                "text": "It assumes without argument that every event has a prior physical cause."
+              },
+              {
+                "id": "d",
+                "text": "It proves only that God is morally perfect, not that God is omnipotent."
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "single_choice",
+            "prompt": "Why does Blackburn regard Russell's quick objection to the first-cause argument as \u201ca little glib\u201d?",
+            "points": "1",
+            "estimated_minutes": 1,
+            "options": [
+              {
+                "id": "a",
+                "text": "The theologian distinguishes dependent physical things from the allegedly self-sufficient being introduced to explain them."
+              },
+              {
+                "id": "b",
+                "text": "Russell mistakenly treats the argument as a posteriori rather than a priori."
+              },
+              {
+                "id": "c",
+                "text": "An infinite causal regress is formally contradictory."
+              },
+              {
+                "id": "d",
+                "text": "Hume had already demonstrated that the material cosmos cannot be necessary."
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "single_choice",
+            "prompt": "Which conclusion most accurately represents what Philo thinks the design argument could establish after its strongest concessions?",
+            "points": "1",
+            "estimated_minutes": 1,
+            "options": [
+              {
+                "id": "a",
+                "text": "The universe was made by one omnipotent and perfectly good person."
+              },
+              {
+                "id": "b",
+                "text": "Biological adaptation makes any inference from order irrational."
+              },
+              {
+                "id": "c",
+                "text": "The cause or causes of order may bear some remote analogy to intelligence, without supporting richer theology."
+              },
+              {
+                "id": "d",
+                "text": "The universe is more probably a literal organism than a designed machine."
+              }
+            ]
+          },
+          {
+            "id": "q4",
+            "type": "single_choice",
+            "prompt": "What is the primary force of the neglected-dormitory analogy in the discussion of evil?",
+            "points": "1",
+            "estimated_minutes": 1,
+            "options": [
+              {
+                "id": "a",
+                "text": "Any suffering is deductively inconsistent with every possible deity."
+              },
+              {
+                "id": "b",
+                "text": "Poor conditions are evidence against inferring management that is simultaneously fully informed, perfectly caring, and unlimited in power."
+              },
+              {
+                "id": "c",
+                "text": "Human freedom explains all apparently defective conditions."
+              },
+              {
+                "id": "d",
+                "text": "Suffering proves that the universe has multiple designers."
+              }
+            ]
+          },
+          {
+            "id": "q5",
+            "type": "single_choice",
+            "prompt": "Which statement best captures Hume's maxim concerning testimony for miracles as Blackburn presents it?",
+            "points": "1",
+            "estimated_minutes": 1,
+            "options": [
+              {
+                "id": "a",
+                "text": "Testimony is irrelevant whenever an event conflicts with a law of nature."
+              },
+              {
+                "id": "b",
+                "text": "A miracle should be accepted whenever several sincere witnesses agree."
+              },
+              {
+                "id": "c",
+                "text": "Testimony can support a miracle only when its falsehood would be still more extraordinary, after weighing the competing evidential forces."
+              },
+              {
+                "id": "d",
+                "text": "Miracles are metaphysically impossible, so reports of them are necessarily false."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "part_ii_short_answer",
+        "title": "Part II \u2014 Short Answer",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "q6",
+            "type": "short_answer",
+            "prompt": "Reconstruct Cleanthes' design argument as an argument by analogy, then state two distinct objections Philo raises against the inference. Your answer should distinguish a criticism of the analogy's evidential basis from a criticism of how much theology its conclusion could support.",
+            "points": "4",
+            "estimated_minutes": 4,
+            "response_lines": 14
+          },
+          {
+            "id": "q7",
+            "type": "short_answer",
+            "prompt": "Explain the dilemma Blackburn sees in Demea's appeal to an incomprehensible divine nature as a response to evil. Why can this strategy preserve compatibility while making religious belief practically \u201cinert\u201d?",
+            "points": "4",
+            "estimated_minutes": 4,
+            "response_lines": 14
+          }
+        ]
+      },
+      {
+        "id": "part_iii_argument",
+        "title": "Part III \u2014 Brief Argument/Application",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "q8",
+            "type": "short_answer",
+            "prompt": "A person says: \u201cI admit that reason and evidence do not identify which religion is true. Still, believing is rational because one possible deity offers infinite reward for faith, while disbelief offers no comparable benefit.\u201d Evaluate this argument using Blackburn's treatment of Pascal's wager. State a thesis, reconstruct the wager's practical logic, present Blackburn's strongest objection, and explain whether that objection shows that religious belief is false or only that this prudential argument fails.",
+            "points": "7",
+            "estimated_minutes": 7,
+            "response_lines": 22
+          }
+        ]
+      }
+    ],
+    "gate": {
+      "mastery": true,
+      "mode": "score",
+      "threshold_share": "7/10",
+      "note": "Mastery gate at 14/20 for unit credit. This exam's own key states no gate; the gate is the course policy in Think/HUB.md ('each unit concludes with a unit essay exam with a mastery gate') and the threshold is the one the sibling unit exams record ('Mastery gate: >=14/20 for unit credit', Exams 06-08, all 20-point unit papers). 14/20 of this paper's 20 points is 7/10."
+    }
+  },
+  "answer_key": {
+    "q1": {
+      "method": "choice",
+      "correct_option_ids": [
+        "b"
+      ],
+      "explanation": "Blackburn's diagnosis is the equivocation between an object in reality and an object as represented in conception: the imagined turkey shows that an imagined object is not a deficient real object available for cross-domain comparison, and a maximally specified concept does not secure a referent.",
+      "locators": [
+        {
+          "source_id": "blackburn-think",
+          "scheme": "chapter",
+          "value": "5",
+          "status": "verified"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "section",
+          "value": "Anselm's Argument: Dreamboats and Turkeys",
+          "status": "pending"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "fulltxt_line",
+          "range": {
+            "from": 2066,
+            "to": 2088
+          },
+          "status": "pending",
+          "note": "The key's citation; the extracted TXT it numbered was deleted."
+        },
+        {
+          "source_id": "part-5-god-notes",
+          "scheme": "heading",
+          "value": "The ontological argument",
+          "status": "verified",
+          "note": "The key links [[Part-5-God#The ontological argument]]; the heading lives in Part-5-God/Arguments.md, not on the hub page the link names."
+        }
+      ]
+    },
+    "q2": {
+      "method": "choice",
+      "correct_option_ids": [
+        "a"
+      ],
+      "explanation": "Blackburn calls the objection a little glib because the theologian applies dependency to ordinary physical things and then introduces a categorically self-sufficient terminus; Russell's \u201ceverything whatsoever has a distinct previous cause\u201d does not by itself catch a formal contradiction.",
+      "locators": [
+        {
+          "source_id": "blackburn-think",
+          "scheme": "chapter",
+          "value": "5",
+          "status": "verified"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "section",
+          "value": "Elephants and Tortoises",
+          "status": "pending"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "fulltxt_line",
+          "range": {
+            "from": 2108,
+            "to": 2136
+          },
+          "status": "pending",
+          "note": "The key's citation; the extracted TXT it numbered was deleted."
+        },
+        {
+          "source_id": "part-5-god-notes",
+          "scheme": "heading",
+          "value": "The cosmological argument",
+          "status": "verified"
+        }
+      ]
+    },
+    "q3": {
+      "method": "choice",
+      "correct_option_ids": [
+        "c"
+      ],
+      "explanation": "Philo allows at most that the cause or causes of order bear a remote and undefined analogy to human intelligence \u2014 which does not establish unity, omnipotence, goodness, personality or practical authority.",
+      "locators": [
+        {
+          "source_id": "blackburn-think",
+          "scheme": "chapter",
+          "value": "5",
+          "status": "verified"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "section",
+          "value": "The Wise Architect",
+          "status": "pending",
+          "note": "The key also cites \u201cThe Problem of Evil\u201d for this answer; one section locator is recorded because the value is the answer's principal ground."
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "fulltxt_line",
+          "range": {
+            "from": 2194,
+            "to": 2202
+          },
+          "status": "pending",
+          "note": "The key's citation; the extracted TXT it numbered was deleted."
+        },
+        {
+          "source_id": "part-5-god-notes",
+          "scheme": "heading",
+          "value": "The argument from design",
+          "status": "verified"
+        }
+      ]
+    },
+    "q4": {
+      "method": "choice",
+      "correct_option_ids": [
+        "b"
+      ],
+      "explanation": "The analogy is evidential rather than a universal deductive disproof: given observable misery one would not infer management that is simultaneously fully informed, perfectly caring and unlimited in corrective resources, which presses directly on Cleanthes' inference from the world to the creator's attributes.",
+      "locators": [
+        {
+          "source_id": "blackburn-think",
+          "scheme": "chapter",
+          "value": "5",
+          "status": "verified"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "section",
+          "value": "The Problem of Evil",
+          "status": "pending"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "fulltxt_line",
+          "range": {
+            "from": 2212,
+            "to": 2234
+          },
+          "status": "pending",
+          "note": "The key's citation; the extracted TXT it numbered was deleted."
+        },
+        {
+          "source_id": "part-5-god-notes",
+          "scheme": "heading",
+          "value": "Epicurean pressure",
+          "status": "verified",
+          "note": "The key links [[Part-5-God#The problem of evil]]; the nearest heading is in Part-5-God/Problem-of-Evil.md."
+        }
+      ]
+    },
+    "q5": {
+      "method": "choice",
+      "correct_option_ids": [
+        "c"
+      ],
+      "explanation": "Hume requires weighing the probability of testimonial failure against the probability of the reported event: testimony commands belief only if its falsehood would be more extraordinary than the miracle, with residual confidence proportioned to the evidential balance. He need not declare miracles metaphysically impossible.",
+      "locators": [
+        {
+          "source_id": "blackburn-think",
+          "scheme": "chapter",
+          "value": "5",
+          "status": "verified"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "section",
+          "value": "Miracles and Testimony",
+          "status": "pending"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "fulltxt_line",
+          "range": {
+            "from": 2290,
+            "to": 2324
+          },
+          "status": "pending",
+          "note": "The key cites 2290\u20132324 and 2358\u20132360; this locator carries the wider of the two ranges."
+        },
+        {
+          "source_id": "part-5-god-notes",
+          "scheme": "heading",
+          "value": "Miracles and testimony",
+          "status": "verified"
+        }
+      ]
+    },
+    "q6": {
+      "method": "analytic_rubric",
+      "reference_answer": "Cleanthes argues that nature's adjustment of means to ends resembles human artefacts; since similar effects probably have similar causes and artefacts arise from intelligence, nature probably has an intelligent cause. Philo first challenges the evidential basis: the universe and artefacts are not sufficiently similar, and we have no experience of universe production that would calibrate the causal analogy. Second, even if something like design were granted, it radically underdetermines theology: it could involve many designers, a defective or dependent designer, or only a remote analogy to intelligence, not the single perfect God of classical theism.",
+      "criteria": [
+        {
+          "id": "q6_c1",
+          "description": "Full credit: states Cleanthes' argument as an argument by analogy, naming both analogues \u2014 the adjustment of means to ends in nature and in human artefacts \u2014 and the principle that like effects are presumed to have like causes. The key weights this element at 1 of the question's 4 points."
+        },
+        {
+          "id": "q6_c2",
+          "description": "Full credit: draws the inference the analogy is meant to license \u2014 that the cause of nature's order is an intelligent cosmic cause, proportioned to the effect. The key weights this element at 1 of the question's 4 points."
+        },
+        {
+          "id": "q6_c3",
+          "description": "Full credit: gives Philo's objection to the analogy's evidential basis, with a reason why the inference fails \u2014 insufficient similarity between universe and artefact, no experience of universe production to calibrate the causal analogy, or competing natural analogies (generation, vegetation) that fit as well. Naming the disanalogy without a reason why it defeats the inference earns half. The key weights this element at 1 of the question's 4 points."
+        },
+        {
+          "id": "q6_c4",
+          "description": "Full credit: gives Philo's scope objection \u2014 that even a granted design conclusion underdetermines theology, supporting at most an undefined, possibly multiple, possibly defective cause rather than one perfect, omnipotent, benevolent deity. The key weights this element at 1 of the question's 4 points."
+        }
+      ],
+      "locators": [
+        {
+          "source_id": "blackburn-think",
+          "scheme": "chapter",
+          "value": "5",
+          "status": "verified"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "section",
+          "value": "The Wise Architect",
+          "status": "pending"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "fulltxt_line",
+          "range": {
+            "from": 2150,
+            "to": 2202
+          },
+          "status": "pending",
+          "note": "The key's citation for Q6; the extracted TXT was deleted."
+        },
+        {
+          "source_id": "part-5-god-notes",
+          "scheme": "heading",
+          "value": "The argument from design",
+          "status": "verified"
+        }
+      ]
+    },
+    "q7": {
+      "method": "analytic_rubric",
+      "reference_answer": "Demea can say that apparently gratuitous suffering is compatible with God because divine goodness and purposes are beyond human understanding. This blocks an inference from human standards of goodness to a contradiction. But if divine goodness has no usable relation to human goodness, belief in it yields no expectations about suffering and no guidance about conduct. An undefined cause remotely analogous to intelligence becomes indistinguishable in practice from no explanatory posit at all: it is protected from refutation by losing content.",
+      "criteria": [
+        {
+          "id": "q7_c1",
+          "description": "Full credit: distinguishes Demea's move from Cleanthes' \u2014 Demea does not infer God's attributes from the world's apparent quality, so the evidential problem does not reach him in the same way. The key weights this element at 1 of the question's 4 points."
+        },
+        {
+          "id": "q7_c2",
+          "description": "Full credit: explains that an incomprehensible divine nature preserves bare compatibility with evil, because human standards of goodness cannot be used to derive a contradiction. The key weights this element at 1 of the question's 4 points."
+        },
+        {
+          "id": "q7_c3",
+          "description": "Full credit: explains that removing ordinary content from \u201cgoodness\u201d removes predictions about how the world will go and moral guidance about conduct \u2014 the word no longer constrains anything. The key weights this element at 1 of the question's 4 points."
+        },
+        {
+          "id": "q7_c4",
+          "description": "Full credit: states the tradeoff explicitly \u2014 that immunity from refutation is purchased by explanatory and practical inertness, so the posit approaches indistinguishability from no posit at all. Naming inertness without stating what it costs earns half. The key weights this element at 1 of the question's 4 points."
+        }
+      ],
+      "locators": [
+        {
+          "source_id": "blackburn-think",
+          "scheme": "chapter",
+          "value": "5",
+          "status": "verified"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "section",
+          "value": "The Problem of Evil",
+          "status": "pending"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "fulltxt_line",
+          "range": {
+            "from": 2238,
+            "to": 2264
+          },
+          "status": "pending",
+          "note": "The key's citation for Q7; the extracted TXT was deleted."
+        },
+        {
+          "source_id": "part-5-god-notes",
+          "scheme": "heading",
+          "value": "Theodicies assessed",
+          "status": "verified"
+        }
+      ]
+    },
+    "q8": {
+      "method": "analytic_rubric",
+      "reference_answer": "A strong answer should argue that Blackburn's false-options objection defeats the wager as presented because metaphysical ignorance cannot justify its selective payoff matrix. This does not establish that God does not exist; it shows that the proposed prudential route to belief lacks a warranted decision model.",
+      "criteria": [
+        {
+          "id": "q8_c1",
+          "description": "Full credit: a clear, defensible thesis that the wager fails as a prudential argument (not that theism is false). The key weights this element at 1 of the question's 7 points."
+        },
+        {
+          "id": "q8_c2",
+          "description": "Full credit: an accurate reconstruction of the wager's practical logic \u2014 a forced practical choice, infinite payoff against negligible finite cost, and the cultivation of belief as the practical route. The key weights this element at 2 of the question's 7 points; a reconstruction missing one of these elements earns at most half."
+        },
+        {
+          "id": "q8_c3",
+          "description": "Full credit: Blackburn's false-options objection \u2014 possible deities and religions assign different rewards and punishments, so a table of the same shape can be built for any candidate, including one that rewards evidence-sensitive non-belief. The key weights this element at 2 of the question's 7 points."
+        },
+        {
+          "id": "q8_c4",
+          "description": "Full credit: explains why the stipulated ignorance cannot both motivate the wager and warrant its specifically Christian or monotheistic payoff assignments. Stating the point only implicitly earns half. The key weights this element at 1 of the question's 7 points."
+        },
+        {
+          "id": "q8_c5",
+          "description": "Full credit: distinguishes the failure of the wager from a proof of atheism \u2014 the objection is to the argument's form, not to the truth of theism. The key weights this element at 1 of the question's 7 points."
+        }
+      ],
+      "locators": [
+        {
+          "source_id": "blackburn-think",
+          "scheme": "chapter",
+          "value": "5",
+          "status": "verified"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "section",
+          "value": "Infini\u2014Rien",
+          "status": "pending"
+        },
+        {
+          "source_id": "blackburn-think",
+          "scheme": "fulltxt_line",
+          "range": {
+            "from": 2390,
+            "to": 2478
+          },
+          "status": "pending",
+          "note": "The key's citation for Q8; the extracted TXT was deleted."
+        },
+        {
+          "source_id": "part-5-god-notes",
+          "scheme": "heading",
+          "value": "Lethal objection: false options",
+          "status": "verified"
+        },
+        {
+          "source_id": "part-5-god-notes",
+          "scheme": "path",
+          "value": "Agents/LLM-Wiki/concepts/Philosophy/Philosophers/simon-blackburn/think/Part-5-God/Faith-and-Reason.md",
+          "status": "verified"
+        }
+      ]
+    }
+  },
+  "quote_verification": [
+    {
+      "quote": "everything whatsoever has a distinct previous cause",
+      "attribution": "Blackburn, Chapter 5, glossing Russell (quoted in the instructor key)",
+      "locators": [
+        {
+          "source_id": "blackburn-think",
+          "scheme": "fulltxt_line",
+          "range": {
+            "from": 2108,
+            "to": 2136
+          },
+          "status": "pending",
+          "note": "Key's range for Q2."
+        }
+      ],
+      "status": "pending",
+      "note": "Wording as the key reports it; the numbered extract no longer exists, so the quotation could not be re-checked against the text."
+    },
+    {
+      "quote": "a little glib",
+      "attribution": "Blackburn on Russell's objection (quoted in the exam stem and the key)",
+      "locators": [
+        {
+          "source_id": "blackburn-think",
+          "scheme": "fulltxt_line",
+          "range": {
+            "from": 2108,
+            "to": 2136
+          },
+          "status": "pending",
+          "note": "Key's range for Q2."
+        }
+      ],
+      "status": "pending",
+      "note": "Present in the exam paper's own wording, so its place in the argument is attested; the exact page wording is not."
+    },
+    {
+      "quote": "remote and undefined analogy",
+      "attribution": "Blackburn, Chapter 5, on Philo's concession (quoted in the key)",
+      "locators": [
+        {
+          "source_id": "blackburn-think",
+          "scheme": "fulltxt_line",
+          "range": {
+            "from": 2194,
+            "to": 2202
+          },
+          "status": "pending",
+          "note": "Key's range for Q3."
+        }
+      ],
+      "status": "pending"
+    }
+  ]
+}

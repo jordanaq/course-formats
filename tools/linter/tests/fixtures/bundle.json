@@ -1,0 +1,826 @@
+{
+  "format_version": "0.12.0",
+  "assessment": {
+    "id": "daily-mip-01-01",
+    "title": "Modern Israel and Palestine \u2014 Lecture 01: Exam 01",
+    "subject": "History",
+    "audience": "Upper-level undergraduate (self-study, open-book)",
+    "instructions": "Answer every question. The paper is open book and runs 30 minutes. Question 1 is an identification question: answer three of the eight terms offered. Questions 2\u20134 are short answers. Question 5 is a mini-essay and carries a word limit stated with the question.",
+    "time_limit_minutes": 30,
+    "scope": {
+      "course": {
+        "id": "modern-israel-palestine",
+        "label": "Modern Israel and Palestine"
+      },
+      "segments": [
+        {
+          "id": "mip-l01",
+          "kind": "lecture",
+          "label": "Lecture 01 \u2014 Background: Late Ottoman Palestine and the Origins of Zionism"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "smith",
+        "citation": "Charles D. Smith, Palestine and the Arab-Israeli Conflict: A History with Documents, 10th ed. \u2014 Ch. 1, \"Ottoman Society, Palestine, and the Origins of Zionism, 1516\u20131914\", including Documents 1.1\u20131.3",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "section",
+            "status": "verified"
+          },
+          {
+            "scheme": "document",
+            "status": "verified"
+          },
+          {
+            "scheme": "print_page",
+            "status": "pending"
+          }
+        ],
+        "tier": "required",
+        "category": "secondary",
+        "note": "Print pagination for Chapter 1 is not verified; citations use the chapter, its named sections and the numbered documents only."
+      },
+      {
+        "id": "avineri",
+        "citation": "Shlomo Avineri, The Making of Modern Zionism \u2014 Ch. 9 (Herzl: The Breakthrough) and Ch. 11 (Ahad Ha'am: The Spiritual Dimensions of the Jewish State)",
+        "schemes": [
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          }
+        ],
+        "tier": "required",
+        "category": "secondary"
+      },
+      {
+        "id": "mip_l01_lecture",
+        "citation": "Lecture 01 \u2014 Background: Late Ottoman Palestine and the Origins of Zionism (course lecture note, Key Concepts)",
+        "schemes": [
+          {
+            "scheme": "heading",
+            "status": "verified"
+          }
+        ],
+        "tier": "required"
+      }
+    ],
+    "gate": {
+      "mastery": true,
+      "mode": "completion",
+      "note": "Soft mastery \u2014 completion advances regardless of score (course policy)."
+    },
+    "delivery": {
+      "mode": "open_book"
+    },
+    "coverage": {
+      "assessed": [
+        {
+          "segment_id": "mip-l01",
+          "question_ids": [
+            "q1",
+            "q2",
+            "q3",
+            "q4",
+            "q5"
+          ],
+          "note": "Grounded in the lecture's required readings only: Smith Ch. 1 (millet, capitulations, Tanzimat \u2014 Q1, Q2; Herzl and political Zionism \u2014 Q1, Q3; the Arab response and Documents 1.1\u20131.3 \u2014 Q1, Q5) and Avineri Chs. 9 and 11 (Q3, Q4)."
+        }
+      ],
+      "omitted": [
+        {
+          "segment_id": "mip-l01",
+          "topic": "Hertzberg (ed.), The Zionist Idea \u2014 Part 3 (Herzl) and Part 4 (Ahad Ha'am)",
+          "reason": "scope",
+          "note": "Optional-tier reading, deliberately not tested here; covered by Exam 02 (extension)."
+        },
+        {
+          "segment_id": "mip-l01",
+          "topic": "Avineri, Ch. 7 (Pinsker: From Emancipation to Autoemancipation)",
+          "reason": "scope",
+          "note": "Optional-tier reading, deliberately not tested here; covered by Exam 02 (extension)."
+        },
+        {
+          "segment_id": "mip-l01",
+          "topic": "Laqueur, A History of Zionism \u2014 Chs. 1\u20133",
+          "reason": "scope",
+          "note": "Optional-tier reading, deliberately not tested here; covered by Exam 02 (extension)."
+        },
+        {
+          "segment_id": "mip-l01",
+          "topic": "Shlaim, War and Peace in the Middle East \u2014 Ch. 1",
+          "reason": "scope",
+          "note": "Optional-tier reading, deliberately not tested here; covered by Exam 02 (extension)."
+        },
+        {
+          "segment_id": "mip-l01",
+          "topic": "Tessler, A History of the Israeli-Palestinian Conflict \u2014 Part 1",
+          "reason": "scope",
+          "note": "Optional-tier reading, deliberately not tested here; covered by Exam 02 (extension)."
+        },
+        {
+          "segment_id": "mip-l01",
+          "topic": "Gelvin, The Israel-Palestine Conflict \u2014 Ch. 3",
+          "reason": "scope",
+          "note": "Optional-tier reading, deliberately not tested here; covered by Exam 02 (extension)."
+        }
+      ],
+      "note": "Short answers foreground the Ottoman institutional vocabulary and the Tanzimat paradox; the identification pool and the mini-essay broaden coverage to the Arab response. Q4 was tightened to Avineri Ch. 11 only, so the paper stays strictly required-only. No supplemental research used."
+    },
+    "sections": [
+      {
+        "id": "short_answers",
+        "title": "Section I \u2014 Short answers (20 pts)",
+        "instructions": "Answer every question in this section. Question 1 is a choice: answer three of the eight terms.",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "alternative_set",
+            "prompt": "Identify and briefly explain three of the following eight terms, with their significance for the period 1880\u20131914. Each term is worth up to 2 points; the question is marked out of 5.",
+            "points": "5",
+            "estimated_minutes": 3.5,
+            "choose_n": 3,
+            "credit": {
+              "mode": "capped"
+            },
+            "alternatives": [
+              {
+                "id": "q1_millet",
+                "type": "short_answer",
+                "prompt": "Millet system \u2014 identify and briefly explain the term, with its significance for the period 1880\u20131914.",
+                "points": "2",
+                "estimated_minutes": 1,
+                "response_lines": 4
+              },
+              {
+                "id": "q1_capitulations",
+                "type": "short_answer",
+                "prompt": "Capitulations \u2014 identify and briefly explain the term, with its significance for the period 1880\u20131914.",
+                "points": "2",
+                "estimated_minutes": 1,
+                "response_lines": 4
+              },
+              {
+                "id": "q1_tanzimat",
+                "type": "short_answer",
+                "prompt": "Tanzimat (1839\u20131876) \u2014 identify and briefly explain the term, with its significance for the period 1880\u20131914.",
+                "points": "2",
+                "estimated_minutes": 1,
+                "response_lines": 4
+              },
+              {
+                "id": "q1_yishuv",
+                "type": "short_answer",
+                "prompt": "Old Yishuv vs. New Yishuv \u2014 identify and briefly explain both, with their significance for the period 1880\u20131914.",
+                "points": "2",
+                "estimated_minutes": 1,
+                "response_lines": 4
+              },
+              {
+                "id": "q1_hibbat_zion",
+                "type": "short_answer",
+                "prompt": "Hibbat Zion (Lovers of Zion) \u2014 identify and briefly explain the term, with its significance for the period 1880\u20131914.",
+                "points": "2",
+                "estimated_minutes": 1,
+                "response_lines": 4
+              },
+              {
+                "id": "q1_jnf",
+                "type": "short_answer",
+                "prompt": "Jewish National Fund (Keren Kayemet, 1901) \u2014 identify and briefly explain the term, with its significance for the period 1880\u20131914.",
+                "points": "2",
+                "estimated_minutes": 1,
+                "response_lines": 4
+              },
+              {
+                "id": "q1_political_zionism",
+                "type": "short_answer",
+                "prompt": "Political Zionism \u2014 identify and briefly explain the term, with its significance for the period 1880\u20131914.",
+                "points": "2",
+                "estimated_minutes": 1,
+                "response_lines": 4
+              },
+              {
+                "id": "q1_filastin",
+                "type": "short_answer",
+                "prompt": "Filastin (est. 1911) \u2014 identify and briefly explain the term, with its significance for the period 1880\u20131914.",
+                "points": "2",
+                "estimated_minutes": 1,
+                "response_lines": 4
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "short_answer",
+            "prompt": "According to Smith, why did the Tanzimat reforms worsen Muslim\u2013Christian relations while leaving Muslim\u2013Jewish relations comparatively stable \u2014 and what changed that dynamic by 1914?",
+            "points": "5",
+            "estimated_minutes": 3,
+            "response_lines": 8
+          },
+          {
+            "id": "q3",
+            "type": "short_answer",
+            "prompt": "Reconstruct Herzl's diagnosis of the \"Jewish problem\" and his proposed solution, as presented in Der Judenstaat (1896) and in Avineri's Chapter 9.",
+            "points": "5",
+            "estimated_minutes": 3,
+            "response_lines": 8
+          },
+          {
+            "id": "q4",
+            "type": "short_answer",
+            "prompt": "Ahad Ha'am's critique of political Zionism. State his central objection and his alternative, citing at least one specific argument from Avineri, Chapter 11.",
+            "points": "5",
+            "estimated_minutes": 3,
+            "response_lines": 8
+          }
+        ]
+      },
+      {
+        "id": "mini_essay",
+        "title": "Section II \u2014 Mini-essay (10 pts)",
+        "instructions": "Answer the single question below. The essay is roughly half the exam's working time.",
+        "questions": [
+          {
+            "id": "q5",
+            "type": "essay",
+            "prompt": "Smith argues that Palestinian Arab opposition to Zionism predated the Balfour Declaration and was rooted in concrete fears of dispossession rather than mere anti-Jewish sentiment. Reconstruct the evidence he gives for this claim, and explain why the point matters historiographically.",
+            "points": "10",
+            "estimated_minutes": 12,
+            "response_lines": 30,
+            "suggested_word_count": {
+              "min": 1,
+              "max": 300,
+              "enforcement": "recorded",
+              "note": "Answers over 300 words are recorded in the marking record and raised in feedback; the score is not reduced for length, but the cap is a discipline note the marker passes on."
+            }
+          }
+        ]
+      }
+    ],
+    "floors": [
+      {
+        "tier": "required",
+        "min_share": "1",
+        "applies_to": "all"
+      }
+    ]
+  },
+  "answer_key": {
+    "q1_millet": {
+      "method": "analytic_rubric",
+      "reference_answer": "The Ottoman arrangement of confessional communities governing personal-status law for non-Muslims (dhimmis), in which Muslims, Christians and Jews had recognized but unequal statuses. Significance: it structured the plural society of Ottoman Palestine and shaped communal relations as European penetration intensified.",
+      "locators": [
+        {
+          "source_id": "smith",
+          "scheme": "chapter",
+          "value": "1",
+          "status": "verified"
+        },
+        {
+          "source_id": "mip_l01_lecture",
+          "scheme": "heading",
+          "value": "Key Concepts",
+          "status": "verified"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q1_millet_c",
+          "description": "Full credit requires both halves: the arrangement of confessional communities with personal-status jurisdiction over non-Muslims under unequal recognized statuses, and its significance \u2014 the structure of Ottoman Palestine's plural society and of communal relations as European penetration intensified. A bare gloss ('religious courts') with no significance earns partial credit only.",
+          "locators": [
+            {
+              "source_id": "smith",
+              "scheme": "chapter",
+              "value": "1",
+              "status": "verified"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "q1_capitulations": {
+      "method": "analytic_rubric",
+      "reference_answer": "Treaties granting European powers extraterritorial rights over their nationals and prot\u00e9g\u00e9s within the empire (France 1740; Russia via the Treaty of Kuchuk Kanarji, 1774). Significance: legal-diplomatic instruments of European penetration that eroded Ottoman sovereignty \u2014 and, later, the legal shield under which European-protected Zionist purchasers operated and avoided Ottoman taxation.",
+      "locators": [
+        {
+          "source_id": "smith",
+          "scheme": "chapter",
+          "value": "1",
+          "status": "verified"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q1_capitulations_c",
+          "description": "Full credit requires the definition \u2014 treaties giving European powers extraterritorial jurisdiction over their nationals and prot\u00e9g\u00e9s \u2014 and the significance: erosion of Ottoman sovereignty, and the later protection under which Zionist purchasers and immigrants escaped Ottoman jurisdiction and taxation. Either half alone earns partial credit.",
+          "locators": [
+            {
+              "source_id": "smith",
+              "scheme": "chapter",
+              "value": "1",
+              "status": "verified"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "q1_tanzimat": {
+      "method": "analytic_rubric",
+      "reference_answer": "The Ottoman reform programme of 1839\u20131876 proclaiming legal equality for all subjects. Significance: intended to strengthen the empire, it paradoxically increased Muslim resentment of Christians, who were seen as beneficiaries of foreign pressure, while Muslim\u2013Jewish relations remained comparatively stable until Zionism.",
+      "locators": [
+        {
+          "source_id": "smith",
+          "scheme": "chapter",
+          "value": "1",
+          "status": "verified"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q1_tanzimat_c",
+          "description": "Full credit requires the reform programme and its proclamation of legal equality for all Ottoman subjects (1839\u20131876) and the significance: reform experienced as European pressure, resentment of Christians as its beneficiaries, and the comparative stability of Muslim\u2013Jewish relations until Zionism. A dateless 'equal rights reforms' earns partial credit.",
+          "locators": [
+            {
+              "source_id": "smith",
+              "scheme": "chapter",
+              "value": "1",
+              "status": "verified"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "q1_yishuv": {
+      "method": "analytic_rubric",
+      "reference_answer": "Old Yishuv: the pre-Zionist religious Jewish communities. New Yishuv: the secular agricultural settlements of the First and Second Aliyot. Significance: the shift from subsistence religious life to institution-building colonization that formed the nucleus of the future state.",
+      "locators": [
+        {
+          "source_id": "smith",
+          "scheme": "chapter",
+          "value": "1",
+          "status": "verified"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q1_yishuv_c",
+          "description": "Full credit requires both terms distinguished \u2014 the pre-Zionist religious communities against the secular agricultural settlements of the First and Second Aliyot \u2014 and the significance: a shift from subsistence religious life to institution-building colonization. Defining only one of the two earns partial credit.",
+          "locators": [
+            {
+              "source_id": "smith",
+              "scheme": "chapter",
+              "value": "1",
+              "status": "verified"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "q1_hibbat_zion": {
+      "method": "analytic_rubric",
+      "reference_answer": "The early Eastern European proto-Zionist movement that sponsored the First Aliyah (1882\u20131903). Significance: pre-Herzlian, practical Zionism that established the first settlements.",
+      "locators": [
+        {
+          "source_id": "smith",
+          "scheme": "chapter",
+          "value": "1",
+          "status": "verified"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q1_hibbat_zion_c",
+          "description": "Full credit requires the movement identified as the early Eastern European proto-Zionist 'Lovers of Zion' that sponsored the First Aliyah (1882\u20131903) and the significance: practical, pre-Herzlian Zionism that founded the first settlements. A description that names the movement's mood but not its sponsorship of the First Aliyah earns partial credit.",
+          "locators": [
+            {
+              "source_id": "smith",
+              "scheme": "chapter",
+              "value": "1",
+              "status": "verified"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "q1_jnf": {
+      "method": "analytic_rubric",
+      "reference_answer": "The Zionist body founded in 1901 (Keren Kayemet) that purchased land as the inalienable property of the Jewish people. Significance: it institutionalized land acquisition; its purchases circumvented Ottoman restrictions and displaced tenant farmers \u2014 a documented source of Arab grievance (see Document 1.3).",
+      "locators": [
+        {
+          "source_id": "smith",
+          "scheme": "chapter",
+          "value": "1",
+          "status": "verified"
+        },
+        {
+          "source_id": "smith",
+          "scheme": "document",
+          "value": "1.3",
+          "status": "verified"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q1_jnf_c",
+          "description": "Full credit requires the fund's function \u2014 purchasing land to be held as the inalienable property of the Jewish people, from 1901 \u2014 and the significance: institutionalized acquisition that circumvented Ottoman restrictions and displaced tenant farmers, a documented Arab grievance. A description of it as a bank or funding mechanism with no dispossession significance earns partial credit.",
+          "locators": [
+            {
+              "source_id": "smith",
+              "scheme": "document",
+              "value": "1.3",
+              "status": "verified"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "q1_political_zionism": {
+      "method": "analytic_rubric",
+      "reference_answer": "Herzl's movement seeking a charter for a Jewish state through great-power diplomacy (Basel Program, 1897). Significance: it transformed a scattered philanthropic and cultural movement into organized political nationalism.",
+      "locators": [
+        {
+          "source_id": "smith",
+          "scheme": "chapter",
+          "value": "1",
+          "status": "verified"
+        },
+        {
+          "source_id": "avineri",
+          "scheme": "chapter",
+          "value": "9",
+          "status": "verified"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q1_political_zionism_c",
+          "description": "Full credit requires the definition \u2014 a movement seeking a charter for a Jewish state through great-power diplomacy, with the Basel Program of 1897 \u2014 and the significance: the transformation of a philanthropic and cultural movement into organized political nationalism. Naming Herzl alone, without the charter diplomacy or the Basel Program, earns partial credit.",
+          "locators": [
+            {
+              "source_id": "avineri",
+              "scheme": "chapter",
+              "value": "9",
+              "status": "verified"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "q1_filastin": {
+      "method": "analytic_rubric",
+      "reference_answer": "The Jaffa-based Palestinian Arab newspaper founded in 1911 (also rendered Falastin), edited by Greek Orthodox Christians, which \"referred to Palestine as an entity and to its readers as 'Palestinians.'\" Significance: evidence that a distinct Palestinian identity was crystallizing before 1914, predating the Balfour Declaration.",
+      "locators": [
+        {
+          "source_id": "smith",
+          "scheme": "section",
+          "value": "Growing Apprehension: Palestine and the Arab World",
+          "status": "verified"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q1_filastin_c",
+          "description": "Full credit requires the paper identified \u2014 a Jaffa-based Palestinian Arab newspaper from 1911, also rendered Falastin \u2014 and the significance: its use of 'Palestine' as an entity and of 'Palestinians' for its readers as evidence of a crystallizing identity before 1914, predating the Balfour Declaration. A press mention with no identity significance earns partial credit.",
+          "locators": [
+            {
+              "source_id": "smith",
+              "scheme": "section",
+              "value": "Growing Apprehension: Palestine and the Arab World",
+              "status": "verified"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "q2": {
+      "method": "analytic_rubric",
+      "reference_answer": "The Tanzimat equality decrees (Hatti Sharif of Gulhane 1839; Hatti Humayoun 1856) were widely seen as products of European coercion, and Christians were perceived as their beneficiaries: European consuls and traders hired Arab Christians as agents, who acquired protected status (barat) and exemption from Muslim authority under the capitulations, fuelling Muslim resentment. Jews, by contrast, 'accepted their official equality cautiously and without fanfare', which contributed to the greater stability of Muslim\u2013Jewish relations during a period of Muslim\u2013Christian enmity. Organized Zionist immigration and land purchase, accelerating after 1904, changed the calculus: as a European movement Zionism appeared to Muslims as another attempt by Western imperialism to subordinate them to Europeans, and Arab elites, Muslim and Christian alike, came to see Jews through Zionism as agents of land loss and displacement, catalysing a common Palestinian Arab identity by 1914.",
+      "locators": [
+        {
+          "source_id": "smith",
+          "scheme": "chapter",
+          "value": "1",
+          "status": "verified"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q2_tanzimat_coercion",
+          "description": "Full credit requires the reforms explained as European coercion in Ottoman eyes and Christians as their perceived beneficiaries \u2014 consular employment, prot\u00e9g\u00e9 status (barat) and capitulatory exemption from Muslim authority \u2014 together with the resulting Muslim resentment. Naming only 'European pressure' without the mechanism earns partial credit.",
+          "locators": [
+            {
+              "source_id": "smith",
+              "scheme": "chapter",
+              "value": "1",
+              "status": "verified"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q2_jewish_caution",
+          "description": "Full credit requires the contrast stated in Smith's own terms: Jews accepted their official equality cautiously and without fanfare and were not seen as beneficiaries of European protection in the same way, which is what kept Muslim\u2013Jewish relations comparatively stable.",
+          "locators": [
+            {
+              "source_id": "smith",
+              "scheme": "chapter",
+              "value": "1",
+              "status": "verified"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q2_1914_shift",
+          "description": "Full credit requires the change after 1904 explained: organized Zionist immigration and land purchase made Zionism legible to Muslims as a European imperial project, so that Arab elites, Muslim and Christian alike, came to see Jews as agents of land loss, producing a common Palestinian Arab identity by 1914. A bare statement that Jewish numbers grew, with no account of the shift in perception, earns little credit.",
+          "locators": [
+            {
+              "source_id": "smith",
+              "scheme": "chapter",
+              "value": "1",
+              "status": "verified"
+            }
+          ],
+          "points": "1"
+        }
+      ]
+    },
+    "q3": {
+      "method": "analytic_rubric",
+      "reference_answer": "Diagnosis: antisemitism is not a passing prejudice but a structural feature of post-Emancipation societies in which Jews remain a minority \u2014 emancipation failed because Jews are perceived as a foreign element. Solution: a publicly guaranteed, legally secured Jewish state achieved through great-power diplomacy \u2014 a charter; political Zionism (the Basel Program, 1897), not piecemeal philanthropy or settlement alone. Avineri's emphasis: the deepest question in Herzl's writings (The Jewish State and Altneuland) is the nature of the future Jewish society, not merely state mechanics; Herzl formally left the territory open, though he 'appears to tilt toward a solution based on the historical homeland of the Jewish people'.",
+      "locators": [
+        {
+          "source_id": "avineri",
+          "scheme": "chapter",
+          "value": "9",
+          "status": "verified"
+        },
+        {
+          "source_id": "smith",
+          "scheme": "chapter",
+          "value": "1",
+          "status": "verified"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q3_diagnosis",
+          "description": "Full credit requires antisemitism diagnosed as structural rather than passing \u2014 a feature of post-Emancipation society in which Jews remain a minority perceived as a foreign element \u2014 and therefore not curable by further emancipation.",
+          "locators": [
+            {
+              "source_id": "avineri",
+              "scheme": "chapter",
+              "value": "9",
+              "status": "verified"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q3_solution",
+          "description": "Full credit requires the solution as Herzl framed it: a publicly guaranteed, legally secured Jewish state obtained by great-power diplomacy \u2014 a charter \u2014 pursued through political Zionism (the Basel Program, 1897) rather than philanthropy or settlement alone. 'A Jewish state' with no charter diplomacy and no Basel Program earns partial credit.",
+          "locators": [
+            {
+              "source_id": "avineri",
+              "scheme": "chapter",
+              "value": "9",
+              "status": "verified"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q3_avineri_emphasis",
+          "description": "Full credit requires Avineri's emphasis: that the deepest question in Herzl's writings is the nature of the future Jewish society, not the mechanics of the state, and that Herzl left the territory formally open while tilting toward the historical homeland.",
+          "locators": [
+            {
+              "source_id": "avineri",
+              "scheme": "chapter",
+              "value": "9",
+              "status": "verified"
+            }
+          ],
+          "points": "1"
+        }
+      ]
+    },
+    "q4": {
+      "method": "analytic_rubric",
+      "reference_answer": "Central objection: a state won by diplomatic charter alone would be small, weak and dependent \u2014 'Such a puny state, being tossed about like a ball between its powerful neighbours, and maintaining its existence only by diplomatic shifts and continual truckling to the favored by fortune, would not be able to give us a feeling of national glory' (Ahad Ha'am, 'The Jewish State and the Jewish Problem', 1897, as quoted in Avineri, Ch. 11). It would neither secure Jewish glory nor regenerate Jewish culture. The 'Switzerland of the Middle East' hope is an illusion: Palestine's geopolitical and religious centrality for the great powers guarantees intervention, so neutrality is impossible. Alternative: spiritual Zionism \u2014 a cultural-spiritual centre in Palestine that regenerates Jewish national life, of which political sovereignty is at best secondary.",
+      "locators": [
+        {
+          "source_id": "avineri",
+          "scheme": "chapter",
+          "value": "11",
+          "status": "verified"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q4_puny_state",
+          "description": "Full credit requires the central objection stated as Ahad Ha'am states it: a charter-won state would be puny, dependent and tossed between the powers, held together by diplomatic shifts and truckling, and so could give no feeling of national glory \u2014 nor regenerate Jewish culture. A general complaint that political Zionism is superficial, with no account of dependence, earns partial credit.",
+          "locators": [
+            {
+              "source_id": "avineri",
+              "scheme": "chapter",
+              "value": "11",
+              "status": "verified"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q4_switzerland",
+          "description": "Full credit requires the 'Switzerland of the Middle East' hope named and refuted: Palestine's geopolitical and religious centrality for the great powers guarantees intervention, so a neutral state there is impossible.",
+          "locators": [
+            {
+              "source_id": "avineri",
+              "scheme": "chapter",
+              "value": "11",
+              "status": "verified"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q4_spiritual_alternative",
+          "description": "Full credit requires the alternative named as spiritual Zionism: a cultural-spiritual centre in Palestine that regenerates Jewish national life, with political sovereignty at best secondary.",
+          "locators": [
+            {
+              "source_id": "avineri",
+              "scheme": "chapter",
+              "value": "11",
+              "status": "verified"
+            }
+          ],
+          "points": "1"
+        }
+      ]
+    },
+    "q5": {
+      "method": "analytic_rubric",
+      "reference_answer": "Evidence: concern about Jewish immigration and land purchases predates the World Zionist Organization \u2014 in 1897 a Jerusalem Arab commission headed by the mufti examined land sales to Jews and its protests halted such sales for several years; Document 1.3 ('Tiberias', 1910) warns that Zionist colonization is a 'foreign seizure of the land of Palestine', reports that tribes such as the al-Dalaika and al-Sbeih lost their lands and that inhabitants are 'forced to emigrate and leave the country'; the Palestinian Arab press \u2014 al-Karmil (1908, Haifa) and Filastin (1911, Jaffa) \u2014 articulated the opposition, Filastin referring 'to Palestine as an entity and to its readers as Palestinians'; and Arab Muslim representatives from Palestine in the Ottoman parliament (1908\u20131914) called for greater vigilance against Zionist activity. The fears were concrete: loss of land through legally questionable, JNF-backed purchases, demographic displacement, and political marginalization under European-protected immigrants who were 'free of most of the taxes \u2026 on Ottoman subjects' \u2014 not abstract religious hostility. By 1914, 'among educated Muslims and Christians in Palestine, Zionism contributed to a growing sense of their common identity as Palestinians.' Historiographically, the point shows the conflict's origins precede Britain's 1917 intervention, that both nationalisms have histories to be taken seriously on their own terms, and it undercuts the 'land without a people' framing of early Zionist settlement.",
+      "locators": [
+        {
+          "source_id": "smith",
+          "scheme": "chapter",
+          "value": "1",
+          "status": "verified"
+        },
+        {
+          "source_id": "smith",
+          "scheme": "document",
+          "value": "1.3",
+          "status": "verified"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q5_evidence",
+          "description": "Full credit requires all four evidence strands, source-accurate: the 1897 mufti-headed Jerusalem commission on land sales and the several-year halt it produced, with the concern placed before the World Zionist Organization; Document 1.3's own dispossession language (foreign seizure of the land, the al-Dalaika and al-Sbeih, forced emigration); the Arabic press, al-Karmil (1908, Haifa) and Filastin (1911, Jaffa), with Filastin's 'Palestinians'; and the Ottoman-parliament representatives of 1908\u20131914. Each missing or misdated strand costs credit.",
+          "locators": [
+            {
+              "source_id": "smith",
+              "scheme": "document",
+              "value": "1.3",
+              "status": "verified"
+            },
+            {
+              "source_id": "smith",
+              "scheme": "section",
+              "value": "Growing Apprehension: Palestine and the Arab World",
+              "status": "verified"
+            }
+          ],
+          "points": "4"
+        },
+        {
+          "id": "q5_concreteness",
+          "description": "Full credit requires the fears shown to be concrete rather than abstract: land lost through legally questionable JNF-backed purchases, demographic displacement, and political marginalization under European-protected immigrants exempt from Ottoman taxation \u2014 with at least one specific mechanism or quotation, not merely the assertion that the fears were material.",
+          "locators": [
+            {
+              "source_id": "smith",
+              "scheme": "section",
+              "value": "Growing Apprehension: Palestine and the Arab World",
+              "status": "verified"
+            }
+          ],
+          "points": "3"
+        },
+        {
+          "id": "q5_historiography",
+          "description": "Full credit requires the historiographical payoff: that the conflict's origins precede Britain's 1917 intervention, that both nationalisms have histories to be taken seriously on their own terms, and that the point undercuts the 'land without a people' framing of early Zionist settlement.",
+          "locators": [
+            {
+              "source_id": "smith",
+              "scheme": "chapter",
+              "value": "1",
+              "status": "verified"
+            }
+          ],
+          "points": "3"
+        }
+      ]
+    }
+  },
+  "quote_verification": [
+    {
+      "quote": "tossed about like a ball between its powerful neighbours",
+      "attribution": "Ahad Ha'am, 'The Jewish State and the Jewish Problem' (1897), as quoted in Avineri, Ch. 11",
+      "locators": [
+        {
+          "source_id": "avineri",
+          "scheme": "chapter",
+          "value": "11",
+          "status": "verified"
+        }
+      ],
+      "status": "verified",
+      "note": "Verified verbatim in Avineri Ch. 11, quoting Ahad Ha'am (key log, 2026-08-11)."
+    },
+    {
+      "quote": "In contrast to the Christian ostentation, Jews accepted their official equality cautiously and without fanfare.",
+      "attribution": "Smith, Ch. 1",
+      "locators": [
+        {
+          "source_id": "smith",
+          "scheme": "chapter",
+          "value": "1",
+          "status": "verified"
+        }
+      ],
+      "status": "verified",
+      "note": "Verified in Smith Ch. 1 (key log, 2026-08-11)."
+    },
+    {
+      "quote": "Herzl appears to tilt toward a solution based on the historical homeland of the Jewish people",
+      "attribution": "Avineri, Ch. 9",
+      "locators": [
+        {
+          "source_id": "avineri",
+          "scheme": "chapter",
+          "value": "9",
+          "status": "verified"
+        }
+      ],
+      "status": "verified",
+      "note": "Verified in Avineri Ch. 9 (key log, 2026-08-11)."
+    },
+    {
+      "quote": "foreign seizure of the land of Palestine",
+      "attribution": "Document 1.3, 'Tiberias' (1910), in Smith, Ch. 1",
+      "locators": [
+        {
+          "source_id": "smith",
+          "scheme": "document",
+          "value": "1.3",
+          "status": "verified"
+        }
+      ],
+      "status": "verified",
+      "note": "Verified against the Document 1.3 text in Smith Ch. 1 (key log, 2026-08-11)."
+    },
+    {
+      "quote": "forced to emigrate and leave the country",
+      "attribution": "Document 1.3, 'Tiberias' (1910), in Smith, Ch. 1",
+      "locators": [
+        {
+          "source_id": "smith",
+          "scheme": "document",
+          "value": "1.3",
+          "status": "verified"
+        }
+      ],
+      "status": "verified",
+      "note": "Verified against the Document 1.3 text in Smith Ch. 1 (key log, 2026-08-11)."
+    },
+    {
+      "quote": "referred to Palestine as an entity and to its readers as 'Palestinians.'",
+      "attribution": "Smith, Ch. 1, 'Growing Apprehension: Palestine and the Arab World', on Filastin",
+      "locators": [
+        {
+          "source_id": "smith",
+          "scheme": "section",
+          "value": "Growing Apprehension: Palestine and the Arab World",
+          "status": "verified"
+        }
+      ],
+      "status": "verified",
+      "note": "Filastin spelling and founding details verified in that section (key log, 2026-08-11)."
+    }
+  ]
+}

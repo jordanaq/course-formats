@@ -1,0 +1,225 @@
+{
+  "format_version": "0.12.0",
+  "assessment_id": "daily-mip-01-01",
+  "submission_id": "fixture-20261003T092530Z",
+  "submitter": {
+    "name": "Fixture Author",
+    "username": "fixture"
+  },
+  "attempt": 1,
+  "submitted_at": "2026-10-03T09:25:30Z",
+  "paper": {
+    "commit": "0000000000000000000000000000000000000000",
+    "path": "linter/tests/fixtures/bundle.json",
+    "sha256": "c47e31fa3a8ba575a19a9c2cfc8be37235c10056cb445227b8b440e85349f186"
+  },
+  "responses": [
+    {
+      "question_id": "q1",
+      "response": {
+        "q1_tanzimat": {
+          "text": "The Tanzimat Reforms were Ottoman policies in the 19th century intending to reorganize their society under the principles of Western liberalism. They declared equal rights for all Ottoman subjects and pushed for Muslim and dhimmi equality in education, justice, and openness of worship. These reforms were pushed for by the British and worsened Christian-Muslim relations."
+        },
+        "q1_hibbat_zion": {
+          "text": "Hibbat Zion was a Russian organization focused on Judeophobia and Jewish emancipation. This was one of the most significant Jewish advocacy organizations at this time. It's most significant figure was Pinsker who argued for a Jewish territory, rather than assimilation in Western countries."
+        },
+        "q1_jnf": {
+          "text": "The Jewish National Fund was one of the primary funding mechanisms for Jewish settlement in Palestine in the early 1900s. It was a bank that purchased and developed land in Palestine, driving Jewish settlements. They wanted to establish a dominant Jewish presence in certain regions and make land \"inalienably Jewish\" where it was never to be sold to or worked by non-Jews."
+        }
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "9/2",
+        "max_points": "5",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "Three alternatives counted, in paper order: Tanzimat (q1_tanzimat), Hibbat Zion (q1_hibbat_zion), Jewish National Fund (q1_jnf). Nothing was ignored: three answers were given against a choose-three pool. The counted awards are 2 + 1 + 3/2 = 9/2, below the question's 5-point ceiling, so no cap applies. Tanzimat is strong on both halves. Hibbat Zion describes the movement's mood but never says it sponsored the First Aliyah or founded the first settlements. The JNF answer gets the fund's function and the 'inalienably Jewish' rule but not the consequence the key asks for — displaced tenant farmers as a documented Arab grievance.",
+        "criteria": [
+          {
+            "criterion_id": "q1_tanzimat_c",
+            "points_awarded": "2",
+            "evidence": "declared equal rights for all Ottoman subjects and pushed for Muslim and dhimmi equality ... worsened Christian-Muslim relations",
+            "justification": "Both halves are present: the reform programme with its proclamation of legal equality, and the significance — reform as European pressure that worsened Muslim–Christian relations.",
+            "alternative_id": "q1_tanzimat"
+          },
+          {
+            "criterion_id": "q1_hibbat_zion_c",
+            "points_awarded": "1",
+            "evidence": "Hibbat Zion was a Russian organization ... Its most significant figure was Pinsker who argued for a Jewish territory",
+            "justification": "The movement is identified as an early proto-Zionist body, but the defining fact — that it sponsored the First Aliyah (1882–1903) and founded the first settlements — is absent, and the Pinsker attribution stands in for it. Partial credit.",
+            "alternative_id": "q1_hibbat_zion"
+          },
+          {
+            "criterion_id": "q1_jnf_c",
+            "points_awarded": "3/2",
+            "evidence": "a bank that purchased and developed land ... make land \"inalienably Jewish\" where it was never to be sold to or worked by non-Jews",
+            "justification": "The purchase function and the inalienability rule are accurate, which is most of the definition; the significance half is thin — the answer stops at building a Jewish presence and never reaches the displacement of tenant farmers that the key identifies as the documented grievance. Half of the significance is credited.",
+            "alternative_id": "q1_jnf"
+          }
+        ],
+        "counted_alternative_ids": [
+          "q1_tanzimat",
+          "q1_hibbat_zion",
+          "q1_jnf"
+        ]
+      }
+    },
+    {
+      "question_id": "q2",
+      "response": {
+        "text": "The Tanzimat reforms worsened Muslim-Christian relations as many Ottoman subjects saw the reforms as European powers pressuring the Sultans. While Christians accepted the reforms readily, and leveraged the reforms along with preexisting protections for personal or European interests, Jews were more cautious.\n\nBy 1914, the Jewish population had grown significantly in Palestine, the Muslims losing majority status in some cities. There was also a growing reaction to Zionism, whose presence was more strongly felt by 1914."
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "4",
+        "max_points": "5",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "The coercion reading and the Christians-as-beneficiaries point are both there; the Jewish half of the contrast is right but compressed, and the 1914 shift is reduced to demography and 'a growing reaction' rather than a change in how Zionism was perceived.",
+        "criteria": [
+          {
+            "criterion_id": "q2_tanzimat_coercion",
+            "points_awarded": "2",
+            "evidence": "many Ottoman subjects saw the reforms as European powers pressuring the Sultans",
+            "justification": "Reform as European coercion and the resulting Muslim resentment of Christians are both stated; the mechanism (consular employment, protégé status, capitulatory exemption) is not spelled out but the causal claim the criterion asks for is made."
+          },
+          {
+            "criterion_id": "q2_jewish_caution",
+            "points_awarded": "3/2",
+            "evidence": "While Christians accepted the reforms readily ... Jews were more cautious",
+            "justification": "Smith's contrast is reproduced in substance, but compressed into a clause: ready Christian acceptance against Jewish caution. The reason the contrast holds — that Jews were not seen as beneficiaries of European protection in the same way — is implied rather than stated, so this is three quarters of the award."
+          },
+          {
+            "criterion_id": "q2_1914_shift",
+            "points_awarded": "1/2",
+            "evidence": "the Jewish population had grown significantly in Palestine ... a growing reaction to Zionism, whose presence was more strongly felt by 1914",
+            "justification": "Population growth and a heightened reaction are noted, but the shift the key asks for — Zionism read as a European imperial project, and Jews seen through it as agents of land loss, producing a common Palestinian identity — is not stated. Only the demographic half is earned."
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "q3",
+      "response": {
+        "text": "Herzl diagnosed the \"Jewish problem\" as the treatment of Jews and modern antisemitism. For him, this was a national question, not religious or social. Towards this, Herzl proposed a new Jewish state. This would be carried out by two organizations, focused on politics and economics, respectively, that would lead the settlement and state objectives."
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "7/2",
+        "max_points": "5",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "Diagnosis is present but asserted rather than argued from emancipation's failure; the solution is a state administered by two organizations, with no charter diplomacy and no Basel Program; Avineri's emphasis on the character of the future society is missing.",
+        "criteria": [
+          {
+            "criterion_id": "q3_diagnosis",
+            "points_awarded": "3/2",
+            "evidence": "Herzl diagnosed the \"Jewish problem\" as the treatment of Jews and modern antisemitism ... a national question, not religious or social",
+            "justification": "Antisemitism is named as the problem and correctly classed as national rather than religious, and the answer implies it is not a passing prejudice; the structural account — emancipation failed because Jews are perceived as a foreign element — is not given, so this is short of full credit."
+          },
+          {
+            "criterion_id": "q3_solution",
+            "points_awarded": "3/2",
+            "evidence": "Herzl proposed a new Jewish state. This would be carried out by two organizations, focused on politics and economics",
+            "justification": "A Jewish state is named, which is the core of the solution; the charter obtained by great-power diplomacy and the Basel Program — the things that make it political Zionism rather than settlement — are absent."
+          },
+          {
+            "criterion_id": "q3_avineri_emphasis",
+            "points_awarded": "1/2",
+            "evidence": "two organizations, focused on politics and economics, respectively, that would lead the settlement and state objectives",
+            "justification": "The answer stays on state machinery, which is exactly what Avineri's emphasis moves past; nothing is said about the nature of the future Jewish society or Herzl's formally open territory. A trace only, because the institutional reading is at least Avineri-adjacent."
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "q4",
+      "response": {
+        "text": "For Ha'am, the Jewish problem is divided into Western and Eastern variations. The Western variation is a spiritual problem, while the Eastern is material. Ha'am criticizes political Zionism for lacking to address the spiritual problem. Ha'am argues that the new Jewish state needs to become a spiritual center for Judaism. Then, the Jews would have a home and a source for spiritual development."
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "5/2",
+        "max_points": "5",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "The alternative — a spiritual centre — is exactly right, and the objection is pitched at the right target (political Zionism answers only the material problem). The puny-state argument and the 'Switzerland of the Middle East' refutation, both of which are what Avineri Ch. 11 actually argues, are absent.",
+        "criteria": [
+          {
+            "criterion_id": "q4_puny_state",
+            "points_awarded": "3/2",
+            "evidence": "Ha'am criticizes political Zionism for lacking to address the spiritual problem",
+            "justification": "The objection is real but argued on cultural rather than political grounds: nothing is said about a charter-won state being small, dependent and tossed between the powers. Half credit for identifying the deficiency political Zionism cannot answer."
+          },
+          {
+            "criterion_id": "q4_switzerland",
+            "points_awarded": "0",
+            "evidence": "",
+            "justification": "No reference to the 'Switzerland of the Middle East' hope or to the great powers' stake in Palestine making neutrality impossible."
+          },
+          {
+            "criterion_id": "q4_spiritual_alternative",
+            "points_awarded": "1",
+            "evidence": "the new Jewish state needs to become a spiritual center for Judaism ... a home and a source for spiritual development",
+            "justification": "Spiritual Zionism is named as the alternative, with the centre regenerating national life. Full credit for the alternative half of the question."
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "q5",
+      "response": {
+        "text": "The classic conception of Palestinian nationalism is that it grew from a reaction to British policy. This is a misconception. Not only had educated Palestinians recognized the land of Palestine as a specific region and people group, but there had also been large protests and significant reactions to Zionism well before the Balfour Declaration.\n\nFirst, while individual events and protests occurred before 1897, this year saw the first large-scale organized reactions to Zionist operations in Palestine. This is the year that the World Zionist Organization was founded. Perhaps in response, the mufti organized a commission to investigate Zionist land purchases. Similar responses followed the Jewish Colonization Association as it expanded its operations.\n\nAdditionally, contemporary periodicals documented pushback against Zionism. Papers such as _al-Karmil_ and _Filastin_, which referred to their readers as Palestinians, regularly criticized Zionist immigration, land purchases, etc. One of the most notable articles of this sort is the pseudonymous Tiberias's essay on Zionist Colonization. This is rumored to be by an Ottoman official, and it criticizes the corruption of local officials, selling land to Zionists and claiming that the locals had been oppressed. It documents the negative response to Zionism that saw Zionists as using subterfuge, lies, and wealth to take over Palestine.\n\nNext, socioeconomic grievances, rather than pure nationalist opposition, drove the reaction to Zionism. Jews were a massive minority in Palestine in the 1880s, but they had grown to a size to be a majority in certain Palestinian cities. They also brought European technologies and methods that strongly competed with traditional practices and did not have to pay many of the taxes the Arabs paid. This is evidenced by soap production, where Arabs continued to use traditional methods while European immigrants used industrial techniques. Although traditional soap remained the larger industry, per-capita output was higher under the imported strategy.\n\nSettler organizations also used underhanded methods to purchase land. This is what is discussed in Tiberias's essay. They bribed officials who were not supposed to allow land sales to buy large swathes of land, mostly empty. However, Zionists also often purchased land from absentee landlords without the fellahin knowing. Certain strands of Zionism, such as that practiced by the _Jewish National Fund_, also declared that land should be \"inalienably Jewish\" and restricted land from being sold to or worked by non-Jewish hands.\n\nThe Palestinian national movement, driven more by these socioeconomic grievances, had emerged long before British policy fanned the flame. While British policy, especially the Balfour Declaration, played a significant role in fueling these anti-Zionist movements, they were already well established."
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "17/2",
+        "max_points": "10",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "Three of the four evidence strands are present and source-accurate, and the concreteness half is now fully earned. Two gaps remain: the Ottoman-parliament strand, and Document 1.3's own dispossession language, which is the most direct textual support for the prompt's claim. The historiographical payoff stops at 'before British policy' and never reaches the 'land without a people' framing. The essay runs 425 words against a 300-word cap; recorded below, not deducted.",
+        "criteria": [
+          {
+            "criterion_id": "q5_evidence",
+            "points_awarded": "7/2",
+            "evidence": "the mufti organized a commission to investigate Zionist land purchases ... Papers such as _al-Karmil_ and _Filastin_, which referred to their readers as Palestinians ... the pseudonymous Tiberias's essay on Zionist Colonization",
+            "justification": "The 1897 commission, the Arabic press (with Filastin's 'Palestinians') and Document 1.3 are all present and accurate, but the commission is placed as a response to the World Zionist Organization's founding rather than before it — which weakens the predating claim the question turns on — the several-year halt in sales is omitted, Document 1.3 is paraphrased instead of quoted in its dispossession language, and the Ottoman-parliament strand is missing. Three and a half of four strands."
+          },
+          {
+            "criterion_id": "q5_concreteness",
+            "points_awarded": "3",
+            "evidence": "did not have to pay many of the taxes the Arabs paid ... bribed officials ... purchased land from absentee landlords without the fellahin knowing ... \"inalienably Jewish\"",
+            "justification": "The tax grievance, the bribery of officials, purchase from absentee landlords and the JNF's inalienability rule are all correct and specific, and the soap-production evidence is used to show economic competition rather than asserted. The fears are shown to be material, not religious."
+          },
+          {
+            "criterion_id": "q5_historiography",
+            "points_awarded": "2",
+            "evidence": "The classic conception of Palestinian nationalism is that it grew from a reaction to British policy. This is a misconception ... they were already well established",
+            "justification": "The periodization point — origins before 1917 — is made at both ends of the essay, but the criterion's other two elements are missing: that both nationalisms have histories to be taken on their own terms, and that the finding undercuts the 'land without a people' framing."
+          }
+        ]
+      }
+    }
+  ],
+  "grading": {
+    "complete": true,
+    "completed_at": "2026-10-03T10:15:30Z"
+  },
+  "graders": [
+    {
+      "username": "fixture",
+      "role": "primary",
+      "at": "2026-10-03T10:15:30Z"
+    }
+  ],
+  "total_possible_points": "30",
+  "total_awarded_points": "23",
+  "process_notes": [
+    {
+      "question_id": "q5",
+      "count": 425,
+      "bound": "max",
+      "note": "Over the 300-word cap by 125 words. Recorded as a discipline note and raised in feedback; the score is unchanged."
+    }
+  ]
+}

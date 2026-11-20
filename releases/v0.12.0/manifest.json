@@ -1,0 +1,32 @@
+{
+  "release": "v0.12.0",
+  "formats": {
+    "assessment": "0.12.0",
+    "submission": "0.4"
+  },
+  "canonical": "schemas",
+  "artifacts": {
+    "schemas": {
+      "assessment": "releases/v0.12.0/schemas/assessment-bundle.schema.json",
+      "submission": "releases/v0.12.0/schemas/submission.schema.json"
+    },
+    "specs": {
+      "assessment": "releases/v0.12.0/specs/assessment-format-spec.md",
+      "submission": "releases/v0.12.0/specs/submission-format-spec.md"
+    },
+    "fixtures": {
+      "conformance_vectors": "releases/v0.12.0/fixtures/conformance-vectors.json",
+      "legacy_worked_examples": "releases/v0.12.0/fixtures/legacy-worked-examples.json",
+      "choice_response_example": "releases/v0.12.0/fixtures/choice-response-example.json"
+    }
+  },
+  "sha256": {
+    "releases/v0.12.0/schemas/assessment-bundle.schema.json": "2bfb5f5bdabeb81d57e64ed6efb47f9d573898efda8552dc76a56ebeb46a6d3e",
+    "releases/v0.12.0/schemas/submission.schema.json": "b5664a32459da5d46b24fd26d39d222ecb6baf1179cbe42d8987288fefe0957c",
+    "releases/v0.12.0/specs/assessment-format-spec.md": "0adadbd546dcc06b697378cd1dd66133cb962a7802fba430d5521e27e68d6b4a",
+    "releases/v0.12.0/specs/submission-format-spec.md": "6d40e29e053cba52619bc4b8070359bb6e6ccec9d032d58d1c71f33db42ce1cd",
+    "releases/v0.12.0/fixtures/conformance-vectors.json": "ab78846a41fbac955fc2b8d3eea217531a63de85a2e1f0df0943887530b7e6b3",
+    "releases/v0.12.0/fixtures/legacy-worked-examples.json": "92e35e7e8f81abc0eb19b39af15102b957e86e82582b3a19b6688cd1e1ef8c8d",
+    "releases/v0.12.0/fixtures/choice-response-example.json": "3ff6d28a6bbcefaf6b6c62e67bfe849ac3c7c3d749773f5f96b77be988f7b63d"
+  }
+}

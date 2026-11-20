@@ -1,0 +1,299 @@
+{
+  "format_version": "0.12.0",
+  "assessment_id": "pp-l1-1-exam-02",
+  "submission_id": "fixture-20261003T092530Z",
+  "submitter": {
+    "name": "Fixture Author",
+    "username": "fixture"
+  },
+  "attempt": 1,
+  "submitted_at": "2026-10-03T09:25:30Z",
+  "paper": {
+    "commit": "0000000000000000000000000000000000000000",
+    "path": "linter/tests/fixtures/polphi/bundle.json",
+    "sha256": "89def97ad9dc256ee7ba71715117eb9f72d3f69bd81b7dac2f410421400a471d"
+  },
+  "responses": [
+    {
+      "question_id": "q1",
+      "response": {
+        "text": "Schofield's answer is no because the polis Plato thought about has gone: democracy meant the direct participation of all adult male citizens in the assembly and the courts, not representation, and his treatment of rhetoric as an inbred democratic disease belongs to fifth-century imperialism and its collapse, with the trial and execution of Socrates in 399 dominating his sense of politics. It is yes because at a level of generality the themes remain live — alienation from politics, education, democracy, knowledge, utopia and the idea of community, money, and religion — and contemporary theory has no convincing answers to them. The method follows from the yes: he proceeds thematically rather than developmentally, since the chronological schemes are conjectural, and explains the differences among the Republic, Statesman and Laws by difference of purpose and point of view rather than by doctrine."
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "9/2",
+        "max_points": "6",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "All three parts attempted. (a) carries the answer: the foreignness case and the live themes are both there, though the themes are abbreviated to four. (b) gets the conjectural-chronology reason but omits the period-division caveat. (c) names the three elements loosely rather than in Schofield's terms. Counted award: 2 + 3/2 + 1 = 9/2 of 6.",
+        "criteria": [
+          {
+            "criterion_id": "q1a",
+            "points_awarded": "2",
+            "evidence": "\"democracy meant the direct participation of all adult male citizens in the assembly and the courts, not representation ... the trial and execution of Socrates in 399\"",
+            "justification": "Both halves: the vanished polis with direct participation, the rhetoric and Socrates' trial, then the live themes — \"alienation from politics, education, democracy, knowledge\" among them; the thematic method with \"the chronological schemes are conjectural\"; the matrix compressed to fewer than three named elements."
+          },
+          {
+            "criterion_id": "q1b",
+            "points_awarded": "3/2",
+            "evidence": "\"he proceeds thematically rather than developmentally, since the chronological schemes are conjectural\"",
+            "justification": "Thematic over developmental with the reason (\"conjectural\") and the substitute explanation, but the period division is not mentioned, so the criterion is not fully met."
+          },
+          {
+            "criterion_id": "q1c",
+            "points_awarded": "1",
+            "evidence": "\"alienation from politics, education, democracy, knowledge, utopia and the idea of community\"",
+            "justification": "Names the Socratic reflection, Spartan admiration and rejection of Athens, but not in Schofield's own terms: \"ambiguous admiration\" and \"thoroughly engaged\" are dropped."
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "q2",
+      "response": {
+        "text": "Internally, the Republic holds most of Plato's striking political ideas — philosopher rulers female as well as male, the abolition of the nuclear family, lies and myths as political necessities, the psychology of regimes — and the later works carry forward its programme: the Laws recapitulates the ideal, the Timaeus-Critias opens with a reprise, and the Seventh Letter makes philosopher rulers pivotal. Externally, the reception keeps it central: Aristotle devotes four chapters of Politics II to it, Zeno wrote a Politeia against it, and Cicero, Proclus and Popper all treat it as the reference point. Schofield then argues that the core meaning of politeia is citizenship, extended to a system of laws and practices structuring the citizens' life; such treatises discussed education, marriage, women, children and property, and did not necessarily ask who should rule. Aristotle's constitution-sense misapplies a different genre, and education is central because a politeia is a way of life. The Cave announces paideia as its subject and education is the single requirement at 423e-424b, so the objection misdescribes the genre it is judging."
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "7/2",
+        "max_points": "6",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "Strong on (a) and (b), thin on (c). The reception list is accurate; the core meaning of politeia and the genre's topics are both present. (c) reaches the genre argument but not Aristotle's own sense (1295a40), which is what makes the objection a misreading rather than a disagreement.",
+        "criteria": [
+          {
+            "criterion_id": "q2a",
+            "points_awarded": "3/2",
+            "evidence": "\"the Laws recapitulates the ideal, the Timaeus-Critias opens with a reprise, and the Seventh Letter makes philosopher rulers pivotal\"",
+            "justification": "Both kinds of ground with the later-works reprise (Laws, Timaeus-Critias, Seventh Letter) and the reception (Aristotle, Zeno, Cicero, Proclus, Popper); the internal list of contents is thinner than the key's."
+          },
+          {
+            "criterion_id": "q2b",
+            "points_awarded": "3/2",
+            "evidence": "\"the core meaning of politeia is citizenship, extended to a system of laws and practices structuring the citizens' life\"",
+            "justification": "Core meaning as citizenship, the extended sense as laws and practices, the typical topics, and the point that who should rule need not arise — all present but compressed."
+          },
+          {
+            "criterion_id": "q2c",
+            "points_awarded": "1/2",
+            "evidence": "\"Aristotle's constitution-sense misapplies a different genre\"",
+            "justification": "Diagnoses the objection as a category error about genre and cites education's centrality (423e-424b, the Cave), but does not give Aristotle's own sense at 1295a40, which the criterion requires."
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "q3",
+      "response": {
+        "text": "Schofield distinguishes the appeal to Platonic quietism, a heavily biographical autobiographical account, from Platonic reflection on Socrates' quietist activism, which is biographical in root but essentially philosophical in character; he prefers the second. Against relying on the Seventh Letter he raises two objections. First, what kind of document it is: most of the thirteen letters are later fictions, the stylistic tests are inconclusive, and on this passage the letter looks more like pastiche than the genuine article, with a gauche adaptation of three Republic passages, the un-Platonic phrase the right philosophy, and a plural classes of mankind where the Republic has a singular genos. Second, what it would imply: I was compelled to say was said by Socrates, a character, so if Plato wrote it he makes his Socrates himself — an abrupt lurch out of a carefully constructed literary persona, as Cooper and Sedley on authorial voice bring out."
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "4",
+        "max_points": "6",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "The two explanations and the preference are secure. The documentary objections are the best part of the answer. The structural objection is gestured at (\"he makes his Socrates himself\") but Cooper and Sedley are decoration here. (c) never reaches the un-Platonic-story argument.",
+        "criteria": [
+          {
+            "criterion_id": "q3a",
+            "points_awarded": "2",
+            "evidence": "\"Platonic reflection on Socrates' quietist activism ... essentially philosophical in character; he prefers the second\"",
+            "justification": "Both explanations named and distinguished, and the preference for the second stated."
+          },
+          {
+            "criterion_id": "q3b",
+            "points_awarded": "1",
+            "evidence": "\"the un-Platonic phrase the right philosophy, and a plural classes of mankind\"",
+            "justification": "Three documentary objections (pastiche, \"the right philosophy\", the plural \"classes of mankind\") and the structural point about a character's speech, but Cooper and Sedley are only named, not used to locate the alternative."
+          },
+          {
+            "criterion_id": "q3c",
+            "points_awarded": "1",
+            "evidence": "\"so if Plato wrote it he makes his Socrates himself\"",
+            "justification": "Half the criterion: the letter's implication is criticised, but the argument that the story itself is un-Platonic — the Socrates-obsessed writer and the missing intensity of argument — is not stated."
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "q4",
+      "response": {
+        "text": "In the Apology and Crito Socrates' philosophizing is deeply embedded in and engaged with Athens. He presents it as a public service and a divine mission, the gadfly sent to sting into activity a large, noble but sluggish horse, and claims the city has never had a greater good than his service, while admitting that he stays out of politika pragmata and never addressed the assembly: the city's greatest benefactor avoiding any part in its affairs. In the Crito he is the laws' beneficiary, owing them everything, and he refuses exile. Two features support the picture: he has no interest in philosophizing elsewhere, and there is no imaginative exploration of a utopian alternative. In Republic 6 that engagement disappears: the philosopher keeps quiet like someone taking shelter behind a wall, the many's madness is a den of wild animals, and the city of his birth becomes foreign soil."
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "9/2",
+        "max_points": "6",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "A clear account of the Apology and Crito. (b) gives two images but not the third, and does not date the change to Republic 6. (c) identifies the Gorgias correctly; the inference to the clean slate is left implicit.",
+        "criteria": [
+          {
+            "criterion_id": "q4a",
+            "points_awarded": "2",
+            "evidence": "\"the city's greatest benefactor avoiding any part in its affairs\"",
+            "justification": "Service and gadfly, the benefactor who avoids the city's affairs, the Crito's debt to the laws, and both supporting features."
+          },
+          {
+            "criterion_id": "q4b",
+            "points_awarded": "3/2",
+            "evidence": "\"the philosopher keeps quiet like someone taking shelter behind a wall\"",
+            "justification": "The shelter-behind-a-wall image and the wild animals, but the foreign-soil simile is missing, and the disappearance of engagement is asserted rather than located at 496c-497a."
+          },
+          {
+            "criterion_id": "q4c",
+            "points_awarded": "1",
+            "evidence": "\"I was compelled to say was said by Socrates, a character\"",
+            "justification": "The Gorgias' rewritten trial is described and the philosophical inference drawn, but the clean-slate consequence is not spelled out."
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "q5",
+      "response": {
+        "text": "Democracy for Plato's Athens meant the direct participation of all adult male citizens in the assembly and the courts, not representative systems; the critique is aimed at face-to-face assembly culture and is not an indictment of a modern legislature, while the fluidity of the concept in fourth-century Athens is what lets Plato exploit it. The paradox is that democracy is perhaps Greece's greatest legacy to political thought, yet almost all surviving Greek reflection on politics is hostile or detachedly comparative, and its major contributors are Athenians; Schofield explains this by making democracy the matrix of the theoretical debate it permitted and provoked, with politeia writing an exercise in the imagination of alternatives. The Beast shows the many becoming the source of all values and the teacher of wisdom controlled by the animal's moods. Democracy is totalitarian in that sense of value, not in the sense of coercion."
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "4",
+        "max_points": "6",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "The definition in (a) is exact and the consequence is drawn. (b) is complete. (c) has the source-of-values point but not the expert's subjection, and the sense of \"totalitarian\" is asserted rather than argued against coercion.",
+        "criteria": [
+          {
+            "criterion_id": "q5a",
+            "points_awarded": "3/2",
+            "evidence": "\"should not be read as an indictment of a modern legislature\"",
+            "justification": "Direct participation in assembly and courts, explicitly against representation, with both consequences for reading the critique."
+          },
+          {
+            "criterion_id": "q5b",
+            "points_awarded": "2",
+            "evidence": "\"democracy the matrix of the theoretical debate it permitted and provoked\"",
+            "justification": "The paradox in both halves and the explanation through the matrix of debate and the imagination of alternatives."
+          },
+          {
+            "criterion_id": "q5c",
+            "points_awarded": "1/2",
+            "evidence": "\"the teacher of wisdom controlled by the animal's moods\"",
+            "justification": "The Beast's mechanism is stated (the many as the source of value), but the expert's enslavement to the animal's moods is not, and \"totalitarian\" is glossed as value-source without the contrast to coercion being drawn out."
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "q6",
+      "response": {
+        "text": "The lawgiver must secure freedom, that is political freedom, wisdom, that is political judgement, and friendship, that is consensus; the two mother-systems are monarchy and democracy, Persia and Athens, and a sound system must combine them, since neither has achieved a balance. Moderate freedom has two components: voluntary acceptance of the rule of law, without which a politeia does not count as one, and the freedom of participation belonging to citizens who are not simply the slaves of their rulers. Voluntary slavery transfers the Demaratus formula from Sparta to Solon's Athens, the law a master feared more than a despot; its decline runs from musical licence and theatocracy to contempt for rulers, parents, the laws and the gods. Schofield denies a conversion: the Republic argues rejectionist, from a utopian ideal, the Laws immanently, in myths that offer no challenge to the familiar conceptual framework, while rational freedom continues in both."
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "3",
+        "max_points": "6",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "(a) lists both triples but does not state the combination requirement as a requirement. (b) is the strongest part: moderate freedom, voluntary slavery and the decline are all there. (c) has the Walzer distinction and the register thesis, but misses the premise Schofield rejects in both the developmental and the unity readings.",
+        "criteria": [
+          {
+            "criterion_id": "q6a",
+            "points_awarded": "1",
+            "evidence": "\"the two mother-systems are monarchy and democracy, Persia and Athens\"",
+            "justification": "The three aims and both mother-systems are given, but the requirement to combine them is only implied (\"a sound system must combine them\") and the balance point is not stated."
+          },
+          {
+            "criterion_id": "q6b",
+            "points_awarded": "3/2",
+            "evidence": "\"voluntary slavery to the laws transfers the Demaratus formula from Sparta to Solon's Athens\"",
+            "justification": "Both components of moderate freedom and the Demaratus formula, with the decline sketched from musical licence to the gods; \"theatocracy\" and the 698a-b formulation are missing."
+          },
+          {
+            "criterion_id": "q6c",
+            "points_awarded": "1/2",
+            "evidence": "\"the Republic argues rejectionist, from a utopian ideal, the Laws immanently\"",
+            "justification": "Rejectionist versus immanent critique is applied to Republic and Laws with the register thesis, but the premise Schofield refuses — that constitutional theory was central to Plato — is not mentioned."
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "section_ii_essays",
+      "response": {
+        "essay_a": {
+          "text": "Schofield's contextualism claims that the Republic's political argument is best understood through the matrix from which it emerged, and that this explains its shape without settling its truth. He identifies three determinants: Plato's reflection on the teaching, life and death of Socrates, which explains the clean-slate radicalism; the Laconizing politeia tradition, with its agenda of education, women, children and property, which explains the institutional content; and engaged rejection of Athenian democracy, which explains the target and the tone. Each does work the rivals cannot. Against the autobiographical reading, the Seventh Letter is a document of doubtful credentials whose story is itself un-Platonic, whereas the Socratic explanation is argued from the Apology, Crito and Gorgias. Against the developmental reading, the differences among Republic, Statesman and Laws are differences of purpose and point of view, and the chronologies are conjectural. The objection at full strength is genetic: showing where an argument came from does not show whether it is sound, and if the ideal is assembled from Spartan borrowings and aristocratic nostalgia it may be a partisan politeia exercise rather than a proposal addressed to Athens — Schofield himself calls that genre a politically partisan activity favoured by aristocratic admirers of Sparta. His reply is the looter's question, whether the Republic is still good to think with, and the claim that political theory is a dialogue across the centuries; the politeia project is undertaken for the sake of the Socratic enquiry into justice, so the context supplies materials rather than conclusions. My verdict is that contextualism changes what we expect the argument to do without settling whether it succeeds, and that what would decide it is whether the premises it identifies can be detached from their Spartan and Socratic settings and still support the conclusion."
+        }
+      },
+      "feedback": {
+        "released": true,
+        "points_awarded": "21/2",
+        "max_points": "14",
+        "review_reason": null,
+        "include_reference_answer": false,
+        "overall_feedback": "One essay answered (essay_a), which is the one-of-two requirement; nothing was ignored. The determinants are reconstructed accurately and the two rivals are answered. The essay states the genetic objection well and the debunking reading with the partisan-genre point, but stops there: the third limb (the cost to the reader) and the \"explanatory, not reductive\" formulation are missing, and the verdict is asserted with only one side weighed. Counted award: 3 + 5/2 + 5/2 + 3/2 + 1 = 21/2 of 14.",
+        "criteria": [
+          {
+            "criterion_id": "esa1",
+            "alternative_id": "essay_a",
+            "points_awarded": "3",
+            "evidence": "",
+            "justification": "The contextualist thesis is stated in one sentence and all three determinants are reconstructed with what each explains: the Socratic reflection and the clean-slate radicalism, the politeia tradition and the institutional content, the rejection of democracy and the target and tone."
+          },
+          {
+            "criterion_id": "esa2",
+            "alternative_id": "essay_a",
+            "points_awarded": "5/2",
+            "evidence": "",
+            "justification": "Both rivals are answered — the Seventh Letter's credentials and un-Platonic story against the Apology, Crito and Gorgias; difference of purpose and point of view against development — but the response does not say what the contextualist account explains that the rivals cannot, only that they fail."
+          },
+          {
+            "criterion_id": "esa3",
+            "alternative_id": "essay_a",
+            "points_awarded": "5/2",
+            "evidence": "",
+            "justification": "The genetic objection and the debunking reading are both developed, with the partisan politeia genre and the aristocratic admirers of Sparta; the cost to the modern reader is absent, so the objection is not at full strength."
+          },
+          {
+            "criterion_id": "esa4",
+            "alternative_id": "essay_a",
+            "points_awarded": "3/2",
+            "evidence": "",
+            "justification": "The looter's question and the dialogue across the centuries are given, and the context-supplies-materials point; the \"explanatory, not reductive\" formulation is not made."
+          },
+          {
+            "criterion_id": "esa5",
+            "alternative_id": "essay_a",
+            "points_awarded": "1",
+            "evidence": "",
+            "justification": "A definite verdict is given and the decision condition stated (detachability of the premises), but the judgement is offered without weighing the counter-consideration, and the page control required by the criterion is thin."
+          }
+        ],
+        "counted_alternative_ids": [
+          "essay_a"
+        ]
+      }
+    }
+  ],
+  "grading": {
+    "complete": true,
+    "completed_at": "2026-10-03T10:15:30Z"
+  },
+  "graders": [
+    {
+      "username": "fixture",
+      "role": "primary",
+      "at": "2026-10-03T10:15:30Z"
+    }
+  ],
+  "total_possible_points": "50",
+  "total_awarded_points": "34",
+  "process_notes": [
+    {
+      "question_id": "q2",
+      "count": 177,
+      "bound": "max",
+      "note": "Recorded, not penalised: length is not a criterion on this paper."
+    }
+  ]
+}

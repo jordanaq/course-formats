@@ -1,0 +1,10 @@
+{
+  "question_id": "q1",
+  "response": { "selected_option_ids": ["B"] },
+  "feedback": {
+    "released": true, "points_awarded": "1", "max_points": "1",
+    "review_reason": null, "include_reference_answer": false,
+    "correct_option_ids": ["B"], "correct": true, "selected_option_ids": ["B"],
+    "explanation": "Blackburn's own diagnosis focuses on an ambiguity in comparing something \"in reality\" with something \"in conception\" — the imagined-turkey example …"
+  }
+}

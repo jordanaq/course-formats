@@ -1,0 +1,1594 @@
+{
+  "format_version": "0.12.0",
+  "assessment": {
+    "id": "pp-l1-1-exam-02",
+    "title": "Political Philosophy \u2014 Lecture 01 \u2014 Secondary-Source Exam 02: Schofield, Plato: Political Philosophy, Introduction and Chapters 1\u20132",
+    "subject": "Political Philosophy",
+    "audience": "Graduate-level political philosophy (self-study, open book)",
+    "instructions": "40 minutes, open book: the assigned chapters may be open throughout and nothing else is provided. Total 50 points. Section I: six short answers, 6 points each, 100\u2013150 words each. Section II: one short essay, 14 points, answered from a choice of two, 250\u2013300 words. Every question asks what Schofield argues; a dialogue may be cited as evidence for one of his claims, but no question asks you to reconstruct a dialogue's own argument. The examinable range is the Introduction and chapters 1\u20132 (pp. 1\u201399); chapter 3, which begins at p. 100, is not examinable.",
+    "time_limit_minutes": 40,
+    "scope": {
+      "course": {
+        "id": "political-philosophy",
+        "label": "Political Philosophy"
+      },
+      "segments": [
+        {
+          "id": "lecture-01-1",
+          "label": "Lecture 01 \u2014 Plato, Socrates, Athens, and the Problem of Political Expertise",
+          "kind": "lecture"
+        }
+      ],
+      "note": "One lecture segment. The assigned source's sections are recorded in the paper's coverage audit; the segment id is the lecture, not a section."
+    },
+    "sources": [
+      {
+        "id": "schofield",
+        "citation": "Malcolm Schofield, Plato: Political Philosophy (Oxford University Press, 2006), Introduction and chapters 1\u20132, pp. 1\u201399",
+        "tier": "required",
+        "category": "secondary",
+        "schemes": [
+          {
+            "scheme": "print_page",
+            "status": "verified"
+          },
+          {
+            "scheme": "chapter",
+            "status": "verified"
+          },
+          {
+            "scheme": "line",
+            "status": "verified"
+          }
+        ],
+        "ranges": [
+          {
+            "label": "Introduction",
+            "scheme": "print_page",
+            "from": 1,
+            "to": 6,
+            "status": "verified"
+          },
+          {
+            "label": "ch. 1 The Republic: Contexts and Projects",
+            "scheme": "print_page",
+            "from": 7,
+            "to": 50,
+            "status": "verified"
+          },
+          {
+            "label": "ch. 2 Athens, Democracy and Freedom",
+            "scheme": "print_page",
+            "from": 51,
+            "to": 99,
+            "status": "verified"
+          },
+          {
+            "label": "assigned range",
+            "scheme": "print_page",
+            "from": 1,
+            "to": 99,
+            "status": "verified"
+          }
+        ],
+        "note": "One edition only: Oxford University Press, 2006. Print page numerals survive in the text extraction as standalone lines at the foot of each page; two numerals are missing from the body (p. 7 and p. 51), so the pagination was fixed by the running-head sequence and cross-checked against the numerals that are present. Page n is the n-th body page counted from the Introduction's first page. Line numbers are those of the vault extraction Raw/Sources/Philosophy/Political-Philosophy/Schofield-Plato-Political-Philosophy/Schofield-Plato-Political-Philosophy.txt (18,008 lines) and are anchors for re-checking, not pagination."
+      }
+    ],
+    "gate": {
+      "mastery": false,
+      "note": "Formative secondary-source paper. The lecture's mastery-gated assessment is Exam 01 (primary texts and the expertise analogy); nothing is unlocked by this score, a low score is diagnostic, and the paper may be re-sat."
+    },
+    "floors": [
+      {
+        "tier": "required",
+        "min_share": "1",
+        "applies_to": "all"
+      }
+    ],
+    "coverage": {
+      "assessed": [
+        {
+          "segment_id": "lecture-01-1",
+          "question_ids": [
+            "q1",
+            "q2",
+            "q3",
+            "q4",
+            "q5",
+            "q6",
+            "essay_a",
+            "essay_b"
+          ],
+          "note": "Section by section: Introduction pp. 1\u20136 (q1, essay_a); ch. 1 \u00a71 pp. 7\u201312 (q2, essay_a); ch. 1 \u00a72 pp. 13\u201319 (q3, essay_a); ch. 1 \u00a73 pp. 19\u201330 (q4, essay_a); ch. 1 \u00a74 pp. 30\u201335 (q2, essay_a); ch. 1 \u00a75 pp. 35\u201342 (q2, essay_a); ch. 2 \u00a71.1 pp. 51\u201354 (q5, essay_b); ch. 2 \u00a71.3 pp. 60\u201362 (q6); ch. 2 \u00a72.1\u20132.3 pp. 63\u201374 (q5, essay_b); ch. 2 \u00a73.1\u20133.3 pp. 74\u201387 (q6, essay_b); ch. 2 \u00a74 p. 88 (essay_b)."
+        }
+      ],
+      "omitted": [
+        {
+          "segment_id": "lecture-01-1",
+          "topic": "ch. 2 \u00a71.2, \"Platonic dialogue and democratic discourse\" (pp. 55\u201359): Euben's Habermasian and Bakhtinian readings of the dialogue form",
+          "reason": "time",
+          "note": "Testing it would need a third debate question in a 40-minute paper and would displace the Laws question, which carries the chapter's positive argument. It is also the one stretch of ch. 2 whose subject is other scholars' readings rather than Schofield's own, and no essay depends on it."
+        },
+        {
+          "segment_id": "lecture-01-1",
+          "topic": "The Laws' constitutional detail: Book 6 election rules and the property classes as institutions",
+          "reason": "scope",
+          "note": "Mentioned in passing; the paper tests the argument about freedom, not the institutional detail, which belongs to the Laws lectures (16\u201322)."
+        },
+        {
+          "segment_id": "lecture-01-1",
+          "topic": "The reception history in ch. 1 \u00a71 (Dio, Photius, Proclus, Popper, Strauss, Jowett)",
+          "reason": "redundant",
+          "note": "Used inside q2(a) as evidence for the centrepiece claim; a separate question would test recall of names rather than argument."
+        },
+        {
+          "segment_id": "lecture-01-1",
+          "topic": "The Seventh Letter's Sicilian narrative in detail (Dion, Dionysius II)",
+          "reason": "redundant",
+          "note": "q3 tests the evidential argument, for which the narrative's content matters only as what the letter claims."
+        },
+        {
+          "segment_id": "lecture-01-1",
+          "topic": "ch. 1 \u00a75's Spartan institutional detail (ag\u014dg\u0113, syssitia, the Crypteia)",
+          "reason": "time",
+          "note": "q2(c) and essay A reach the thesis (Spartan frame, Athenian content); the detail is context for the Republic lectures, not for this paper."
+        },
+        {
+          "segment_id": "lecture-01-1",
+          "topic": "Plato's own arguments in Apology, Crito, Gorgias, Republic, Laws",
+          "reason": "scope",
+          "note": "Deliberately excluded: this paper tests Schofield's reconstruction of them; the dialogues are examined by Exam 01 and the Book-by-Book papers."
+        }
+      ],
+      "note": "Short answers follow the assigned text's own order, from the Introduction to ch. 2 \u00a73; the essays broaden coverage to ch. 2 \u00a72 and the ch. 2 \u00a74 conclusion. Every assigned section is reached by at least one question."
+    },
+    "delivery": {
+      "mode": "open_book"
+    },
+    "sections": [
+      {
+        "id": "section_i",
+        "title": "Section I \u2014 Short Answer (6 \u00d7 6 pts = 36 pts)",
+        "instructions": "Answer all six questions. 100\u2013150 words each; quote Schofield if it helps, but state his argument in your own words and keep your own view out of this section.",
+        "questions": [
+          {
+            "id": "q1",
+            "type": "short_answer",
+            "prompt": "\"Is Plato our contemporary?\"\n\n(a) Schofield answers \"yes and no.\" State what makes the answer no, and what makes it yes.\n(b) What methodological choice follows from the second half of the answer, and what does he say is wrong with the alternative?\n(c) He describes his approach as reaching Plato's political philosophy \"through a study of the matrix from which it emerged.\" Name the three elements of that matrix as he states them.",
+            "points": "6",
+            "estimated_minutes": 3,
+            "response_lines": 12,
+            "suggested_word_count": {
+              "min": 100,
+              "max": 150,
+              "enforcement": "recorded",
+              "note": "The range is recorded, not enforced: a response outside 100-150 words is counted by the spec's token rule and the breach is noted in the marking record, but no mark is added or removed for length."
+            }
+          },
+          {
+            "id": "q2",
+            "type": "short_answer",
+            "prompt": "The centrepiece, and what a politeia is.\n\n(a) Ferrari calls the Republic \"the first great work of Western political philosophy.\" Give the two kinds of ground on which Schofield defends the Republic's centrality against that claim's rivals.\n(b) Schofield says translators of Aristotle's Politics have found \"constitution\" a workable rendering of politeia, but that the Republic belongs to a different tradition of politeia writing. State what he says the word's core meaning is, and what a politeia treatise in that tradition was expected to discuss.\n(c) On that account, why is the objection that the Republic offers no serious analysis of constitutions beside the Politics a misunderstanding? And why is education central rather than incidental?",
+            "points": "6",
+            "estimated_minutes": 3,
+            "response_lines": 12,
+            "suggested_word_count": {
+              "min": 100,
+              "max": 150,
+              "enforcement": "recorded",
+              "note": "The range is recorded, not enforced: a response outside 100-150 words is counted by the spec's token rule and the breach is noted in the marking record, but no mark is added or removed for length."
+            }
+          },
+          {
+            "id": "q3",
+            "type": "short_answer",
+            "prompt": "\"Some Dubious Platonic Autobiography\"\n\n(a) Schofield sketches two explanations of why Plato has Socrates propose beginning again \"with a clean slate\" (Republic 6.501a). Name both and say which he prefers.\n(b) The Seventh Letter would supply the first explanation. Set out his two objections to relying on it \u2014 one concerning what kind of document it is, one concerning what it would have to imply about Plato's relation to his own character \"Socrates.\"\n(c) Even setting authorship aside, he argues that the story itself is un-Platonic. State that argument, and say what he offers in place of the letter's account.",
+            "points": "6",
+            "estimated_minutes": 3,
+            "response_lines": 12,
+            "suggested_word_count": {
+              "min": 100,
+              "max": 150,
+              "enforcement": "recorded",
+              "note": "The range is recorded, not enforced: a response outside 100-150 words is counted by the spec's token rule and the breach is noted in the marking record, but no mark is added or removed for length."
+            }
+          },
+          {
+            "id": "q4",
+            "type": "short_answer",
+            "prompt": "Socrates: engagement and detachment.\n\n(a) In the Apology and Crito, what is Socrates' relation to Athens said to be, and what two features of those works support it?\n(b) What has disappeared from the philosopher's portrait in Republic 6, and what are the two images Schofield uses to mark the change?\n(c) Why does he insist this is Plato's philosophical rethinking of Socrates rather than a report of Plato's own experience? Cite the earlier dialogue he says already performs the same rewriting.",
+            "points": "6",
+            "estimated_minutes": 3,
+            "response_lines": 12,
+            "suggested_word_count": {
+              "min": 100,
+              "max": 150,
+              "enforcement": "recorded",
+              "note": "The range is recorded, not enforced: a response outside 100-150 words is counted by the spec's token rule and the breach is noted in the marking record, but no mark is added or removed for length."
+            }
+          },
+          {
+            "id": "q5",
+            "type": "short_answer",
+            "prompt": "Democracy, and the warning about anachronism.\n\n(a) State precisely what \"democracy\" means in Schofield's opening account of Plato's Athens, and what follows for how the Republic's critique should and should not be read.\n(b) He calls attention to a \"curious paradox.\" State it, and give his explanation of it.\n(c) Explain the Beast analogy: what the image shows about the relation between a populace and its values, and why Schofield says democracy is \"in this regard a totalitarian system.\"",
+            "points": "6",
+            "estimated_minutes": 3,
+            "response_lines": 12,
+            "suggested_word_count": {
+              "min": 100,
+              "max": 150,
+              "enforcement": "recorded",
+              "note": "The range is recorded, not enforced: a response outside 100-150 words is counted by the spec's token rule and the breach is noted in the marking record, but no mark is added or removed for length."
+            }
+          },
+          {
+            "id": "q6",
+            "type": "short_answer",
+            "prompt": "The Laws on democracy and freedom.\n\n(a) The Athenian Visitor names three things a lawgiver must secure, and two \"mother-systems\" that must be combined. Give both lists.\n(b) What does the \"moderate\" freedom he endorses consist in? Explain the phrase \"voluntary slavery\" to the laws and the decline narrative that goes with it.\n(c) Schofield denies that the Laws represents a conversion to democracy. State his explanation of why the dialogue can say what the Republic does not, and the distinction he borrows from Walzer to make it.",
+            "points": "6",
+            "estimated_minutes": 3,
+            "response_lines": 12,
+            "suggested_word_count": {
+              "min": 100,
+              "max": 150,
+              "enforcement": "recorded",
+              "note": "The range is recorded, not enforced: a response outside 100-150 words is counted by the spec's token rule and the breach is noted in the marking record, but no mark is added or removed for length."
+            }
+          }
+        ]
+      },
+      {
+        "id": "section_ii",
+        "title": "Section II \u2014 Short Essay (choose 1 of 2; 14 pts)",
+        "instructions": "Answer one of the two essays below. 250\u2013300 words. Each essay states the structure its answer should follow.",
+        "questions": [
+          {
+            "id": "section_ii_essays",
+            "type": "alternative_set",
+            "prompt": "Answer one of the following two essays. Each is worth 14 points; both are marked against 14.",
+            "points": "14",
+            "estimated_minutes": 10,
+            "choose_n": 1,
+            "alternatives": [
+              {
+                "id": "essay_a",
+                "type": "essay",
+                "prompt": "Does Schofield's contextualism change how the Republic's political argument should be read?\n\nSchofield approaches the Republic through the matrix it emerged from \u2014 Plato's reflection on Socrates, the Laconizing politeia tradition, and a rejection of Athenian democracy \u2014 and explains its differences from the Statesman and Laws by \"difference in purpose and point of view adopted\" rather than by doctrinal development. He also insists the dialogue is still \"good to think with.\"\n\nAssess whether that contextualism leaves the Republic's political argument standing as philosophy, or dissolves it into the circumstances that produced it.\n\nStructure your answer:\n1. State in one sentence what the contextualist thesis claims about the Republic's argument.\n2. Reconstruct the three contextual determinants Schofield identifies, saying what each is supposed to explain.\n3. Say what the contextualist account explains better than its rivals \u2014 the autobiographical reading, and the developmental reading.\n4. State the strongest objection: that explaining where an argument came from does not settle whether it is good, and that an ideal assembled from Spartan borrowings and Socratic loyalty may be an artefact rather than a proposal.\n5. Give Schofield's best reply, using his own figure for the reader who asks whether the Republic is still good to think with.\n6. State your verdict, and say what evidence would decide it.",
+                "points": "14",
+                "estimated_minutes": 10,
+                "response_lines": 34,
+                "suggested_word_count": {
+                  "min": 250,
+                  "max": 300,
+                  "enforcement": "recorded",
+                  "note": "The range is recorded, not enforced: a response outside 250-300 words is counted by the spec's token rule and the breach is noted in the marking record, but no mark is added or removed for length."
+                }
+              },
+              {
+                "id": "essay_b",
+                "type": "essay",
+                "prompt": "Does Schofield's Athens make Plato's critique stronger, or narrower?\n\nOn Schofield's account Plato's target is a democracy of direct participation \u2014 assembly, courts, festivals \u2014 in which \"the people become the source of all values in the society,\" and a rhetorical culture in which the orator is the people's servant rather than its master.\n\nAssess whether locating the critique in that setting strengthens it or narrows it.\n\nStructure your answer:\n1. State the criterion by which you will judge \"stronger\" or \"narrower,\" and say which way you are inclined.\n2. Reconstruct the critique as Schofield presents it: the Beast, the argument of the Gorgias that rhetoric is servile, and the Menexenus as a demonstration rather than a description.\n3. Explain what directness of participation adds to the critique \u2014 what a representative system would have screened off.\n4. Explain what the local target costs: why the argument may not transfer to modern democracy, and what Plato's willingness in the Laws to make freedom constitutive suggests about the charge's scope.\n5. Answer the obvious reply \u2014 that a critique confined to its own moment cannot indict democracy as such.\n6. State your verdict.",
+                "points": "14",
+                "estimated_minutes": 10,
+                "response_lines": 34,
+                "suggested_word_count": {
+                  "min": 250,
+                  "max": 300,
+                  "enforcement": "recorded",
+                  "note": "The range is recorded, not enforced: a response outside 250-300 words is counted by the spec's token rule and the breach is noted in the marking record, but no mark is added or removed for length."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "answer_key": {
+    "q1": {
+      "method": "analytic_rubric",
+      "reference_answer": "(a) No: the polis Plato thought about is gone \u2014 democracy meant the direct participation of all adult male citizens in the assembly and the courts, not representation; rhetoric as an \"inbred democratic disease\" is intelligible only against fifth-century imperialism and its collapse in the Peloponnesian War, a story he probably took from Thucydides; and the trial and execution of Socrates in 399 dominated his conception of politics. Yes: at a level of generality the themes remain live \u2014 alienation from politics, education, democracy, knowledge, utopia and the idea of community, the power of money, ideological uses of religion \u2014 and a conversation with Plato remains possible and profitable. (b) The method is thematic, not chronological, because chronological schemes are conjectural; the early/middle/late division is assumed but little turns on it, and the differences among Republic, Statesman and Laws are explained by difference of purpose and point of view. (c) The matrix: profound reflection on the teaching, life and death of Socrates; ambiguous admiration for ancient Sparta; fierce but thoroughly engaged rejection of the democracy of Athens. The key's bracketed split is 2/2/2; the format fixes no per-criterion maximum, so the awards are argued from the descriptions below.",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "range": {
+            "from": 1,
+            "to": 4
+          }
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "chapter",
+          "value": "Introduction",
+          "status": "verified",
+          "role": "cf"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q1a",
+          "description": "Both halves of the answer. Full credit: the vanished polis with direct participation of all adult male citizens in assembly and courts, explicitly not representation; the rhetoric/imperialism/Thucydides background or Socrates' trial; AND the trans-historical conversation with at least two of the named themes.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "1"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "2"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q1b",
+          "description": "Thematic over developmental, with the reason and the substitute. Full credit: chronology called conjectural, the period division said to carry little weight, and the differences explained by difference in purpose and point of view adopted.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "2"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "3"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q1c",
+          "description": "All three elements of the matrix in Schofield's own terms: reflection on the teaching, life and death of Socrates; ambiguous admiration for ancient Sparta; engaged rejection of the democracy of Athens. Partial credit where one element is missing or paraphrased out of recognition.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "4"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "q2": {
+      "method": "analytic_rubric",
+      "reference_answer": "(a) Internal grounds: the Republic holds most of Plato's most striking political ideas (philosopher rulers female as well as male, abolition of the nuclear family, lies and myths as political necessities, the psychology of regimes), and the later works carry forward programmes it set \u2014 the Laws recapitulates its ideal, the Timaeus-Critias opens with a reprise, the Seventh Letter makes philosopher rulers pivotal; it also gives definitive treatment to themes of earlier writings. Hence it is \"the centrepiece of the entire Platonic corpus\". External grounds: its reception \u2014 Aristotle's Politics II, Zeno's Politeia against it, Polybius, Cicero, Proclus, Dio, Photius, Popper and Strauss, Jowett's Greats. (b) The core meaning of politeia is citizenship, the condition of being a citizen, extended to a system of laws and practices structuring the citizens' life; such a treatise discussed the formation of citizens \u2014 education, marriage, the role of women, children, property, social stratification \u2014 and did not necessarily pose the question of who should rule. (c) The objection applies Aristotle's sense (a certain ordering of positions of rule) to a genre with a different focus, and Aristotle himself calls a politeia a city's way of life (Pol. 4.11, 1295a40), so Socrates' attention to lifestyle is nothing idiosyncratic; if a politeia is a whole way of life, the formation of citizens is the substance of the proposal \u2014 education and upbringing is the single requirement at 423e\u2013424b, and the Cave announces paideia as its subject.",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "range": {
+            "from": 7,
+            "to": 12
+          }
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "range": {
+            "from": 30,
+            "to": 42
+          }
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "chapter",
+          "value": "1",
+          "status": "verified",
+          "role": "cf"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q2a",
+          "description": "Both kinds of ground, with at least two specific items each. Full credit: contents and later-works reprise (Laws, Timaeus-Critias, Seventh Letter or earlier dialogues) AND reception (Aristotle, Zeno, Cicero, Proclus, Jowett, Popper).",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "10"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "9"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q2b",
+          "description": "The word's core meaning and the genre's business. Full credit: citizenship / the condition of being a citizen, the extended sense (laws and practices, a way of life), the tradition's typical topics (education, women, children, property), AND the point that the question who should rule need not arise.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "33"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "32"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q2c",
+          "description": "The objection diagnosed and education derived rather than asserted. Full credit: the objection is an Aristotelian misreading of a different genre, supported by 1295a40 (a city's way of life), and education's centrality follows from the conception of politeia.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "33"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "34"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "q3": {
+      "method": "analytic_rubric",
+      "reference_answer": "(a) The appeal to Platonic quietism \u2014 a heavily biographical and indeed autobiographical account \u2014 and Platonic reflection on Socrates' quietist activism, biographical in root but essentially philosophical in character; he prefers the second. (b) What kind of document: the Seventh Letter's authenticity is unsettled, most of the thirteen letters are later fictions, the stylistic tests are inconclusive because its diction resembles the latest dialogues, and on this passage it looks more like Platonic pastiche than the genuine article \u2014 the adaptation of three Republic passages is a gauche performance, \"the right philosophy\" is not a Platonic locution, and the plural \"the classes of mankind\" betrays a botched borrowing of the singular genos. What it would imply: \"I was compelled to say\" was said in the Republic by Socrates, a character; if Plato wrote the letter he implies that his Socrates is him, an abrupt lurch out of a carefully constructed literary persona \u2014 against which Cooper (it is in the entire writing that the author speaks) and Sedley (the dialogues as Plato thinking aloud) locate the alternative. (c) The story, not merely its telling, strikes a note false to Plato: it puts Plato's own career at the centre, whereas the authentic dialogues are the work of a writer so obsessed with Socrates that they are set in the imagined world of Socrates' Athens and carry an intensity of argument the letter lacks. In place of autobiography: Plato's reflection on Socrates, for whom politics' defining problem was its need for a rationality it rejects.",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "range": {
+            "from": 13,
+            "to": 20
+          }
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "chapter",
+          "value": "1",
+          "status": "verified",
+          "role": "cf"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q3a",
+          "description": "Both explanations named and distinguished, with the stated preference. Full credit: the autobiographical/quietist explanation AND the philosophical reflection on Socrates' activism, with Schofield's preference for the second made explicit.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "13"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q3b",
+          "description": "The documentary and the structural objection. Full credit: at least two documentary points (pastiche, \"the right philosophy\", the plural gen\u0113, unsettled authenticity) AND the structural point that the letter has Plato endorsing a speech the Republic gives to a character, with Cooper or Sedley used to locate the alternative.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "16"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "17"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q3c",
+          "description": "The story itself argued un-Platonic, and a replacement offered. Full credit: the Socrates-obsessed writer and the imagined Athens with the letter's missing intensity of argument, AND the substitute explanation (politics' need for a rationality it rejects).",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "range": {
+                "from": 19,
+                "to": 20
+              }
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "q4": {
+      "method": "analytic_rubric",
+      "reference_answer": "(a) In the Apology and Crito Socrates' philosophizing is deeply embedded in and engaged with Athens: a public service and a divine mission, the gadfly sent to sting into activity a large, noble but sluggish horse, the city's greatest benefactor who yet avoids any part in its affairs (31c\u201332a); in the Crito he is the laws' beneficiary, owing them everything, and he refuses exile. Two supporting features: he has no interest in philosophizing elsewhere and never had; and there is no imaginative exploration of a utopian alternative. The embeddedness is contingent but deep. (b) Embeddedness and engagement have disappeared from the philosopher of Republic 6: he keeps quiet and minds his own business, like someone taking shelter behind a wall from a storm (496c\u2013497a); the many's madness is a den of wild animals, which negates rational interaction; and at 497b\u2013c the city of his birth becomes foreign soil. (c) Because the change is argued from inside the Socratic texts, not from Plato's career: the Gorgias already rewrites the trial as a doctor defending himself before a jury of children (521e\u2013522b), and the Republic's conclusion \u2014 philosophizing must move out of the democratic polis-as-it-is into the polis-as-it-should-be \u2014 is what Plato inferred from Socrates' situation. Alienation, detachment and a degree of personal impoverishment is therefore a verdict on Socrates' relation to his city, and it generates the clean slate.",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "range": {
+            "from": 19,
+            "to": 30
+          }
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "chapter",
+          "value": "1",
+          "status": "verified",
+          "role": "cf"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q4a",
+          "description": "The Apology/Crito picture with its supporting features. Full credit: service and gadfly, the Crito's debt to the laws or the refusal of exile, at least one supporting feature (no wish to philosophize elsewhere; no utopian alternative), AND the benefactor/inactive paradox.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "22"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "24"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "26"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q4b",
+          "description": "The disappearance of engagement. Full credit: the shelter-behind-a-wall image from 496c\u2013497a AND either the madness of the many as wild animals or the foreign-soil simile.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "27"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "28"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "29"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q4c",
+          "description": "The Gorgias as the earlier rewriting, and the alienation inferred philosophically. Full credit: 521e\u2013522b cited or described, the conclusion that the move is out of the polis-as-it-is into the polis-as-it-should-be, and the clean-slate consequence.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "30"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "29"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "q5": {
+      "method": "analytic_rubric",
+      "reference_answer": "(a) Democracy meant the direct participation of all adult male citizens in the decision-making of the assembly and the courts, not the representative systems of today; the critique is therefore aimed at a face-to-face assembly culture in which citizens decide, judge and attend the festivals themselves. Two consequences: the Republic is not an indictment of a modern representative legislature, so the charge must be located in the practices Plato knew; and the concept itself was fluid and contested in fourth-century Athens, which is why Plato can exploit it. (b) The paradox: the invention of democracy is perhaps the greatest legacy of ancient Greece to modern political thought and practice, yet almost all surviving Greek theoretical reflection on politics is either sharply critical of democracy or detachedly comparative, and its major contributors are Athenians. Explanation: democracy was also the matrix of theoretical debate, often hostile to democracy, because it permitted and provoked it; politeia writing was a Laconizing, partisan exercise in the imagination of alternatives, and the same city's festivals show that it relished the argument. (c) The Beast (6.493a\u2013c): the sophist learns the animal's passions, noises and moods and calls that knowledge wisdom, assigning the names good, fine and just by the animal's pleasure; under direct popular rule the people become the source of all values in the society, and the teacher of wisdom is controlled by the populace rather than controlling it. Democracy is in this regard a totalitarian system \u2014 not because it is coercive, but because no independent standard is left outside the many's appetites.",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "range": {
+            "from": 51,
+            "to": 54
+          }
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "range": {
+            "from": 63,
+            "to": 65
+          }
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "chapter",
+          "value": "2",
+          "status": "verified",
+          "role": "cf"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q5a",
+          "description": "Direct participation and its consequence for reading the critique. Full credit: assembly and courts, explicitly contrasted with representation, AND at least one consequence \u2014 the charge is not aimed at modern legislatures, or the fluidity of the fourth-century concept.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "1"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "63"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q5b",
+          "description": "The paradox in both halves and its explanation. Full credit: democracy as Greece's greatest legacy AND the surviving theory as hostile or detachedly comparative, with the explanation that democracy was the matrix of the debate and politeia writing an imagination of alternatives.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "51"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "52"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q5c",
+          "description": "The Beast's mechanism and the exact sense of \"totalitarian\". Full credit: the many as the source of value and the expert enslaved to the animal's moods, AND totalitarian as a claim about the source of values rather than about coercion.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "64"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "q6": {
+      "method": "analytic_rubric",
+      "reference_answer": "(a) Three aims: freedom (political freedom), wisdom (political judgement) and friendship (consensus within the society); two mother-systems: monarchy and democracy, Persia and Athens, of which all others are varieties, and a sound system must combine them, since neither has achieved a balance between the two. (b) Moderate freedom has two components: voluntary acceptance of the rule of law, without which a politeia does not count as one, and the freedom of participation belonging to citizens who are not simply the slaves of their rulers \u2014 the education that makes a person desire passionately to become a perfect citizen who knows how to rule and to be ruled as justice requires (Laws 1.643e). Voluntary slavery to the laws is the Demaratus formula transferred from Sparta to Solon's Athens: the law is a master feared more than a despot is feared. Its decline narrative runs from musical licence \u2014 theatocracy in place of musical aristocracy \u2014 to refusal of rulers, then parents and elders, then the laws, then oaths and the gods; hence complete freedom from all authority is infinitely worse than submitting to a moderate form of rule by others (698a\u2013b). (c) Not a conversion: the difference is one of project and register. The Republic argues in what Walzer calls rejectionist mode, from a utopian ideal that rejects existing systems wholesale; the Laws argues immanently, through myths of history, in language that offers no challenge to the conceptual framework the audience already has. The substance continues \u2014 rational freedom in both, and the preludes, the free doctor's persuasion against the slave doctor's command, as the analogue of a hypothetical consent. Schofield rejects Annas's developmental claim, finds Rowe's unity thesis much closer to the truth, and rejects the premise both share, since Plato shows comparatively little interest in constitutional theory at any stage.",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "range": {
+            "from": 60,
+            "to": 62
+          }
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "range": {
+            "from": 74,
+            "to": 88
+          }
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "chapter",
+          "value": "2",
+          "status": "verified",
+          "role": "cf"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "q6a",
+          "description": "Both lists and the requirement to combine. Full credit: freedom, wisdom and friendship as the three aims, monarchy and democracy as the two mother-systems (Persia and Athens), and the claim that neither has achieved a balance.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "77"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "78"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q6b",
+          "description": "Moderate freedom, \"voluntary slavery\" and the decline. Full credit: both components (voluntary acceptance of law; participation by citizens who are not slaves of their rulers), the law as a master feared more than a despot, AND at least the outline of the decline from musical licence to contempt for law and the gods.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "79"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "80"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "82"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "q6c",
+          "description": "Register, not doctrine, and the premise refused. Full credit: rejectionist versus immanent critique applied to Republic and Laws, the claim that project and register explain the difference while rational freedom continues, AND the premise shared by the developmental and unity readings that Schofield rejects.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "81"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "61"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "87"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "essay_a": {
+      "method": "analytic_rubric",
+      "reference_answer": "The contextualist thesis: the Republic's argument is approached through a study of the matrix from which it emerged, and that explains its shape without settling its truth. Determinants: reflection on Socrates' life and death (the clean-slate radicalism); the Laconizing politeia tradition, with its agenda of education, women, children and property (the institutional content); engaged rejection of Athenian democracy (the target and tone). What it explains better: against the autobiographical reading, the Seventh Letter is a document of doubtful credentials whose story is itself un-Platonic, whereas the Socratic explanation is argued from the Apology, Crito and Gorgias; against the developmental reading, the differences among Republic, Statesman and Laws are differences of purpose and point of view, and developmental chronologies are conjectural. The objection at full strength: genetic (provenance does not establish validity), debunking (an ideal assembled from Spartan borrowings and aristocratic nostalgia looks like a partisan politeia exercise \u2014 the genre Schofield himself calls a politically partisan activity favoured by aristocratic admirers of Sparta), and the cost to the reader (an argument so situated may be unavailable to us). Reply: the looter's question \u2014 whatever its original contexts, is the Republic still good to think with? \u2014 the assumption that political theory is a dialogue across the centuries, and the substantive point that the politeia project is undertaken for the sake of the Socratic enquiry into justice, so the context supplies materials rather than conclusions; contextualism is explanatory, not reductive. Verdict: either way, but it must say what would decide it \u2014 whether the premises Schofield identifies can be detached from their Spartan and Socratic settings and still support the conclusion. The key's bracketed split is 3/3/4/2/2; the format fixes no per-criterion maximum.",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "range": {
+            "from": 2,
+            "to": 5
+          }
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "range": {
+            "from": 12,
+            "to": 42
+          }
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "81"
+        }
+      ],
+      "criteria": [
+        {
+          "id": "esa1",
+          "description": "The thesis stated and the three determinants reconstructed, each with what it is supposed to explain: the Socratic reflection and the clean-slate radicalism, the politeia tradition and the institutional content, the rejection of democracy and the target and tone.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "4"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "3"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "35"
+            }
+          ],
+          "points": "3"
+        },
+        {
+          "id": "esa2",
+          "description": "What contextualism explains better than its rivals. Full credit: against the autobiographical reading, the Seventh Letter's doubtful credentials and un-Platonic story against the argument from Apology, Crito and Gorgias; against the developmental reading, difference of purpose and point of view and conjectural chronologies.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "16"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "17"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "81"
+            }
+          ],
+          "points": "3"
+        },
+        {
+          "id": "esa3",
+          "description": "The objection at full strength. Full credit: the genetic objection stated as an objection to validity, the debunking reading with the partisan politeia genre, and the cost to the modern reader \u2014 at least two of the three developed, not merely named.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "38"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "5"
+            }
+          ],
+          "points": "4"
+        },
+        {
+          "id": "esa4",
+          "description": "Schofield's reply. Full credit: the looter's question and the dialogue across the centuries, plus the point that the politeia project is undertaken for the sake of the Socratic enquiry, so context supplies materials rather than conclusions; a strong answer says the contextualism is explanatory, not reductive.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "5"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "35"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "esa5",
+          "description": "Verdict and control of the text. Full credit: a definite verdict either way, an explicit statement of what would decide it, and accurate use of pp. 1\u20135, 13\u201342, 81 with no invented quotation.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "range": {
+                "from": 1,
+                "to": 5
+              }
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "35"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    },
+    "essay_b": {
+      "method": "analytic_rubric",
+      "reference_answer": "Criterion: stronger in diagnostic power or immunity to the charge of caricature, narrower in transferability; the best answers see that a critique can be more damaging to its actual target and less available against ours. The critique: the Beast (6.493a\u2013c) \u2014 the many as the source of all values, the expert enslaved to its moods; the Gorgias \u2014 rhetoric is not power over the people but subservience to the populace, the orator must become like the d\u00eamos to be its friend (513a\u2013c), flattery and frankness demanded at once; the Menexenus \u2014 the funeral oration as enacted flattery, its chronology deliberately broken and its history sanitized, a working demonstration of the kind of flattery of the d\u00eamos; and the Gorgias' revision of Athenian history against Thucydides. What directness adds: because the assembly and the courts are the people, there is no institutional mediation behind which responsibility can hide \u2014 the populace is ruler, judge, audience and source of value at once, so the flattery relation is structural; a representative system would screen off exactly that immediate dependence, so the critique would have to be restated rather than transferred. What the local target costs: the argument presupposes the politeia/assembly culture and the ideology of freedom (eleutheria, parrh\u0113sia) the Laws analyses, and Plato's willingness there to make freedom constitutive of a sound system shows the charge is against a version of democracy, not popular rule as such; transfer is an inference the text does not license, which is Schofield's own warning about projecting representative assumptions backwards. The obvious reply: a critique confined to its moment cannot indict democracy as such \u2014 answered by distinguishing the deeper charge (no role for knowledge in government), which is not institutional and does carry over, from the rhetorical diagnosis, which does not. Verdict must say which it defends and why. The key's bracketed split is 3/3/4/2/2; the format fixes no per-criterion maximum.",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "range": {
+            "from": 51,
+            "to": 54
+          }
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "range": {
+            "from": 63,
+            "to": 74
+          }
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "range": {
+            "from": 77,
+            "to": 82
+          }
+        }
+      ],
+      "criteria": [
+        {
+          "id": "esb1",
+          "description": "A criterion for \"stronger\" or \"narrower\" and an initial position. Full credit: the respect in which the critique would be stronger (or narrower) is named \u2014 diagnostic power, immunity to caricature, transferability \u2014 with the answer's inclination stated in a sentence.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "54"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "51"
+            }
+          ],
+          "points": "3"
+        },
+        {
+          "id": "esb2",
+          "description": "The critique reconstructed. Full credit: the Beast's mechanism, the Gorgias' servility thesis (the orator must become like the d\u00eamos), and the Menexenus as a demonstration of flattery \u2014 at least two of the three with the text's own point.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "64"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "66"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "74"
+            }
+          ],
+          "points": "3"
+        },
+        {
+          "id": "esb3",
+          "description": "What directness adds. Full credit: the absence of institutional mediation explained \u2014 the populace as ruler, judge, audience and source of value at once \u2014 and the inference that a representative system would screen off that immediate dependence, so the critique would need restating.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "66"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "67"
+            }
+          ],
+          "points": "4"
+        },
+        {
+          "id": "esb4",
+          "description": "What the local target costs. Full credit: the dependence on the politeia/assembly culture and on eleutheria and parrh\u0113sia, Plato's willingness in the Laws to make freedom constitutive, and the conclusion that transfer to modern democracy is an inference the text does not license.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "range": {
+                "from": 77,
+                "to": 82
+              }
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "71"
+            }
+          ],
+          "points": "2"
+        },
+        {
+          "id": "esb5",
+          "description": "The obvious reply and the verdict. Full credit: the reply that a critique confined to its moment cannot indict democracy as such is answered, not ignored, and the verdict says which of the two charges it defends and why, without claiming both.",
+          "locators": [
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "88"
+            },
+            {
+              "source_id": "schofield",
+              "scheme": "print_page",
+              "status": "verified",
+              "value": "66"
+            }
+          ],
+          "points": "2"
+        }
+      ]
+    }
+  },
+  "quote_verification": [
+    {
+      "quote": "Is Plato our contemporary? Well, yes and no.",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "1"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "295",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "not the representative systems of today",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "1"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "299",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "an inbred democratic disease",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "1"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "300",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "the trial and execution of Socrates in 399",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "1"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "306",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "however plausible, are conjectural",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "2"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "352",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "difference in purpose and point of view adopted",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "3"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "386",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "study of the matrix from which it emerged",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "4"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "452",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "good to think with",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "5"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "477",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "centrepiece of the entire Platonic corpus",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "10"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "662",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "pastiche than the genuine article",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "16"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "926",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "in the entire writing that the author speaks to us",
+      "attribution": "Cooper, quoted by Schofield",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "17"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "955",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "Plato thinking aloud",
+      "attribution": "Sedley, quoted by Schofield",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "17"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "979",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "greatest benefactor, but avoids any part in its affairs",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "22"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "1178",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "Embeddedness and engagement are what have disappeared",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "27"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "1371",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "The core meaning of politeia",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "33"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "1652",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "did not necessarily pose the question of who should rule",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "33"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "1659",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "politically partisan activity",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "38"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "1856",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "curious paradox here",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "51"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "2467",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "exercise in the imagination of alternatives",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "52"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "2505",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "the source of all values in the society",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "64"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "3000",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "totalitarian system",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "64"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "3001",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "subservience to the populace, not power over them",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "66"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "3074",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "working demonstration of the kind of flattery",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "74"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "3399",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "freedom (i.e. political freedom), wisdom",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "77"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "3534",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "voluntary slavery to the laws",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "79"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "3628",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "offers no challenge to the conceptual framework",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "81"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "3712",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "what we might call rational freedom",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "87"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "3950",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
+    {
+      "quote": "history as a form of rhetoric",
+      "locators": [
+        {
+          "source_id": "schofield",
+          "scheme": "print_page",
+          "status": "verified",
+          "value": "88"
+        },
+        {
+          "source_id": "schofield",
+          "scheme": "line",
+          "value": "4009",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    }
+  ]
+}
