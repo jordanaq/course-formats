@@ -46,12 +46,12 @@ tools/
 
 | Repository | Role | Status |
 | --- | --- | --- |
-| `assessment-cli` | reads schemas and fixtures; validates bundles and submissions | submodule pending remote |
-| `~/Documents/Obsidian-Vault` | reads the normative specs and linter | submodule pending remote |
-| `course-organizer` | reads the schemas and specs | submodule pending remote |
+| `assessment-cli` | reads schemas and fixtures; validates bundles and submissions | submodule at `vendor/course-formats`, `v0.12.0` |
+| `~/Documents/Obsidian-Vault` | reads the normative specs and linter | submodule at `Agents/Design/course-formats`; current specs and linter are symlinks into it |
+| `course-organizer` | reads the schemas and specs | submodule at `vendor/course-formats`, `v0.12.0` |
 
-Submodules require an upstream URL. Until this repository is pushed, consumers use a local
-checkout.
+Consumers pin the release tag. Update by checking out a newer tag in the submodule and
+committing the new gitlink.
 
 ## Tooling
 
