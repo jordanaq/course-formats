@@ -3,3 +3,6 @@ __pycache__/
 .mypy_cache/
 .venv/
 .DS_Store
+
+# local scratch scripts and throwaway output
+tmp/

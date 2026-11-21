@@ -1,0 +1,1553 @@
+{
+  "B": {
+    "format_version": "0.11.3",
+    "assessment": {
+      "id": "data_structures_quiz",
+      "title": "Data Structures Mini-Assessment",
+      "subject": "Computer Science",
+      "audience": "Introductory undergraduate",
+      "instructions": "Answer every question. Multiple-select questions state their scoring policy.",
+      "time_limit_minutes": 30,
+      "sections": [
+        {
+          "id": "fundamentals",
+          "title": "Fundamentals",
+          "instructions": "",
+          "questions": [
+            {
+              "id": "q1",
+              "type": "single_choice",
+              "prompt": "Which data structure follows first-in, first-out order?",
+              "points": "2",
+              "estimated_minutes": 1,
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Stack"
+                },
+                {
+                  "id": "b",
+                  "text": "Queue"
+                },
+                {
+                  "id": "c",
+                  "text": "Binary tree"
+                }
+              ]
+            },
+            {
+              "id": "q2",
+              "type": "multiple_select",
+              "prompt": "Select all comparison-based sorting algorithms.",
+              "points": "4",
+              "estimated_minutes": 2,
+              "scoring_policy": "partial_credit",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Merge sort"
+                },
+                {
+                  "id": "b",
+                  "text": "Counting sort"
+                },
+                {
+                  "id": "c",
+                  "text": "Quicksort"
+                },
+                {
+                  "id": "d",
+                  "text": "Radix sort"
+                }
+              ]
+            },
+            {
+              "id": "q3",
+              "type": "multiple_select",
+              "prompt": "Select all data structures that support efficient search for a key under their usual assumptions.",
+              "points": "3",
+              "estimated_minutes": 2,
+              "scoring_policy": "all_or_nothing",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Hash table"
+                },
+                {
+                  "id": "b",
+                  "text": "Balanced binary search tree"
+                },
+                {
+                  "id": "c",
+                  "text": "Unsorted linked list"
+                },
+                {
+                  "id": "d",
+                  "text": "Unsorted array"
+                }
+              ]
+            },
+            {
+              "id": "q4",
+              "type": "short_answer",
+              "prompt": "Define a hash collision and describe one consequence for a hash table.",
+              "points": "4",
+              "estimated_minutes": 4,
+              "response_lines": 5,
+              "suggested_word_count": {
+                "min": 25,
+                "max": 75
+              }
+            },
+            {
+              "id": "q5",
+              "type": "essay",
+              "prompt": "Compare arrays and linked lists with respect to random access, insertion, and memory overhead. Explain how the differences influence a design decision.",
+              "points": "6",
+              "estimated_minutes": 12,
+              "response_lines": 20,
+              "suggested_word_count": {
+                "min": 180,
+                "max": 300
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "answer_key": {
+      "q1": {
+        "method": "choice",
+        "correct_option_ids": [
+          "b"
+        ],
+        "explanation": "A queue processes elements in FIFO order."
+      },
+      "q2": {
+        "method": "choice",
+        "correct_option_ids": [
+          "a",
+          "c"
+        ],
+        "explanation": "Merge sort and quicksort compare elements, unlike counting sort and radix sort."
+      },
+      "q3": {
+        "method": "choice",
+        "correct_option_ids": [
+          "a",
+          "b"
+        ],
+        "explanation": "Hash tables have expected constant-time lookup and balanced search trees have logarithmic lookup; unsorted linear collections require linear search."
+      },
+      "q4": {
+        "method": "analytic_rubric",
+        "reference_answer": "A collision occurs when distinct keys produce the same hash value or index/bucket. Collision handling such as chaining or probing is required, and collisions can increase lookup time.",
+        "criteria": [
+          {
+            "id": "definition",
+            "description": "Defines a collision correctly. Full credit: States that distinct keys can map to the same hash value or bucket."
+          },
+          {
+            "id": "consequence",
+            "description": "Explains a relevant consequence. Full credit: Explains how collisions require resolution or can impair table performance."
+          }
+        ]
+      },
+      "q5": {
+        "method": "analytic_rubric",
+        "reference_answer": "Arrays typically provide constant-time indexed access and contiguous memory; linked lists require traversal for indexed access. Linked-list insertion is constant time only once the location is known, while middle-array insertion requires shifting; resizing may also be relevant. Linked lists have pointer overhead; arrays typically have better locality. The best choice depends on workload and constraints.",
+        "criteria": [
+          {
+            "id": "access",
+            "description": "Compares random access accurately. Full credit: Contrasts array indexing with linked-list traversal correctly."
+          },
+          {
+            "id": "insertion_memory",
+            "description": "Compares insertion and memory overhead accurately. Full credit: Explains relevant insertion qualifications and memory differences."
+          },
+          {
+            "id": "design",
+            "description": "Justifies a design choice for a specific workload. Full credit: Links an explicit workload to the appropriate access, insertion or memory tradeoffs."
+          }
+        ]
+      }
+    }
+  },
+  "F": {
+    "format_version": "0.11.3",
+    "assessment": {
+      "id": "proportional_reasoning_quiz",
+      "title": "Proportional Reasoning Mini-Assessment",
+      "subject": "Quantitative Reasoning",
+      "audience": "Introductory undergraduate",
+      "instructions": "Answer every question. The multiple-select question states its scoring policy. The short answer is marked against a five-criterion rubric; the grader may award any fraction of the five points, justified against each criterion's description.",
+      "time_limit_minutes": 20,
+      "sections": [
+        {
+          "id": "proportionality",
+          "title": "Proportionality",
+          "instructions": "",
+          "questions": [
+            {
+              "id": "q1",
+              "type": "single_choice",
+              "prompt": "A recipe uses 3 cups of flour for every 2 cups of milk. Which expression gives the amount of flour needed for 7 cups of milk?",
+              "points": "2",
+              "estimated_minutes": 2,
+              "options": [
+                {
+                  "id": "a",
+                  "text": "7 × (2/3)"
+                },
+                {
+                  "id": "b",
+                  "text": "7 × (3/2)"
+                },
+                {
+                  "id": "c",
+                  "text": "3 + 7"
+                }
+              ]
+            },
+            {
+              "id": "q2",
+              "type": "multiple_select",
+              "prompt": "Which of the following are legitimate ways to test whether two quantities are proportional?",
+              "points": "3",
+              "estimated_minutes": 3,
+              "scoring_policy": "partial_credit",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Check whether the ratio of the two quantities is constant across data pairs."
+                },
+                {
+                  "id": "b",
+                  "text": "Check whether the graph passes through the origin."
+                },
+                {
+                  "id": "c",
+                  "text": "Check whether a single pair of values has a ratio greater than one."
+                },
+                {
+                  "id": "d",
+                  "text": "Check whether the differences between successive values are constant."
+                }
+              ]
+            },
+            {
+              "id": "q3",
+              "type": "short_answer",
+              "prompt": "A car travels 240 km in 3 hours. Assuming a constant speed, explain how you would find the distance travelled in 7.5 hours, carry out the calculation, and state what the result means.",
+              "points": "5",
+              "estimated_minutes": 6,
+              "response_lines": 5
+            }
+          ]
+        }
+      ]
+    },
+    "answer_key": {
+      "q1": {
+        "method": "choice",
+        "correct_option_ids": [
+          "b"
+        ],
+        "explanation": "The rate is flour per milk, 3/2, so 7 cups of milk require 7 × (3/2) = 10.5 cups of flour."
+      },
+      "q2": {
+        "method": "choice",
+        "correct_option_ids": [
+          "a",
+          "b"
+        ],
+        "explanation": "A constant ratio and an origin-crossing graph both characterise proportionality; a single pair's ratio and constant successive differences do not."
+      },
+      "q3": {
+        "method": "analytic_rubric",
+        "reference_answer": "Speed = 240/3 = 80 km/h; distance = 80 × 7.5 = 600 km. The result says the car covers 600 km if the speed stays constant.",
+        "criteria": [
+          {
+            "id": "identify_rate",
+            "description": "Identifies the constant rate that the proportionality assumption gives. Full credit: States the constant speed as 240 ÷ 3 = 80 km/h."
+          },
+          {
+            "id": "state_assumption",
+            "description": "States the proportionality assumption the method depends on. Full credit: Explicitly assumes a constant speed before applying the ratio."
+          },
+          {
+            "id": "set_up_equation",
+            "description": "Sets up the correct proportion or scaling relation. Full credit: Sets up a correct relation, whether as 240/3 = d/7.5 or as 80 per hour scaled by 7.5."
+          },
+          {
+            "id": "arithmetic",
+            "description": "Carries out the arithmetic correctly. Full credit: Both 80 km/h and 600 km are computed correctly."
+          },
+          {
+            "id": "interpretation",
+            "description": "Interprets the result in the problem's terms. Full credit: States that the car travels about 600 km in 7.5 hours at that constant speed."
+          }
+        ]
+      }
+    }
+  },
+  "F.1": {
+    "format_version": "0.11.3",
+    "assessment_id": "proportional_reasoning_quiz",
+    "submission_id": "submission_hp_004",
+    "responses": {
+      "q1": {
+        "selected_option_ids": [
+          "b"
+        ]
+      },
+      "q2": {
+        "selected_option_ids": [
+          "a"
+        ]
+      },
+      "q3": {
+        "text": "The car covers 80 km each hour because 240 divided by 3 is 80. So in 7.5 hours it goes 80 times 7.5, which is 600. It travels 600 kilometres."
+      }
+    }
+  },
+  "F.2": {
+    "format_version": "0.11.3",
+    "assessment_id": "proportional_reasoning_quiz",
+    "submission_id": "submission_hp_004",
+    "grading_status": "graded",
+    "results": [
+      {
+        "question_id": "q1",
+        "status": "graded",
+        "awarded_points": "2",
+        "max_points": "2",
+        "feedback": "Selected b, the only correct expression: the rate is flour per milk, 3/2.",
+        "criterion_scores": [],
+        "review_reason": null
+      },
+      {
+        "question_id": "q2",
+        "status": "graded",
+        "awarded_points": "3/2",
+        "max_points": "3",
+        "feedback": "Partial credit: TP=1, FP=0, c=2, i=2; score = 3 × (1×2 − 0×2) / (2×2) = \"3/2\" exactly, displayed 1.5. Option a is correct; option b (origin-crossing) is also correct and was not selected.",
+        "criterion_scores": [],
+        "review_reason": null
+      },
+      {
+        "question_id": "q3",
+        "status": "graded",
+        "awarded_points": "4",
+        "max_points": "5",
+        "feedback": "Correct rate and arithmetic, but the assumption is only implied and the interpretation omits the constant-speed condition.",
+        "criterion_scores": [
+          {
+            "criterion_id": "identify_rate",
+            "points_awarded": "1",
+            "evidence": "The car covers 80 km each hour because 240 divided by 3 is 80",
+            "justification": "States the constant speed explicitly and correctly."
+          },
+          {
+            "criterion_id": "state_assumption",
+            "points_awarded": "1/2",
+            "evidence": "each hour",
+            "justification": "A per-hour rate implies constant speed but the assumption is never stated."
+          },
+          {
+            "criterion_id": "set_up_equation",
+            "points_awarded": "1",
+            "evidence": "80 times 7.5",
+            "justification": "Correct scaling of the unit rate by 7.5 hours."
+          },
+          {
+            "criterion_id": "arithmetic",
+            "points_awarded": "1/2",
+            "evidence": "which is 600",
+            "justification": "The result 600 is correct, but 80 × 7.5 = 600 is asserted without showing the half-hour step the problem's 7.5 invites."
+          },
+          {
+            "criterion_id": "interpretation",
+            "points_awarded": "1",
+            "evidence": "It travels 600 kilometres.",
+            "justification": "Interprets the number as a distance, though the constant-speed condition is left implicit."
+          }
+        ],
+        "review_reason": null
+      }
+    ],
+    "total_possible_points": "10",
+    "total_awarded_points": "15/2"
+  },
+  "G.1": {
+    "format_version": "0.11.3",
+    "assessment": {
+      "id": "classics_unit_08_final",
+      "title": "Classics — Unit 08: The Lathe of Heaven — Final Exam",
+      "subject": "Literature / Philosophy",
+      "audience": "Upper-level undergraduate",
+      "instructions": "Open-book, 60 minutes. Section B requires two of three essays; Section C requires one of two short answers. Read the section preambles for how many answers are required.",
+      "time_limit_minutes": 60,
+      "sections": [
+        {
+          "id": "recall",
+          "title": "Section A — Recall",
+          "instructions": "",
+          "questions": [
+            {
+              "id": "a1",
+              "type": "single_choice",
+              "prompt": "In the novel, whose dreams alter reality?",
+              "points": "2",
+              "estimated_minutes": 1,
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Haber"
+                },
+                {
+                  "id": "b",
+                  "text": "Orr"
+                },
+                {
+                  "id": "c",
+                  "text": "Lelache"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "analysis",
+          "title": "Section B — Analytical essays",
+          "instructions": "",
+          "questions": [
+            {
+              "id": "section_b",
+              "type": "alternative_set",
+              "prompt": "Answer any two of the following three essays.",
+              "choose_n": 2,
+              "points": "70",
+              "estimated_minutes": 45,
+              "alternatives": [
+                {
+                  "id": "b1",
+                  "type": "essay",
+                  "prompt": "On wu wei and Orr's agency: does the novel endorse quietism?",
+                  "points": "35",
+                  "estimated_minutes": 22,
+                  "response_lines": 40,
+                  "suggested_word_count": {
+                    "min": 450,
+                    "max": 550
+                  }
+                },
+                {
+                  "id": "b2",
+                  "type": "essay",
+                  "prompt": "On Haber and the critique of utopian and technocratic engineering.",
+                  "points": "35",
+                  "estimated_minutes": 22,
+                  "response_lines": 40,
+                  "suggested_word_count": {
+                    "min": 450,
+                    "max": 550
+                  }
+                },
+                {
+                  "id": "b3",
+                  "type": "essay",
+                  "prompt": "On the novel's ontology and its unstable reality.",
+                  "points": "35",
+                  "estimated_minutes": 22,
+                  "response_lines": 40,
+                  "suggested_word_count": {
+                    "min": 450,
+                    "max": 550
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "synthesis",
+          "title": "Section C — Synthesis",
+          "instructions": "",
+          "questions": [
+            {
+              "id": "section_c",
+              "type": "alternative_set",
+              "prompt": "Answer one of the following two short answers.",
+              "choose_n": 1,
+              "points": "10",
+              "estimated_minutes": 10,
+              "alternatives": [
+                {
+                  "id": "c1",
+                  "type": "short_answer",
+                  "prompt": "State the Daoist objection to Haber's improvements in one or two sentences.",
+                  "points": "10",
+                  "estimated_minutes": 5,
+                  "response_lines": 6
+                },
+                {
+                  "id": "c2",
+                  "type": "short_answer",
+                  "prompt": "State the novel's argument about who bears responsibility for an authored world.",
+                  "points": "10",
+                  "estimated_minutes": 5,
+                  "response_lines": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "answer_key": {
+      "a1": {
+        "method": "choice",
+        "correct_option_ids": [
+          "b"
+        ],
+        "explanation": "Orr's dreams change the world; Haber directs them."
+      },
+      "b1": {
+        "method": "analytic_rubric",
+        "reference_answer": "Quietism is the failure to act; wu wei is effective non-coercive action, and Orr acts through the dream rather than withdrawing from it.",
+        "criteria": [
+          {
+            "id": "thesis",
+            "description": "States what wu wei requires of an agent, and what quietism would be. Full credit: distinguishes principled non-coercion from passivity."
+          },
+          {
+            "id": "evidence",
+            "description": "Grounds the claim in specific episodes of the novel. Full credit: cites at least two episodes accurately."
+          },
+          {
+            "id": "coherence",
+            "description": "Explains how the evidence supports the thesis without internal contradiction. Full credit: the argument's steps connect."
+          }
+        ]
+      },
+      "b2": {
+        "method": "analytic_rubric",
+        "reference_answer": "Haber's engineering reduces political problems to technical ones, and the novel treats that reduction as the source of each catastrophe.",
+        "criteria": [
+          {
+            "id": "thesis",
+            "description": "Identifies the technocratic reduction the novel criticizes. Full credit: names the reduction, not just Haber's ambition."
+          },
+          {
+            "id": "evidence",
+            "description": "Grounds the critique in specific episodes of the novel. Full credit: cites at least two episodes accurately."
+          },
+          {
+            "id": "coherence",
+            "description": "Explains how the evidence supports the thesis without internal contradiction. Full credit: the argument's steps connect."
+          }
+        ]
+      },
+      "b3": {
+        "method": "analytic_rubric",
+        "reference_answer": "Reality in the novel is revisable and layered; the concurrences make the instability structural rather than a plot device.",
+        "criteria": [
+          {
+            "id": "thesis",
+            "description": "States what the novel claims reality is. Full credit: distinguishes instability from mere illusion."
+          },
+          {
+            "id": "evidence",
+            "description": "Grounds the claim in the concurrences and their consequences. Full credit: traces at least one continuity across revisions."
+          },
+          {
+            "id": "coherence",
+            "description": "Explains how the evidence supports the thesis without internal contradiction. Full credit: the argument's steps connect."
+          }
+        ]
+      },
+      "c1": {
+        "method": "analytic_rubric",
+        "reference_answer": "Centralized improvement imposes the improver's values and treats the beneficiaries as objects of a design rather than agents.",
+        "criteria": [
+          {
+            "id": "objection",
+            "description": "Names the Daoist objection to imposed improvement. Full credit: identifies coercion by a central planner."
+          }
+        ]
+      },
+      "c2": {
+        "method": "analytic_rubric",
+        "reference_answer": "Responsibility falls on whoever directs the dream, since the world's revision is deliberate even when its details are not foreseen.",
+        "criteria": [
+          {
+            "id": "responsibility",
+            "description": "Locates responsibility for an authored world. Full credit: ties it to deliberate direction, not to unintended detail."
+          }
+        ]
+      }
+    }
+  },
+  "G.2": {
+    "format_version": "0.11.3",
+    "assessment_id": "classics_unit_08_final",
+    "submission_id": "submission_unit08_042",
+    "responses": {
+      "a1": {
+        "selected_option_ids": [
+          "b"
+        ]
+      },
+      "section_b": {
+        "b1": {
+          "text": "Orr does not withdraw from the world; he revises it. Wu wei is action that does not coerce, and the dream is its instrument, so the novel's quietism is a charge it refuses. The misuse is Haber's, who treats each revision as an engineering task."
+        },
+        "b2": {
+          "text": "Haber's improvements fail because he converts political questions into technical ones. Each fix removes one grievance and installs a new order of value that nobody chose, which is the novel's objection to the technical fix."
+        },
+        "b3": {
+          "text": "The world of the novel is revisable and layered; what looks like an unstable reality is a reality with an author in it."
+        }
+      }
+    }
+  },
+  "G.3": {
+    "format_version": "0.11.3",
+    "assessment_id": "classics_unit_08_final",
+    "submission_id": "submission_unit08_042",
+    "grading_status": "graded",
+    "results": [
+      {
+        "question_id": "a1",
+        "status": "graded",
+        "awarded_points": "2",
+        "max_points": "2",
+        "feedback": "Selected b, the only correct option.",
+        "criterion_scores": [],
+        "review_reason": null
+      },
+      {
+        "question_id": "section_b",
+        "status": "graded",
+        "awarded_points": "115/2",
+        "max_points": "70",
+        "answered_alternative_ids": [
+          "b1",
+          "b2",
+          "b3"
+        ],
+        "ignored_alternative_ids": [
+          "b3"
+        ],
+        "feedback": "Three answers were provided for a two-of-three group; b1 and b2 are counted in the group's document order and b3 is ignored, not graded. b1 earned 30 of 35; b2 earned 55/2 of 35. The group maximum stays 70 (115/2 displays as 57.5).",
+        "criterion_scores": [
+          {
+            "alternative_id": "b1",
+            "criterion_id": "thesis",
+            "points_awarded": "15",
+            "evidence": "Wu wei is action that does not coerce",
+            "justification": "Distinguishes principled non-coercion from passivity, as the criterion requires."
+          },
+          {
+            "alternative_id": "b1",
+            "criterion_id": "evidence",
+            "points_awarded": "10",
+            "evidence": "the dream is its instrument",
+            "justification": "Cites the dream and Haber's misuse; episode coverage is adequate but not rich."
+          },
+          {
+            "alternative_id": "b1",
+            "criterion_id": "coherence",
+            "points_awarded": "5",
+            "evidence": "the novel's quietism is a charge it refuses",
+            "justification": "The steps connect, though the closing sentence asserts more than it shows."
+          },
+          {
+            "alternative_id": "b2",
+            "criterion_id": "thesis",
+            "points_awarded": "25/2",
+            "evidence": "converts political questions into technical ones",
+            "justification": "Names the reduction rather than Haber's ambition, but hedges with 'improvements fail'."
+          },
+          {
+            "alternative_id": "b2",
+            "criterion_id": "evidence",
+            "points_awarded": "10",
+            "evidence": "Each fix removes one grievance and installs a new order",
+            "justification": "Uses the novel's pattern accurately without citing a second episode."
+          },
+          {
+            "alternative_id": "b2",
+            "criterion_id": "coherence",
+            "points_awarded": "5",
+            "evidence": "is the novel's objection to the technical fix",
+            "justification": "The argument's steps connect; the final clause restates rather than explains."
+          }
+        ],
+        "review_reason": null
+      },
+      {
+        "question_id": "section_c",
+        "status": "graded",
+        "awarded_points": "0",
+        "max_points": "10",
+        "answered_alternative_ids": [],
+        "ignored_alternative_ids": [],
+        "feedback": "No alternative was answered, so the group earns 0 of 10. The group's maximum does not change with the answer sheet: the assessment is still marked out of 82.",
+        "criterion_scores": [],
+        "review_reason": null
+      }
+    ],
+    "total_possible_points": "82",
+    "total_awarded_points": "119/2"
+  },
+  "H.1": {
+    "format_version": "0.11.3",
+    "assessment": {
+      "id": "mip_l01_locator_demo",
+      "title": "Modern Israel and Palestine — Lecture 01 locator demo",
+      "subject": "History",
+      "audience": "Upper-level undergraduate",
+      "instructions": "Answer both questions. Open book; citations in the key follow each source's declared locator scheme.",
+      "time_limit_minutes": 25,
+      "sources": [
+        {
+          "id": "morris",
+          "citation": "Morris, Righteous Victims (1999)",
+          "schemes": [
+            {
+              "scheme": "chapter",
+              "status": "verified"
+            },
+            {
+              "scheme": "print_page",
+              "status": "pending"
+            }
+          ],
+          "note": "Quotation attribution via the lesson passes. Print page ranges are not verified, so citations stay at chapter level; no invented page ranges.",
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "tessler",
+          "citation": "Tessler, A History of the Israeli–Palestinian Conflict (1994)",
+          "schemes": [
+            {
+              "scheme": "chapter",
+              "status": "verified"
+            },
+            {
+              "scheme": "print_page",
+              "status": "verified"
+            }
+          ],
+          "ranges": [
+            {
+              "label": "Part I chs. 1–2",
+              "scheme": "print_page",
+              "from": 1,
+              "to": 65,
+              "offset": -20,
+              "status": "derived"
+            }
+          ],
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "pipes",
+          "citation": "Pipes, A History of the Middle East (1990)",
+          "schemes": [
+            {
+              "scheme": "chapter",
+              "status": "verified"
+            }
+          ],
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "khalidi_readings",
+          "citation": "Khalidi (ed.), From Haven to Conquest — course Reading booklet",
+          "schemes": [
+            {
+              "scheme": "reading",
+              "status": "verified"
+            }
+          ],
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "mip_wiki",
+          "citation": "Wiki: Modern-Israel-Palestine-L01 (course wiki page)",
+          "schemes": [
+            {
+              "scheme": "path",
+              "status": "verified"
+            }
+          ],
+          "tier": "supplemental"
+        }
+      ],
+      "sections": [
+        {
+          "id": "recall",
+          "title": "Section A — Short factual recall (5 pts)",
+          "instructions": "",
+          "questions": [
+            {
+              "id": "a1",
+              "type": "short_answer",
+              "prompt": "Which land-transfer pattern does Tessler describe for the first decade of Zionist settlement, and where does he place it?",
+              "points": "5",
+              "estimated_minutes": 5,
+              "response_lines": 6
+            }
+          ]
+        },
+        {
+          "id": "analysis",
+          "title": "Section B — Short essay (10 pts)",
+          "instructions": "",
+          "questions": [
+            {
+              "id": "b1",
+              "type": "essay",
+              "prompt": "Explain how the early Zionist leadership understood Arab opposition before 1914, and how that understanding changed. Ground the answer in the assigned readings.",
+              "points": "10",
+              "estimated_minutes": 18,
+              "response_lines": 20,
+              "suggested_word_count": {
+                "min": 250,
+                "max": 350
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "answer_key": {
+      "a1": {
+        "method": "analytic_rubric",
+        "reference_answer": "Settlement concentrated in coastal and inland colonies purchased on the market; Tessler places the pattern in the Ottoman period of Part I.",
+        "locators": [
+          {
+            "source_id": "tessler",
+            "scheme": "print_page",
+            "range": {
+              "from": 1,
+              "to": 65
+            },
+            "status": "derived",
+            "derived_from": "Part I chs. 1–2"
+          }
+        ],
+        "criteria": [
+          {
+            "id": "pattern",
+            "description": "Names the land-transfer pattern. Full credit: market purchase under Ottoman land law, not confiscation.",
+            "locators": [
+              {
+                "source_id": "morris",
+                "scheme": "chapter",
+                "value": "3",
+                "status": "verified"
+              }
+            ]
+          }
+        ]
+      },
+      "b1": {
+        "method": "analytic_rubric",
+        "reference_answer": "Before 1914 the leadership largely denied Arab national feeling and read opposition as economic or incited; the change tracks the Young Turk revolution and the early labour-Zionist encounters.",
+        "locators": [
+          {
+            "source_id": "morris",
+            "scheme": "chapter",
+            "value": "3",
+            "status": "verified"
+          },
+          {
+            "source_id": "tessler",
+            "scheme": "print_page",
+            "value": "102",
+            "status": "verified"
+          }
+        ],
+        "criteria": [
+          {
+            "id": "thesis",
+            "description": "States how the leadership read Arab opposition, and what changed. Full credit: names denial of national feeling and gives the shift a cause.",
+            "locators": [
+              {
+                "source_id": "khalidi_readings",
+                "scheme": "reading",
+                "value": "25",
+                "status": "verified"
+              }
+            ]
+          },
+          {
+            "id": "evidence",
+            "description": "Cites specific episodes or statements. Full credit: at least two, accurately attributed.",
+            "locators": [
+              {
+                "source_id": "morris",
+                "scheme": "chapter",
+                "value": "4",
+                "status": "verified"
+              },
+              {
+                "source_id": "pipes",
+                "scheme": "chapter",
+                "value": "2",
+                "status": "verified",
+                "role": "cf",
+                "note": "Pipes reads the same episodes as a failed bargain; use only as a contrast."
+              }
+            ]
+          },
+          {
+            "id": "coherence",
+            "description": "Connects the evidence to the thesis without internal contradiction.",
+            "locators": [
+              {
+                "source_id": "mip_wiki",
+                "scheme": "path",
+                "value": "Modern-Israel-Palestine-L01.md",
+                "status": "verified"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "quote_verification": [
+      {
+        "quote": "in opposition to the will of the majority of the population",
+        "attribution": "Money to Curzon",
+        "locators": [
+          {
+            "source_id": "morris",
+            "scheme": "chapter",
+            "value": "3",
+            "status": "verified"
+          }
+        ],
+        "status": "verified"
+      },
+      {
+        "quote": "No solution! There is a gulf, and nothing can bridge it",
+        "attribution": "Ben-Gurion, 1919",
+        "locators": [
+          {
+            "source_id": "morris",
+            "scheme": "chapter",
+            "value": "3",
+            "status": "verified"
+          }
+        ],
+        "status": "verified"
+      },
+      {
+        "quote": "the graveyard of empires",
+        "attribution": "as quoted in the lesson",
+        "locators": [
+          {
+            "source_id": "pipes",
+            "scheme": "chapter",
+            "value": "2",
+            "status": "unverified"
+          }
+        ],
+        "status": "unverified",
+        "note": "Wording to confirm on the page pass; not used as scored evidence."
+      }
+    ]
+  },
+  "H.2": {
+    "format_version": "0.11.3",
+    "assessment_id": "mip_l01_locator_demo",
+    "submission_id": "submission_l01_007",
+    "responses": {
+      "a1": {
+        "text": "Colonies were bought on the market rather than seized; Tessler puts it in the Ottoman Part I period."
+      },
+      "b1": {
+        "text": "Before 1914 the leadership mostly denied that Arab opposition was national, reading it as the work of a few notables or as resentment of better farming. Morris's chapters on the second aliya show the shift beginning where labour Zionism ran into Arab labour."
+      }
+    }
+  },
+  "H.3": {
+    "format_version": "0.11.3",
+    "assessment_id": "mip_l01_locator_demo",
+    "submission_id": "submission_l01_007",
+    "grading_status": "graded",
+    "results": [
+      {
+        "question_id": "a1",
+        "status": "graded",
+        "awarded_points": "3",
+        "max_points": "5",
+        "feedback": "Names the market-purchase pattern correctly and places it in the Ottoman period; the answer does not name the legal basis, so the criterion is partly earned.",
+        "criterion_scores": [
+          {
+            "criterion_id": "pattern",
+            "points_awarded": "3",
+            "evidence": "Colonies were bought on the market rather than seized",
+            "justification": "Names the pattern; Ottoman land law is not named, so full credit is not earned.",
+            "locators": [
+              {
+                "source_id": "morris",
+                "scheme": "chapter",
+                "value": "3",
+                "status": "verified"
+              }
+            ]
+          }
+        ],
+        "review_reason": null
+      },
+      {
+        "question_id": "b1",
+        "status": "graded",
+        "awarded_points": "8",
+        "max_points": "10",
+        "feedback": "Denial of national feeling is named with a cause; two episodes are cited accurately, one only loosely. Coherence is sound but the closing sentence asserts more than it shows.",
+        "criterion_scores": [
+          {
+            "criterion_id": "thesis",
+            "points_awarded": "9/2",
+            "evidence": "the leadership mostly denied that Arab opposition was national",
+            "justification": "Names the denial and its cause in economic terms, as the criterion requires.",
+            "locators": [
+              {
+                "source_id": "khalidi_readings",
+                "scheme": "reading",
+                "value": "25",
+                "status": "verified"
+              }
+            ]
+          },
+          {
+            "criterion_id": "evidence",
+            "points_awarded": "5/2",
+            "evidence": "Morris's chapters on the second aliya show the shift beginning",
+            "justification": "One episode is accurate and attributed; the second is gestured at rather than cited.",
+            "locators": [
+              {
+                "source_id": "morris",
+                "scheme": "chapter",
+                "value": "4",
+                "status": "verified"
+              }
+            ]
+          },
+          {
+            "criterion_id": "coherence",
+            "points_awarded": "1",
+            "evidence": "the shift beginning where labour Zionism ran into Arab labour",
+            "justification": "The steps connect; the final clause is asserted rather than argued.",
+            "locators": [
+              {
+                "source_id": "mip_wiki",
+                "scheme": "path",
+                "value": "Modern-Israel-Palestine-L01.md",
+                "status": "verified"
+              }
+            ]
+          }
+        ],
+        "review_reason": null
+      }
+    ],
+    "total_possible_points": "15",
+    "total_awarded_points": "11"
+  },
+  "I.1": {
+    "format_version": "0.11.3",
+    "assessment": {
+      "id": "mip_l01_exam_01",
+      "title": "Modern Israel and Palestine — Lecture 01: Exam 01",
+      "subject": "History",
+      "audience": "Upper-level undergraduate (self-study, open-book)",
+      "instructions": "Answer every question. Section A is recall; Section B offers two essays — answer one.",
+      "time_limit_minutes": 30,
+      "scope": {
+        "course": {
+          "id": "modern-israel-palestine",
+          "label": "Modern Israel and Palestine"
+        },
+        "segments": [
+          {
+            "id": "mip-l01",
+            "kind": "lecture",
+            "label": "Lecture 01 — Background: Late Ottoman Palestine and the Origins of Zionism"
+          }
+        ],
+        "note": "Required readings only. The optional-tier worksheet (WS02) is a separate assessment and does not gate."
+      },
+      "sources": [
+        {
+          "id": "hertzberg",
+          "citation": "Hertzberg (ed.), The Zionist Idea — Part 3 (Herzl) and Part 4 (Ahad Ha'am)",
+          "schemes": [
+            {
+              "scheme": "part",
+              "status": "verified"
+            },
+            {
+              "scheme": "print_page",
+              "status": "pending"
+            }
+          ],
+          "tier": "required",
+          "category": "primary"
+        },
+        {
+          "id": "avineri",
+          "citation": "Avineri, The Making of Modern Zionism — Ch. 7 (Pinsker)",
+          "schemes": [
+            {
+              "scheme": "chapter",
+              "status": "verified"
+            }
+          ],
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "laqueur_hist",
+          "citation": "Laqueur, A History of Zionism — Chs. 1–3",
+          "schemes": [
+            {
+              "scheme": "chapter",
+              "status": "verified"
+            }
+          ],
+          "tier": "required",
+          "category": "secondary"
+        },
+        {
+          "id": "nordau_speech",
+          "citation": "Nordau, Speech at the First Zionist Congress (1897)",
+          "schemes": [
+            {
+              "scheme": "heading",
+              "status": "verified"
+            }
+          ],
+          "tier": "extension",
+          "category": "primary"
+        },
+        {
+          "id": "mip_wiki",
+          "citation": "Wiki: Modern-Israel-Palestine-L01 (course wiki page)",
+          "schemes": [
+            {
+              "scheme": "path",
+              "status": "verified"
+            }
+          ],
+          "tier": "supplemental"
+        }
+      ],
+      "gate": {
+        "mastery": true,
+        "mode": "completion",
+        "note": "Soft mastery — completion advances regardless of score (course policy)."
+      },
+      "floors": [
+        {
+          "tier": "required",
+          "min_share": "3/5",
+          "applies_to": "mastery"
+        }
+      ],
+      "sections": [
+        {
+          "id": "recall",
+          "title": "Section A — Recall (10 pts)",
+          "instructions": "Answer both questions briefly.",
+          "questions": [
+            {
+              "id": "q1",
+              "type": "single_choice",
+              "prompt": "In Ahad Ha'am's 'The Jewish State and the Jewish Problem', what does he argue the Zionist movement must create?",
+              "points": "5",
+              "estimated_minutes": 3,
+              "options": [
+                {
+                  "id": "o1",
+                  "text": "A state with a Jewish majority as soon as possible"
+                },
+                {
+                  "id": "o2",
+                  "text": "A spiritual centre in Palestine that shapes Jewish life in the Diaspora"
+                },
+                {
+                  "id": "o3",
+                  "text": "A territorial refuge outside Palestine"
+                },
+                {
+                  "id": "o4",
+                  "text": "A religious revival led by the rabbinate"
+                }
+              ]
+            },
+            {
+              "id": "q2",
+              "type": "short_answer",
+              "prompt": "State Pinsker's diagnosis of the Jewish problem and the remedy he proposed.",
+              "points": "5",
+              "estimated_minutes": 5,
+              "response_lines": 4
+            }
+          ]
+        },
+        {
+          "id": "analysis",
+          "title": "Section B — Analysis (10 pts)",
+          "instructions": "Choose ONE of the two essays.",
+          "questions": [
+            {
+              "id": "q3",
+              "type": "alternative_set",
+              "prompt": "Choose one essay.",
+              "points": "10",
+              "estimated_minutes": 20,
+              "choose_n": 1,
+              "alternatives": [
+                {
+                  "id": "a1",
+                  "type": "essay",
+                  "prompt": "Explain how Laqueur's chapters 1–3 account for the emergence of political Zionism, and assess whether his account is compatible with Hertzberg's documents.",
+                  "points": "10",
+                  "estimated_minutes": 20,
+                  "response_lines": 14
+                },
+                {
+                  "id": "a2",
+                  "type": "essay",
+                  "prompt": "Using Avineri's chapter on Pinsker and Nordau's Congress speech, compare what each thought the movement was for.",
+                  "points": "10",
+                  "estimated_minutes": 20,
+                  "response_lines": 14
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "assessed": [
+          {
+            "segment_id": "mip-l01",
+            "question_ids": [
+              "q1",
+              "q2",
+              "q3"
+            ],
+            "note": "Recall covers the Ottoman background and both readings' diagnoses; the essay group weighs the two framings."
+          }
+        ],
+        "omitted": [
+          {
+            "segment_id": "mip-l01",
+            "topic": "The 1936–39 Arab Revolt and its aftermath",
+            "reason": "time"
+          },
+          {
+            "topic": "Post-1948 refugee politics in detail",
+            "reason": "deferred"
+          }
+        ],
+        "note": "Lecture 01 only; the optional-tier worksheet WS02 is a separate assessment and is not audited here."
+      }
+    },
+    "answer_key": {
+      "q1": {
+        "method": "choice",
+        "correct_option_ids": [
+          "o2"
+        ],
+        "explanation": "Ahad Ha'am's 'spiritual centre' is the reading's central claim; the political state is Herzl's programme, which he criticises.",
+        "locators": [
+          {
+            "source_id": "hertzberg",
+            "scheme": "part",
+            "value": "4",
+            "status": "verified"
+          }
+        ]
+      },
+      "q2": {
+        "method": "analytic_rubric",
+        "reference_answer": "Pinsker reads Judeophobia as a hereditary, irrational fear that no emancipation can dissolve, and proposes a national territory secured by charter — a homeland, not necessarily Palestine.",
+        "locators": [
+          {
+            "source_id": "avineri",
+            "scheme": "chapter",
+            "value": "7",
+            "status": "verified"
+          }
+        ],
+        "criteria": [
+          {
+            "id": "diagnosis",
+            "description": "Names the hereditary, irrational character of Judeophobia.",
+            "locators": [
+              {
+                "source_id": "avineri",
+                "scheme": "chapter",
+                "value": "7",
+                "status": "verified"
+              }
+            ]
+          },
+          {
+            "id": "remedy",
+            "description": "Names auto-emancipation: a territory secured by charter, with Palestine not required."
+          }
+        ]
+      },
+      "a1": {
+        "method": "analytic_rubric",
+        "reference_answer": "Laqueur locates political Zionism in the failure of emancipation and of the forerunners, with Herzl as organiser; Hertzberg's documents supply the movement's own self-understanding — compatible at the level of diagnosis, not of programme.",
+        "locators": [
+          {
+            "source_id": "laqueur_hist",
+            "scheme": "chapter",
+            "value": "1",
+            "status": "verified"
+          },
+          {
+            "source_id": "hertzberg",
+            "scheme": "part",
+            "value": "3",
+            "status": "verified",
+            "role": "cf"
+          }
+        ],
+        "criteria": [
+          {
+            "id": "laqueur_account",
+            "description": "States Laqueur's causal account: failed emancipation, forerunners, Herzl as organiser.",
+            "locators": [
+              {
+                "source_id": "laqueur_hist",
+                "scheme": "chapter",
+                "value": "1",
+                "status": "verified"
+              }
+            ]
+          },
+          {
+            "id": "hertzberg_compat",
+            "description": "Weighs Hertzberg's documents against that account rather than summarising them.",
+            "locators": [
+              {
+                "source_id": "hertzberg",
+                "scheme": "part",
+                "value": "3",
+                "status": "verified"
+              }
+            ]
+          }
+        ]
+      },
+      "a2": {
+        "method": "analytic_rubric",
+        "reference_answer": "Avineri's Pinsker treats the problem as psychological and the remedy as a charter; Nordau's speech treats it as the physical and moral degeneration of the Western Jew, for which a state is the cure.",
+        "locators": [
+          {
+            "source_id": "avineri",
+            "scheme": "chapter",
+            "value": "7",
+            "status": "verified"
+          },
+          {
+            "source_id": "nordau_speech",
+            "scheme": "heading",
+            "value": "the Jewish question",
+            "status": "verified",
+            "role": "cf"
+          }
+        ],
+        "criteria": [
+          {
+            "id": "pinsker_view",
+            "description": "Pinsker: hereditary fear, charter territory.",
+            "locators": [
+              {
+                "source_id": "avineri",
+                "scheme": "chapter",
+                "value": "7",
+                "status": "verified"
+              }
+            ]
+          },
+          {
+            "id": "nordau_view",
+            "description": "Nordau: a degeneration diagnosis, the state as cure.",
+            "locators": [
+              {
+                "source_id": "nordau_speech",
+                "scheme": "heading",
+                "value": "the Jewish question",
+                "status": "verified"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "quote_verification": [
+      {
+        "quote": "in opposition to the will of the majority of the people, the community of nations has not yet learned to see in them anything but a horde of hated aliens",
+        "attribution": "Pinsker, Auto-Emancipation (1882), as quoted by Avineri",
+        "locators": [
+          {
+            "source_id": "avineri",
+            "scheme": "chapter",
+            "value": "7",
+            "status": "verified"
+          }
+        ],
+        "status": "verified",
+        "note": "Quoted inside Avineri's chapter; the original is not held."
+      }
+    ]
+  },
+  "I.2": {
+    "format_version": "0.11.3",
+    "assessment_id": "mip_l01_exam_01",
+    "submission_id": "submission_l01_exam_01_004",
+    "responses": {
+      "q1": {
+        "selected_option_ids": [
+          "o2"
+        ]
+      },
+      "q2": {
+        "text": "Pinsker says the fear of Jews is hereditary and cannot be cured by emancipation, so the remedy is a territory of their own, secured by a charter from the powers."
+      },
+      "q3": {
+        "a2": {
+          "text": "Pinsker, on Avineri's reading, treats the problem as a psychological one: a fear carried by the host nation, answerable only by a charter for a territory. Nordau's Congress speech treats it as degeneration — the Western Jew is physically and morally marked by it — and so the cure is a state, not a refuge. The two agree that emancipation has failed, and differ on what the movement is for: a shelter or a reconstruction."
+        }
+      }
+    }
+  },
+  "I.3": {
+    "format_version": "0.11.3",
+    "assessment_id": "mip_l01_exam_01",
+    "submission_id": "submission_l01_exam_01_004",
+    "grading_status": "graded",
+    "results": [
+      {
+        "question_id": "q1",
+        "status": "graded",
+        "awarded_points": "5",
+        "max_points": "5",
+        "feedback": "Correct. The 'spiritual centre' is the reading's claim, not Herzl's programme.",
+        "criterion_scores": [],
+        "review_reason": null,
+        "locators": [
+          {
+            "source_id": "hertzberg",
+            "scheme": "part",
+            "value": "4",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "question_id": "q2",
+        "status": "graded",
+        "awarded_points": "4",
+        "max_points": "5",
+        "feedback": "The diagnosis is exact; the remedy is named as a charter but Palestine is not excluded, as the criterion asks.",
+        "criterion_scores": [
+          {
+            "criterion_id": "diagnosis",
+            "points_awarded": "5/2",
+            "evidence": "the fear of Jews is hereditary and cannot be cured by emancipation",
+            "justification": "Both halves of the diagnosis are stated.",
+            "locators": [
+              {
+                "source_id": "avineri",
+                "scheme": "chapter",
+                "value": "7",
+                "status": "verified"
+              }
+            ]
+          },
+          {
+            "criterion_id": "remedy",
+            "points_awarded": "3/2",
+            "evidence": "the remedy is a territory of their own, secured by a charter",
+            "justification": "The charter is named; the reading's point that Palestine is not required is missing.",
+            "locators": [
+              {
+                "source_id": "avineri",
+                "scheme": "chapter",
+                "value": "7",
+                "status": "verified"
+              }
+            ]
+          }
+        ],
+        "review_reason": null
+      },
+      {
+        "question_id": "q3",
+        "status": "graded",
+        "awarded_points": "8",
+        "max_points": "10",
+        "feedback": "Both views are stated accurately and distinguished at the close. The comparison could weigh the two diagnoses against each other, which is what the second criterion asks.",
+        "answered_alternative_ids": [
+          "a2"
+        ],
+        "ignored_alternative_ids": [],
+        "criterion_scores": [
+          {
+            "criterion_id": "pinsker_view",
+            "alternative_id": "a2",
+            "points_awarded": "4",
+            "evidence": "treats the problem as a psychological one: a fear carried by the host nation",
+            "justification": "The diagnosis and the charter remedy are both named.",
+            "locators": [
+              {
+                "source_id": "avineri",
+                "scheme": "chapter",
+                "value": "7",
+                "status": "verified"
+              }
+            ]
+          },
+          {
+            "criterion_id": "nordau_view",
+            "alternative_id": "a2",
+            "points_awarded": "4",
+            "evidence": "Nordau's Congress speech treats it as degeneration",
+            "justification": "The diagnosis is named; 'state, not a refuge' is stated.",
+            "locators": [
+              {
+                "source_id": "nordau_speech",
+                "scheme": "heading",
+                "value": "the Jewish question",
+                "status": "verified"
+              }
+            ]
+          }
+        ],
+        "review_reason": null
+      }
+    ],
+    "total_possible_points": "20",
+    "total_awarded_points": "17"
+  }
+}

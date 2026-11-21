@@ -1,0 +1,1083 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Assessment Bundle v0.12.1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "format_version": {
+      "const": "0.12.1",
+      "studentVisible": true
+    },
+    "assessment": {
+      "$ref": "#/$defs/assessment",
+      "studentVisible": true
+    },
+    "answer_key": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/id"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/key_entry"
+      }
+    },
+    "quote_verification": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/quote_entry"
+      }
+    }
+  },
+  "required": [
+    "format_version",
+    "assessment",
+    "answer_key"
+  ],
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+    },
+    "nonempty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "positive_integer": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "nonnegative_integer": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "positive_number": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "option": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id",
+          "studentVisible": true
+        },
+        "text": {
+          "$ref": "#/$defs/nonempty",
+          "studentVisible": true
+        }
+      },
+      "required": [
+        "id",
+        "text"
+      ]
+    },
+    "word_count": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "$ref": "#/$defs/positive_integer",
+          "studentVisible": true
+        },
+        "max": {
+          "$ref": "#/$defs/positive_integer",
+          "studentVisible": true
+        },
+        "enforcement": {
+          "type": "string",
+          "enum": [
+            "advisory",
+            "recorded",
+            "capped"
+          ],
+          "default": "advisory",
+          "studentVisible": true
+        },
+        "note": {
+          "$ref": "#/$defs/nonempty",
+          "studentVisible": true
+        }
+      },
+      "required": [
+        "min",
+        "max"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "enforcement": {
+                "enum": [
+                  "recorded",
+                  "capped"
+                ]
+              }
+            },
+            "required": [
+              "enforcement"
+            ]
+          },
+          "then": {
+            "required": [
+              "note"
+            ]
+          }
+        }
+      ]
+    },
+    "question": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/id",
+              "studentVisible": true
+            },
+            "prompt": {
+              "$ref": "#/$defs/nonempty",
+              "studentVisible": true
+            },
+            "points": {
+              "$ref": "#/$defs/point_value",
+              "studentVisible": true
+            },
+            "estimated_minutes": {
+              "$ref": "#/$defs/positive_number",
+              "studentVisible": true
+            },
+            "type": {
+              "const": "single_choice",
+              "studentVisible": true
+            },
+            "options": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 26,
+              "items": {
+                "$ref": "#/$defs/option"
+              },
+              "studentVisible": true
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "prompt",
+            "points",
+            "estimated_minutes",
+            "options"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/id",
+              "studentVisible": true
+            },
+            "prompt": {
+              "$ref": "#/$defs/nonempty",
+              "studentVisible": true
+            },
+            "points": {
+              "$ref": "#/$defs/point_value",
+              "studentVisible": true
+            },
+            "estimated_minutes": {
+              "$ref": "#/$defs/positive_number",
+              "studentVisible": true
+            },
+            "type": {
+              "const": "multiple_select",
+              "studentVisible": true
+            },
+            "options": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 26,
+              "items": {
+                "$ref": "#/$defs/option"
+              },
+              "studentVisible": true
+            },
+            "scoring_policy": {
+              "enum": [
+                "all_or_nothing",
+                "partial_credit"
+              ],
+              "studentVisible": true
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "prompt",
+            "points",
+            "estimated_minutes",
+            "options",
+            "scoring_policy"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/id",
+              "studentVisible": true
+            },
+            "prompt": {
+              "$ref": "#/$defs/nonempty",
+              "studentVisible": true
+            },
+            "points": {
+              "$ref": "#/$defs/point_value",
+              "studentVisible": true
+            },
+            "estimated_minutes": {
+              "$ref": "#/$defs/positive_number",
+              "studentVisible": true
+            },
+            "type": {
+              "const": "short_answer",
+              "studentVisible": true
+            },
+            "response_lines": {
+              "$ref": "#/$defs/positive_integer",
+              "studentVisible": true
+            },
+            "suggested_word_count": {
+              "$ref": "#/$defs/word_count",
+              "studentVisible": true
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "prompt",
+            "points",
+            "estimated_minutes",
+            "response_lines"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/id",
+              "studentVisible": true
+            },
+            "prompt": {
+              "$ref": "#/$defs/nonempty",
+              "studentVisible": true
+            },
+            "points": {
+              "$ref": "#/$defs/point_value",
+              "studentVisible": true
+            },
+            "estimated_minutes": {
+              "$ref": "#/$defs/positive_number",
+              "studentVisible": true
+            },
+            "type": {
+              "const": "essay",
+              "studentVisible": true
+            },
+            "response_lines": {
+              "$ref": "#/$defs/positive_integer",
+              "studentVisible": true
+            },
+            "suggested_word_count": {
+              "$ref": "#/$defs/word_count",
+              "studentVisible": true
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "prompt",
+            "points",
+            "estimated_minutes",
+            "response_lines"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/id",
+              "studentVisible": true
+            },
+            "type": {
+              "const": "alternative_set",
+              "studentVisible": true
+            },
+            "prompt": {
+              "$ref": "#/$defs/nonempty",
+              "studentVisible": true
+            },
+            "points": {
+              "$ref": "#/$defs/point_value",
+              "studentVisible": true
+            },
+            "estimated_minutes": {
+              "$ref": "#/$defs/positive_number",
+              "studentVisible": true
+            },
+            "choose_n": {
+              "type": "integer",
+              "minimum": 1,
+              "studentVisible": true
+            },
+            "alternatives": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "$ref": "#/$defs/question"
+              },
+              "studentVisible": true
+            },
+            "credit": {
+              "$ref": "#/$defs/credit",
+              "studentVisible": true
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "prompt",
+            "points",
+            "estimated_minutes",
+            "choose_n",
+            "alternatives"
+          ]
+        }
+      ]
+    },
+    "criterion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "description": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "locators": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/locator"
+          }
+        },
+        "points": {
+          "$ref": "#/$defs/point_value"
+        }
+      },
+      "required": [
+        "id",
+        "description"
+      ]
+    },
+    "key_choice": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "const": "choice"
+        },
+        "correct_option_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "explanation": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "locators": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/locator"
+          }
+        }
+      },
+      "required": [
+        "method",
+        "correct_option_ids",
+        "explanation"
+      ]
+    },
+    "key_text": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "const": "exact_text"
+        },
+        "accepted_answers": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/nonempty"
+          }
+        },
+        "normalization": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "trim",
+              "case_fold",
+              "collapse_whitespace"
+            ]
+          }
+        },
+        "explanation": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "locators": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/locator"
+          }
+        }
+      },
+      "required": [
+        "method",
+        "accepted_answers",
+        "normalization",
+        "explanation"
+      ]
+    },
+    "key_rubric": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "const": "analytic_rubric"
+        },
+        "reference_answer": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "criteria": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/criterion"
+          }
+        },
+        "locators": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/locator"
+          }
+        }
+      },
+      "required": [
+        "method",
+        "reference_answer",
+        "criteria"
+      ]
+    },
+    "key_entry": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/key_choice"
+        },
+        {
+          "$ref": "#/$defs/key_text"
+        },
+        {
+          "$ref": "#/$defs/key_rubric"
+        }
+      ]
+    },
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id",
+          "studentVisible": true
+        },
+        "title": {
+          "$ref": "#/$defs/nonempty",
+          "studentVisible": true
+        },
+        "instructions": {
+          "type": "string",
+          "studentVisible": true
+        },
+        "source_material": {
+          "type": "string",
+          "studentVisible": true
+        },
+        "questions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/question"
+          },
+          "studentVisible": true
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "instructions",
+        "questions"
+      ]
+    },
+    "assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id",
+          "studentVisible": true
+        },
+        "title": {
+          "$ref": "#/$defs/nonempty",
+          "studentVisible": true
+        },
+        "subject": {
+          "$ref": "#/$defs/nonempty",
+          "studentVisible": true
+        },
+        "audience": {
+          "$ref": "#/$defs/nonempty",
+          "studentVisible": true
+        },
+        "instructions": {
+          "type": "string",
+          "studentVisible": true
+        },
+        "time_limit_minutes": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/positive_number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "studentVisible": true
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/section"
+          },
+          "studentVisible": true
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/source"
+          },
+          "studentVisible": true
+        },
+        "scope": {
+          "$ref": "#/$defs/scope",
+          "studentVisible": true
+        },
+        "gate": {
+          "$ref": "#/$defs/gate",
+          "studentVisible": true
+        },
+        "floors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/floor"
+          }
+        },
+        "coverage": {
+          "$ref": "#/$defs/coverage"
+        },
+        "delivery": {
+          "$ref": "#/$defs/delivery",
+          "studentVisible": true
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "subject",
+        "audience",
+        "instructions",
+        "time_limit_minutes",
+        "sections"
+      ]
+    },
+    "point_value": {
+      "type": "string",
+      "pattern": "^[1-9][0-9]*(/[1-9][0-9]*)?$"
+    },
+    "nonnegative_point_value": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)(/[1-9][0-9]*)?$"
+    },
+    "source_scheme": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scheme": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "status": {
+          "enum": [
+            "verified",
+            "pending",
+            "none"
+          ]
+        }
+      },
+      "required": [
+        "scheme",
+        "status"
+      ]
+    },
+    "source_range": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "scheme": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "from": {
+          "type": "integer"
+        },
+        "to": {
+          "type": "integer"
+        },
+        "offset": {
+          "type": "integer"
+        },
+        "status": {
+          "enum": [
+            "verified",
+            "derived"
+          ]
+        }
+      },
+      "required": [
+        "label",
+        "scheme",
+        "from",
+        "to",
+        "status"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id",
+          "studentVisible": true
+        },
+        "citation": {
+          "$ref": "#/$defs/nonempty",
+          "studentVisible": true
+        },
+        "schemes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/source_scheme"
+          }
+        },
+        "ranges": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/source_range"
+          }
+        },
+        "note": {
+          "type": "string"
+        },
+        "tier": {
+          "description": "How the source stands to the course's reading list.",
+          "enum": [
+            "required",
+            "extension",
+            "supplemental"
+          ],
+          "studentVisible": true
+        },
+        "category": {
+          "enum": [
+            "primary",
+            "secondary"
+          ],
+          "studentVisible": true
+        }
+      },
+      "required": [
+        "id",
+        "citation",
+        "schemes",
+        "tier"
+      ]
+    },
+    "locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "$ref": "#/$defs/id"
+        },
+        "scheme": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "value": {
+          "type": "string",
+          "minLength": 1
+        },
+        "range": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "from": {
+              "type": "integer"
+            },
+            "to": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "from",
+            "to"
+          ]
+        },
+        "status": {
+          "enum": [
+            "verified",
+            "derived",
+            "pending",
+            "unverified"
+          ]
+        },
+        "role": {
+          "enum": [
+            "primary",
+            "cf"
+          ]
+        },
+        "derived_from": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "scheme",
+        "status"
+      ],
+      "oneOf": [
+        {
+          "required": [
+            "value"
+          ]
+        },
+        {
+          "required": [
+            "range"
+          ]
+        }
+      ]
+    },
+    "quote_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "quote": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "attribution": {
+          "type": "string"
+        },
+        "locators": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/locator"
+          }
+        },
+        "status": {
+          "enum": [
+            "verified",
+            "derived",
+            "pending",
+            "unverified"
+          ]
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "quote",
+        "locators",
+        "status"
+      ]
+    },
+    "share": {
+      "description": "An exact positive rational, no greater than 1: a bare integer or a lowest-terms improper fraction. The upper bound is a semantic check.",
+      "type": "string",
+      "pattern": "^[1-9][0-9]*(/[1-9][0-9]*)?$"
+    },
+    "course_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id",
+          "studentVisible": true
+        },
+        "label": {
+          "$ref": "#/$defs/nonempty",
+          "studentVisible": true
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "segment_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id",
+          "studentVisible": true
+        },
+        "label": {
+          "$ref": "#/$defs/nonempty",
+          "studentVisible": true
+        },
+        "kind": {
+          "$ref": "#/$defs/nonempty",
+          "studentVisible": true
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "course": {
+          "$ref": "#/$defs/course_ref",
+          "studentVisible": true
+        },
+        "segments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/segment_ref"
+          },
+          "studentVisible": true
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "course",
+        "segments"
+      ]
+    },
+    "gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mastery": {
+          "type": "boolean",
+          "studentVisible": true
+        },
+        "mode": {
+          "enum": [
+            "completion",
+            "score"
+          ],
+          "studentVisible": true
+        },
+        "threshold_share": {
+          "$ref": "#/$defs/share",
+          "studentVisible": true
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "mastery"
+      ]
+    },
+    "floor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tier": {
+          "enum": [
+            "required",
+            "extension",
+            "supplemental"
+          ]
+        },
+        "min_share": {
+          "$ref": "#/$defs/share"
+        },
+        "applies_to": {
+          "enum": [
+            "mastery",
+            "all"
+          ]
+        }
+      },
+      "required": [
+        "tier",
+        "min_share",
+        "applies_to"
+      ]
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "assessed": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/coverage_entry"
+          }
+        },
+        "omitted": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/omission"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "assessed"
+      ]
+    },
+    "coverage_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "segment_id": {
+          "$ref": "#/$defs/id"
+        },
+        "question_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "segment_id",
+        "question_ids"
+      ]
+    },
+    "omission": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "segment_id": {
+          "$ref": "#/$defs/id"
+        },
+        "topic": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "reason": {
+          "type": "string",
+          "enum": [
+            "time",
+            "scope",
+            "redundant",
+            "deferred"
+          ]
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "topic"
+      ]
+    },
+    "delivery": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "open_book",
+            "closed_book"
+          ],
+          "studentVisible": true
+        }
+      },
+      "required": [
+        "mode"
+      ]
+    },
+    "credit": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "equal",
+            "capped"
+          ],
+          "studentVisible": true
+        }
+      },
+      "required": [
+        "mode"
+      ]
+    }
+  }
+}

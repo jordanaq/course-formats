@@ -30,7 +30,9 @@ stay in the consuming repositories.
 
 - One release pairs an assessment bundle format with a submission specification revision and
   a course-structure revision. `v0.12.2` pairs assessment `0.12.1`, submission `0.5`, and
-  course `0.1.11`.
+  course `0.1.11`. `v0.12.3` keeps that pairing and adds the `studentVisible` projection
+  annotations to the assessment-bundle schema; the bundle format is unchanged, so consumer
+  pins stay at `v0.12.2` until they adopt the annotations.
 - Release directories, tags, and `manifest.json` carry the version. Artifact filenames are
   deliberately unversioned.
 - Releases are immutable. A change produces a new release directory and tag.

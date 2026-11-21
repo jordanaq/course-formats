@@ -4,9 +4,40 @@ This file records conflicts found **inside the canonical formats**. App-specific
 fixture conversions, and product decisions stay in the consuming repositories
 (`course-organizer/docs/spec-reconciliation.md` and `assessment-cli/docs/PLAN.md`).
 
-Current release: `v0.12.2` — assessment `0.12.1`, submission `0.5`, course `0.1.11`.
+Current release: `v0.12.3` — assessment `0.12.1`, submission `0.5`, course `0.1.11`.
 The assessment/submission errata below were resolved in `v0.12.1`; `v0.12.2` adds the
-course-structure spec unchanged.
+course-structure spec unchanged; `v0.12.3` adds the `studentVisible` projection annotations
+and no format change.
+
+## Added in v0.12.3
+
+Not a conflict, but a change to the assessment bundle schema that release notes must carry. The
+bundle schema in `releases/v0.12.3/schemas/assessment-bundle.schema.json` annotates 75 property
+occurrences with the custom keyword `studentVisible: true`; the extension key `format_version` is
+annotated too, so a projection can report which format it rendered. It is an annotation for a
+projection consumer only: shapes, values, required fields and validation verdicts are identical
+to `v0.12.2` (checked over 1,615 documents, 204 of them valid). The assessment format version
+therefore stays `0.12.1`.
+
+Annotated: root `format_version` and `assessment`; the `assessment` metadata, sections, sources,
+scope, gate and delivery occurrences; `section` id/title/instructions/source_material/questions;
+every `question` branch (identity, type, prompt, points, estimated minutes, and that branch's own
+options/scoring/word-count/alternative fields); `option`; `word_count`; `credit.mode`; `source`
+id/citation/tier/category; `scope` course/segments; `course_ref` and `segment_ref`; `gate`
+mastery/mode/threshold_share; `delivery.mode`.
+
+Deliberately unannotated: root `answer_key` and `quote_verification`; `assessment.floors` and
+`assessment.coverage`; locators and their positions/statuses; `derived_from`; the free-text
+`note` fields on `source`, `scope` and `gate`. `source.schemes` and `source.ranges` stay invisible
+pending review of real examples. Absence of `studentVisible: true` means a property is excluded,
+and a projection must fail closed on unclassified fields, malformed annotations, ambiguous
+`oneOf` branches and unresolvable `$ref`s. Annotations sit on occurrences, never on the shared
+`$defs` scalars (`id`, `nonempty`, `point_value`). The spec's Appendix A.1 block carries the same
+annotated schema, kept identical by hand as with every earlier release.
+
+Open: whether `source.ranges`/`schemes` and the deferred `note` fields are ever safe to show, and
+whether the projection consumer resolves branches well enough to use the annotations. §1.1 and §7
+remain the authority for what a student may see.
 
 ## Resolved in v0.12.1
 
