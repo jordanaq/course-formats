@@ -16,13 +16,13 @@ stay in the consuming repositories.
 
 ## Canonicality
 
-- **Schemas are canonical for structure.** `releases/<release>/schemas/*.schema.json` is the
-  file programs read and validate against. Edit the schema first.
+- **Schemas are canonical for structure.** `schemas/*.schema.json`, at the tag consumers pin,
+  is the file programs read and validate against. Edit the schema first.
 - **Specs carry the normative prose.** They remain the authority for rules a schema cannot
   express: exact rational arithmetic, word counting, timing, rendering, privacy, and awards.
 - The specs currently embed copies of the schemas in fenced JSON blocks. Until the generator
-  lands, those blocks must be kept identical to the canonical schema files by hand. The
-  generator and its drift check are the next tooling task.
+  lands, those blocks must be kept identical to the canonical schema files by hand.
+  `tools/release-check/` fails a release whose embedded block has drifted.
 - Payload `format_version` consts remain in the schemas and documents. They are part of the
   format, not a filename or repository convention.
 
@@ -33,21 +33,27 @@ stay in the consuming repositories.
   course `0.1.11`. `v0.12.3` keeps that pairing and adds the `studentVisible` projection
   annotations to the assessment-bundle schema; the bundle format is unchanged, so consumer
   pins stay at `v0.12.2` until they adopt the annotations.
-- Release directories, tags, and `manifest.json` carry the version. Artifact filenames are
-  deliberately unversioned.
-- Releases are immutable. A change produces a new release directory and tag.
+- From `v0.13.0`, a release is a **tag plus a manifest**. The artifacts live once, at the
+  repository root, and `releases/<release>/manifest.json` records the format pairing and the
+  SHA-256 pins; the tag's tree is what makes the release immutable. `v0.12.0`–`v0.12.2` keep
+  their full directory copies as history, and `v0.12.3`'s copies remain in its tag.
+- Artifact filenames are deliberately unversioned; paths are stable across releases, and
+  `manifest.json` is where a consumer learns them.
+- Releases are immutable. A change produces a new tag and a new manifest, never an edit to an
+  existing one.
 
 ## Layout
 
 ```
+schemas/                  # canonical machine-readable structure
+specs/                    # normative prose (current: embeds schema copies)
+fixtures/                 # examples, worked examples, conformance vectors
+releases/<release>/       # manifest.json only, from v0.13.0 on:
+                          #   formats, artifact paths, SHA-256 pins
 ERRATA.md                 # conflicts inside the formats, resolved and open
-releases/<release>/
-  manifest.json           # formats, artifact paths, SHA-256 pins
-  schemas/                # canonical machine-readable structure
-  specs/                  # normative prose (current: embeds schema copies)
-  fixtures/               # examples, worked examples, conformance vectors
 tools/
   linter/                 # cross-check oracle; not part of a release
+  release-check/          # manifest pins, schema meta-validation, vector counts, spec drift
 ```
 
 ## Consumers
@@ -59,9 +65,21 @@ tools/
 | `course-organizer` | reads the schemas and specs | submodule at `vendor/course-formats`, `v0.12.2` |
 
 Consumers pin the release tag. Update by checking out a newer tag in the submodule and
-committing the new gitlink.
+committing the new gitlink. Paths come from the pinned `manifest.json`; from `v0.13.0` they
+are root-relative (`schemas/…`, `specs/…`, `fixtures/…`), before it they are
+`releases/<release>/…`.
 
 ## Tooling
+
+`tools/release-check/check_release.py` gates a release against itself: manifest fields, pins vs
+the checked tree, Draft 2020-12 meta-validation, conformance-vector counts, and it fails when a
+spec's embedded bundle schema has drifted from the canonical file. Run it before tagging, and
+against any tag afterwards:
+
+```
+python3 tools/release-check/check_release.py                     # the working tree
+python3 tools/release-check/check_release.py releases/v0.12.2/manifest.json --ref v0.12.2
+```
 
 `tools/linter/` is the Python cross-check linter copied from the vault. It is **not
 release-gating** and is currently out of date:
@@ -76,7 +94,8 @@ repository.
 
 ## Known pending work
 
-1. Generate the specs' embedded schema blocks from `releases/<release>/schemas/` and fail on drift.
+1. Generate the specs' embedded schema blocks from `schemas/` and fail on drift (the check half
+   exists in `tools/release-check/`).
 2. Add the prose-example test: extract the current appendix bundles into fixtures and validate
    them alongside the schema.
 3. Move the course linter and its fixtures here; then resolve C01–C05 and the stale submission

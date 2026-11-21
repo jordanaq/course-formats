@@ -4,15 +4,29 @@ This file records conflicts found **inside the canonical formats**. App-specific
 fixture conversions, and product decisions stay in the consuming repositories
 (`course-organizer/docs/spec-reconciliation.md` and `assessment-cli/docs/PLAN.md`).
 
-Current release: `v0.12.3` — assessment `0.12.1`, submission `0.5`, course `0.1.11`.
+Current release: `v0.13.0` — assessment `0.12.1`, submission `0.5`, course `0.1.11`.
 The assessment/submission errata below were resolved in `v0.12.1`; `v0.12.2` adds the
 course-structure spec unchanged; `v0.12.3` adds the `studentVisible` projection annotations
-and no format change.
+and no format change; `v0.13.0` moves the artifacts to the repository root and changes no
+format.
+
+## Layout change in v0.13.0
+
+`schemas/`, `specs/` and `fixtures/` now sit at the repository root and `releases/<release>/`
+holds only `manifest.json`. A release is the tag plus that manifest; the directory copies that
+`v0.12.0`–`v0.12.2` carry are history and stay untouched, and `v0.12.3`'s copies remain in its
+tag. Nothing a consumer validates changed: `v0.13.0` carries the same schema, prose and
+fixtures it inherited from `v0.12.3` byte-for-byte, so format versions stay at assessment
+`0.12.1` / submission `0.5` / course `0.1.11`. What changes is where a manifest's paths point:
+root-relative from `v0.13.0`, `releases/<release>/…` before it. Consumers must read paths from
+the manifest rather than composing them. `tools/release-check/check_release.py` now enforces
+the manifest pins, schema meta-validation, vector counts and spec-block drift against either
+the working tree or a tag.
 
 ## Added in v0.12.3
 
 Not a conflict, but a change to the assessment bundle schema that release notes must carry. The
-bundle schema in `releases/v0.12.3/schemas/assessment-bundle.schema.json` annotates 75 property
+bundle schema released in `v0.12.3` (now `schemas/assessment-bundle.schema.json`) annotates 75 property
 occurrences with the custom keyword `studentVisible: true`; the extension key `format_version` is
 annotated too, so a projection can report which format it rendered. It is an annotation for a
 projection consumer only: shapes, values, required fields and validation verdicts are identical
@@ -62,8 +76,8 @@ These are not silently decided. Each needs either a format change or a recorded
 | Pending locators | The wording around `pending` provenance and what a validator may conclude from it needs a single reading. | Assessment §2.5 and §8 check 6 |
 | Rubric prose caps | When a rubric description states a prose cap ("no more than 2 points for X"), how does it reconcile with the free-rational award rule? | Assessment §4.2.1 |
 | Course-spec findings | Lecture ID padding, legacy state field counts, required-field counts, discovery ambiguity, and the stale `submission-format-spec-v0.3.md` citation. | Course-structure spec once it moves here (C01–C05 in `course-organizer/docs/design-review.md`) |
-| Schema generation and drift | The specs embed copies of the schemas. A generator and drift check must make the canonical schema files the only editable source. | `tools/` |
-| Prose examples as tests | The current appendix bundles are not yet extracted into the release fixtures or validated alongside the schema. | `releases/<release>/fixtures/`, `tools/` |
+| Schema generation and drift | The specs embed copies of the schemas. A generator must make the canonical schema files the only editable source; the drift **check** now exists (`tools/release-check/`), the generator does not. | `tools/` |
+| Prose examples as tests | The current appendix bundles are not yet extracted into the release fixtures or validated alongside the schema. | `fixtures/`, `tools/` |
 | Linter migration | The Python linter still scrapes fenced markdown and expects versioned filenames. | `tools/linter/` |
 
 ## Adding an entry
